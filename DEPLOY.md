@@ -50,6 +50,35 @@ Statische Website (HTML/CSS/JS). Kein Build nötig – die Dateien werden 1:1 au
   - Canonical/OG/JSON-LD zeigen **bereits auf designj.de**.
   - Dann: `noindex` **raus** (auf index) und **FormSubmit aktivieren** (siehe unten).
 
+## ⚠️ Domain-Umzug zu Cloudflare – MAIL-SICHER & OHNE AUSFALL
+
+> Gilt für **designj.de** (dort läuft die Geschäfts-Mail `info@designj.de`) **und** für `dennisj.de` (private Mail). Ein Nameserver-Umzug **verschiebt die Postfächer NICHT** – die Mails bleiben physisch bei IONOS. Wir ändern nur, **wo die DNS gehostet wird**, und kopieren jeden Eintrag **1:1**. Solange die **MX-Einträge identisch** bleiben, merkt die E-Mail vom Umzug nichts.
+
+**Vorbereitung (Tage vorher):**
+- [ ] In IONOS **alle** DNS-Einträge von designj.de auflisten + sichern (Screenshot **und** Textdatei). Kritisch:
+  - [ ] **MX** (Maileingang) – Werte + Prioritäten notieren
+  - [ ] **TXT/SPF** (`v=spf1 …`)
+  - [ ] **TXT/DKIM** (`<selector>._domainkey…`)
+  - [ ] **TXT/DMARC** (`_dmarc…`)
+  - [ ] Mail-CNAMEs: `imap`, `smtp`, `mail`, `autoconfig`, `autodiscover`, ggf. `webmail`
+  - [ ] Website-Einträge (A/AAAA/CNAME) – damit die ALTE Seite während des Umzugs online bleibt
+  - [ ] sonstige (z. B. Verifizierungs-TXT)
+- [ ] **TTL** der Einträge bei IONOS auf niedrig stellen (z. B. 300 s / 5 Min), 1 Tag vorher → Änderungen greifen dann schnell.
+
+**Umzug Schritt für Schritt:**
+1. [ ] designj.de in Cloudflare einhängen (Add a domain, Free-Plan). Cloudflare scannt vorhandene Einträge.
+2. [ ] **Jeden** Eintrag gegen die IONOS-Liste abgleichen – besonders MX + alle Mail-TXT. Fehlende **manuell nachtragen**. Website-A/CNAME zunächst auf den **bisherigen** Host zeigen lassen (alte Seite bleibt live), Proxy für Mail-Einträge **aus** (grau).
+3. [ ] Erst wenn **kein** Mail-Eintrag fehlt: bei IONOS Nameserver auf die 2 Cloudflare-Nameserver umstellen.
+4. [ ] Auf Cloudflare-Status **„Active"** warten (Min. bis Std.). → Von außen ändert sich nichts.
+5. [ ] **Mail-Test:** Test-Mail an `info@designj.de` senden + von dort eine raus → Ein-/Ausgang bestätigt. Alte Website weiterhin erreichbar prüfen.
+6. [ ] **Erst jetzt** Website-Cutover: Worker `designj-website` → Domains `www.designj.de` + `designj.de` hinzufügen (Cloudflare setzt A/CNAME auf den Worker, SSL automatisch). Wirkt in Sekunden (NS liegen schon auf CF).
+7. [ ] Neue Seite auf beiden URLs prüfen (inkl. http→https, www↔nackt-Redirect).
+
+**Sicherheitsnetze:**
+- **Rollback Website:** Worker-Domain entfernen / A-CNAME zurück auf alten Host → alte Seite sofort wieder da. Mail ist davon nie betroffen.
+- **Timing:** abends / ruhige Zeit, nicht Freitagnachmittag.
+- Postfächer + IONOS-Mailhosting bleiben unangetastet – nur die DNS-Verwaltung wandert.
+
 ## Livegang-Checkliste (designj.de)
 
 - [ ] `noindex` entfernen → `index, follow`
