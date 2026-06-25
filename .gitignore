@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Arbeits-/Quell-Ordner (gehören nicht auf die Live-Seite)
+_neue-fotos/
+_real/
+_zu-webp/
+
+# Editor/Temp
+*.tmp
+Thumbs.db
