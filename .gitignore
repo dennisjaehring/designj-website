@@ -10,3 +10,9 @@ _zu-webp/
 # Editor/Temp
 *.tmp
 Thumbs.db
+
+# Arbeitsordner Bild-Optimierung (nicht deployen)
+_bilder-optimieren/
+
+# Kampagnen-Arbeitsmaterial (Briefing + Entwürfe) – internes Material, nicht veröffentlichen
+kampagnen/
