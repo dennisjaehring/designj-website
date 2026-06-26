@@ -16,3 +16,10 @@ _bilder-optimieren/
 
 # Kampagnen-Arbeitsmaterial (Briefing + Entwürfe) – internes Material, nicht veröffentlichen
 kampagnen/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
