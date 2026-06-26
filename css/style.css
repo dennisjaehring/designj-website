@@ -251,7 +251,8 @@ body.nav-locked { overflow: hidden; }
 .hero--text .hero__content { max-width: 880px; }
 
 /* Über-mich-Hero: kompaktere H1 (2 Zeilen) + kleineres Porträt */
-.hero--about h1 { font-size: clamp(2rem, 4.2vw, 3.4rem); }
+.hero--about .hero__grid { grid-template-columns: 1.25fr .75fr; }
+.hero--about .lead { max-width: none; }
 .hero--about .portrait-cut { max-width: 420px; }
 
 /* ============================================================
