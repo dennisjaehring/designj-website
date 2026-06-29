@@ -6,15 +6,22 @@
    ============================================================ */
 
 /* ---------- Akzent-System: pro Kampagne via Body-Klasse überschreibbar ----------
-   THEMES-TABELLE (gleicher Hex 1:1 für InDesign / Firefly / CapCut / Print):
-     Kampagne   Body-Klasse          Akzent-Hex   Badge-Label
-     Bedarf     .kampagne-bedarf     #E8912A      Bernstein/Orange
-     Macher     .kampagne-macher     #D8452B      (Platzhalter – final folgt)
-     Sport      .kampagne-sport      #2FB179      (Platzhalter – final folgt)
+   PALETTE A (DESIGNJ-Kampagnen) – gleicher Hex 1:1 für InDesign / Firefly / CapCut / Print.
+
+   ZUGEORDNET:
+     Kampagne   Body-Klasse          Akzent-Hex   Farbe   Zielgruppe
+     Macher     .kampagne-macher     #FF8A2B      Orange  Handwerk & Bau
+     Sport      .kampagne-sport      #3FBF6A      Grün    PlayersBranding / Spieler:innen
+     Bedarf     .kampagne-bedarf     #4F7DF5      Blau    Firmen mit Personalbedarf
+
+   FREI (für künftige Kampagnen / Landingpage-Tests):
+     #FF5247 Rot (Aktion/Sale)      #FFB323 Bernstein (Print)   #9FD138 Limette (Eco/Gesundheit)
+     #1FC4A8 Türkis (Beratung/Web)  #28AEE6 Cyan (Tech/Digital)
+     #8C6CF0 Violett (Premium/Kreativ)   #F25C9E Magenta (Social/Content)
 */
-.kampagne-bedarf { --accent: #E8912A; }
-.kampagne-macher { --accent: #D8452B; } /* Platzhalter, bei Macher-Umsetzung final setzen */
-.kampagne-sport  { --accent: #2FB179; } /* Platzhalter, bei Sport-Umsetzung final setzen  */
+.kampagne-macher { --accent: #FF8A2B; }
+.kampagne-sport  { --accent: #3FBF6A; }
+.kampagne-bedarf { --accent: #4F7DF5; }
 :root            { --accent: var(--accent-color, #ffffff); } /* Fallback = Hausfarbe */
 
 /* ---------- Akzent-Grundzüge im Kampagnenbereich ---------- */
@@ -27,12 +34,16 @@
 .btn--accent .arrow, .btn--accent .chev { color: #000; }
 
 /* ---------- Hero ---------- */
-.kmp-hero { padding-block: clamp(2.6rem, 6vw, 5rem) clamp(2.8rem, 6vw, 5rem); }
-.kmp-hero__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.kmp-hero { padding-block: clamp(5.5rem, 9vw, 7.5rem) clamp(2.4rem, 5vw, 3.8rem); }
+.kmp-hero__grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
 /* Grid-Kinder dürfen unter min-content schrumpfen → kein Überlauf bei langen Wörtern */
 .kmp-hero__grid > *, .kmp-net > *, .kmp-compare > *, .kmp-models > * { min-width: 0; }
-.kmp-hero h1 { font-size: clamp(2.4rem, 5.6vw, 4.7rem); margin: .15em 0 .5em; }
+.kmp-hero h1 { font-size: clamp(2.6rem, 7vw, 5.6rem); margin: .1em 0 .5em; }
 .kmp-hero h1 .accentword { color: var(--accent); }
+.kmp-hero__answer { display: block; margin-top: .85rem; font-size: clamp(1.45rem, 2.7vw, 2.1rem); font-weight: 500; letter-spacing: -.01em; line-height: 1.2; color: var(--fg-muted); }
+.kmp-emph { color: var(--fg); font-weight: 700; }
+.section-head--wide { max-width: none; }
+.kmp-fg { color: var(--fg); }
 .kmp-hero .lead { max-width: 46ch; margin-bottom: 2rem; }
 .kmp-hero__media { width: 100%; }
 .kmp-hero__media .placeholder-img,
@@ -60,6 +71,9 @@
 .kmp-net__list { columns: 2; column-gap: 2rem; }
 .kmp-net__list li { padding: .75rem 0; border-bottom: 1px solid var(--line); font-weight: 500; break-inside: avoid; display: flex; gap: .6rem; align-items: center; color: var(--fg); }
 .kmp-net__list li::before { content: "›"; color: var(--accent); font-weight: 800; }
+/* Einheitlicher, etwas größerer Abstand Headline -> Subline (alle Kampagnen-Sektionen + Netzwerk) */
+.kampagne .section-head p { margin-top: 1.4rem; }
+.kmp-net .lead { margin-top: 1.4rem; }
 
 /* ---------- Vergleichstabelle (Beweis/Angebot-Slot) ---------- */
 .kmp-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
@@ -74,11 +88,19 @@
 .kmp-col--lose .mk { color: var(--fg-dim); }
 .kmp-col--win .mk { color: var(--accent); }
 
-/* ---------- Leistungs-Chips ---------- */
-.kmp-chips { display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem; }
-.kmp-chip { display: flex; align-items: center; gap: .8rem; padding: 1.1rem 1.4rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg-elev); font-weight: 700; letter-spacing: -.01em; transition: border-color var(--t), background var(--t); }
-.kmp-chip:hover { border-color: var(--line-strong); background: var(--bg-elev-2); }
-.kmp-chip .plus { color: var(--accent); font-weight: 800; font-size: 1.15em; line-height: 0; }
+/* ---------- Leistungs-Akkordeon (aufklappbare Toggles) ---------- */
+.kmp-acc { display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem; align-items: start; }
+.kmp-acc__item { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg-elev); transition: border-color var(--t), background var(--t); }
+.kmp-acc__item:hover { border-color: var(--line-strong); }
+.kmp-acc__item[open] { border-color: var(--accent); background: var(--bg-elev-2); }
+.kmp-acc__item summary { display: flex; align-items: center; gap: .8rem; padding: 1.1rem 1.4rem; font-weight: 700; letter-spacing: -.01em; cursor: pointer; list-style: none; }
+.kmp-acc__item summary::-webkit-details-marker { display: none; }
+.kmp-acc__item summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: var(--radius-sm); }
+.kmp-acc__ico { color: var(--accent); font-weight: 800; font-size: 1.4rem; line-height: 0; transition: transform var(--t); }
+.kmp-acc__item[open] .kmp-acc__ico { transform: rotate(45deg); }
+.kmp-acc__title { flex: 1; }
+.kmp-acc__item > p { margin: 0 1.4rem 1.25rem; padding-left: 1.6rem; color: var(--fg-muted); font-size: .98rem; line-height: 1.6; }
+@media (prefers-reduced-motion: reduce) { .kmp-acc__ico { transition: none; } }
 
 /* ---------- Prozess-Steps (echte Reihenfolge 01–04) ---------- */
 .kmp-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.4rem; counter-reset: s; }
@@ -92,43 +114,38 @@
 .kmp-xlinks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
 .kmp-xcard { border: 1px solid var(--line); border-radius: var(--radius); padding: 1.9rem 1.6rem; background: var(--bg-elev); display: flex; flex-direction: column; transition: border-color var(--t), background var(--t); }
 .kmp-xcard:hover { border-color: var(--line-strong); background: var(--bg-elev-2); }
+.kmp-xico { display: block; color: var(--accent); margin-bottom: 1rem; }
+.kmp-xico svg { width: 30px; height: 30px; }
 .kmp-xcard h3 { font-size: 1.1rem; margin-bottom: .5rem; }
 .kmp-xcard p { font-size: .94rem; margin-bottom: 1.3rem; }
 .kmp-xlink { margin-top: auto; align-self: flex-start; display: inline-flex; gap: .45em; align-items: center; font-weight: 700; letter-spacing: -.01em; color: var(--fg); border-bottom: 2px solid var(--accent); padding-bottom: 3px; transition: color var(--t-fast), gap var(--t-fast); }
 .kmp-xlink:hover { color: var(--accent); gap: .7em; }
 
-/* ---------- Formular ---------- */
-.kmp-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; max-width: 780px; }
-.kmp-field { display: flex; flex-direction: column; gap: .5rem; }
-.kmp-field--full { grid-column: 1 / -1; }
-.kmp-form .kmp-label { font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: .73rem; color: var(--fg-muted); }
-.kmp-form input,
-.kmp-form textarea,
-.kmp-form select {
-  width: 100%; background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius-sm);
-  color: var(--fg); padding: .85rem 1rem; font-family: inherit; font-size: .98rem;
-}
-.kmp-form input::placeholder,
-.kmp-form textarea::placeholder { color: var(--fg-dim); }
-.kmp-form input:focus,
-.kmp-form textarea:focus,
-.kmp-form select:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
-.kmp-checks { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; margin-top: .2rem; }
-.kmp-check { display: flex; align-items: center; gap: .55rem; font-size: .93rem; color: var(--fg); }
-.kmp-check input { width: 18px; height: 18px; accent-color: var(--accent); padding: 0; }
-.kmp-consent { font-size: .8rem; color: var(--fg-muted); line-height: 1.5; }
-.kmp-consent a { color: var(--fg); text-decoration: underline; }
-.kmp-form__note { grid-column: 1 / -1; font-size: .9rem; color: var(--fg-muted); margin-top: -.2rem; }
+/* ---------- Formular ----------
+   Nutzt jetzt das globale Kontakt-Formular (.form aus style.css) → 1:1 identisch zur
+   Kontaktseite. Eigene .kmp-form-Styles entfernt (waren tot). */
 
 /* ---------- Responsive ---------- */
 @media (max-width: 940px) {
   .kmp-hero__grid, .kmp-net, .kmp-compare, .kmp-models, .kmp-xlinks { grid-template-columns: 1fr; }
   .kmp-pain, .kmp-steps { grid-template-columns: 1fr 1fr; }
-  .kmp-chips { grid-template-columns: 1fr; }
+  .kmp-acc { grid-template-columns: 1fr; }
   .kmp-net__list { columns: 1; }
 }
 @media (max-width: 560px) {
-  .kmp-pain, .kmp-steps, .kmp-form { grid-template-columns: 1fr; }
-  /* Lange Komposita (z.B. "Marketingmitarbeiter") sauber umbrechen statt überlaufen */
-  .kmp-hero h1, .kampagne h2 { overflow-wrap: break-word; hyphens: auto; }
+  .kmp-pain, .kmp-steps { grid-template-columns: 1fr; }
+  /* Lange Komposita (z.B. "Marketingmitarbeiter") sauber umbrechen statt überlaufen.
+     anywhere (statt break-word) verkleinert auch die intrinsische Mindestbreite → kein Überlauf. */
+  .kmp-hero h1, .kampagne h2 { overflow-wrap: anywhere; hyphens: auto; }
 }
+
+/* ---------- Praxis-Beispiele (2×2 Bild-Block, Querformat) ---------- */
+.kmp-shots { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 2.4vw, 1.7rem); }
+.kmp-shot { margin: 0; }
+.kmp-shot__media { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); }
+.kmp-shot__cap { margin-top: .85rem; font-weight: 700; letter-spacing: -.01em; color: var(--fg); display: flex; align-items: center; gap: .45em; }
+@media (max-width: 620px) { .kmp-shots { grid-template-columns: 1fr; } }
+
+/* ---------- Einheitlicher Kontaktblock (1:1 von kontakt.html) im Kampagnen-Layout ----------
+   Keine Overrides: contact-grid (align-items:stretch) + contact-aside lassen die Karten-Skizze
+   mitwachsen → linke und rechte Spalte automatisch gleich hoch, exakt wie auf kontakt.html. */
