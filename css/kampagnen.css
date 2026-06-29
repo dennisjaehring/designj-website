@@ -92,7 +92,7 @@
 .kmp-pack { position: relative; display: flex; flex-direction: column; background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius); padding: 2.1rem 1.7rem; transition: border-color var(--t), background var(--t); }
 .kmp-pack:hover { border-color: var(--line-strong); background: var(--bg-elev-2); }
 .kmp-pack--feat { border-color: var(--accent); }
-.kmp-pack__badge { position: absolute; top: -.75rem; left: 1.7rem; background: var(--accent); color: #000; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: .32rem .75rem; border-radius: 999px; }
+.kmp-pack__badge { position: absolute; top: -.75rem; right: 1.7rem; background: var(--accent); color: #000; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: .32rem .75rem; border-radius: 999px; }
 .kmp-pack__name { font-size: 1.4rem; font-weight: 800; letter-spacing: -.02em; }
 .kmp-pack__tag { color: var(--fg-muted); margin: .25rem 0 1.3rem; font-size: .95rem; }
 .kmp-pack__list { display: flex; flex-direction: column; gap: .7rem; }
