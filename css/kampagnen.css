@@ -67,7 +67,7 @@
 .kmp-model p { font-size: .96rem; }
 
 /* ---------- Netzwerk ---------- */
-.kmp-net { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.kmp-net { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: end; }
 .kmp-net__list { columns: 2; column-gap: 2rem; }
 .kmp-net__list li { padding: .75rem 0; border-bottom: 1px solid var(--line); font-weight: 500; break-inside: avoid; display: flex; gap: .6rem; align-items: center; color: var(--fg); }
 .kmp-net__list li::before { content: "›"; color: var(--accent); font-weight: 800; }
