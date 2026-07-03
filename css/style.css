@@ -833,8 +833,10 @@ main > section.hero { background: #000; }
 .faq__item p { color: var(--fg-muted); line-height: 1.75; padding: 0 0 1.3rem; margin: 0; max-width: 70ch; }
 .kampagne .faq__item summary::after { color: var(--accent); } /* +/- im Kampagnen-Akzent */
 .kampagne .faq__item[open] summary { color: var(--accent); }
-/* SEO-Landingpage: Lokal-/Textblock */
-.seo-local { max-width: 780px; }
+/* SEO-Landingpage: Hero-Headline (einheitlich für alle SEO-Seiten, 2-zeilig) */
+.kmp-hero h1.seo-h1 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); line-height: 1.06; margin: .1em 0 .5em; }
+/* SEO-Landingpage: Lokal-/Textblock – volle Breite */
+.seo-local { max-width: none; }
 .seo-local p { margin-bottom: 1rem; }
 
 /* Nav-Dropdown „Lösungen" */
