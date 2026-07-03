@@ -1,0 +1,4 @@
+# Testphase: nichts cachen, damit Änderungen sofort sichtbar sind.
+# Vor dem echten Livegang wieder entfernen / auf sinnvolles Caching stellen.
+/*
+  Cache-Control: no-store
