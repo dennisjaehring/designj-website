@@ -831,6 +831,8 @@ main > section.hero { background: #000; }
 .faq__item summary::after { content: "+"; font-size: 1.5rem; font-weight: 400; color: var(--fg-dim); line-height: 1; flex-shrink: 0; }
 .faq__item[open] summary::after { content: "–"; }
 .faq__item p { color: var(--fg-muted); line-height: 1.75; padding: 0 0 1.3rem; margin: 0; max-width: 70ch; }
+.kampagne .faq__item summary::after { color: var(--accent); } /* +/- im Kampagnen-Akzent */
+.kampagne .faq__item[open] summary { color: var(--accent); }
 /* SEO-Landingpage: Lokal-/Textblock */
 .seo-local { max-width: 780px; }
 .seo-local p { margin-bottom: 1rem; }
