@@ -623,7 +623,7 @@ a.contact-loc:hover .contact-loc__addr { text-decoration: underline; }
    FOOTER
    ============================================================ */
 .footer { border-top: 1px solid var(--line); padding-block: clamp(3rem,5vw,4.5rem) 2rem; margin-top: clamp(3rem,6vw,6rem); }
-.footer__top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2.5rem; margin-bottom: 3rem; }
+.footer__top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem; }
 .footer__brand img { height: 48px; width: auto; margin-bottom: 1rem; }
 .footer__brand .claim { font-size: .82rem; letter-spacing: .18em; color: var(--fg-dim); text-transform: uppercase; margin-bottom: 1.4rem; }
 .footer__addr { font-size: .94rem; color: var(--fg-muted); line-height: 1.8; }
@@ -822,3 +822,10 @@ main > section.hero { background: #000; }
 .proj-quote__name { font-weight: 700; }
 .proj-quote__role { color: var(--fg-dim); font-size: .9rem; }
 @media (max-width: 560px) { .proj-quote { grid-template-columns: 1fr; text-align: center; justify-items: center; } .proj-quote__media { width: 150px; height: 150px; } }
+
+/* Themen-Zeile als erste Zeile im Footer */
+.footer:has(.footer__topics) { padding-top: 1.4rem; }
+.footer__topics { padding-bottom: 1.4rem; margin-bottom: 3rem; border-bottom: 1px solid var(--line); font-size: .82rem; color: var(--fg-muted); }
+.footer__topics a { color: var(--fg-muted); }
+.footer__topics a:hover { color: var(--fg); }
+.topic-strip__label { color: var(--fg); font-weight: 600; margin-right: .45em; }
