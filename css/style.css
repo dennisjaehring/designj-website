@@ -833,8 +833,9 @@ main > section.hero { background: #000; }
 .faq__item p { color: var(--fg-muted); line-height: 1.75; padding: 0 0 1.3rem; margin: 0; max-width: 70ch; }
 .kampagne .faq__item summary::after { color: var(--accent); } /* +/- im Kampagnen-Akzent */
 .kampagne .faq__item[open] summary { color: var(--accent); }
-/* Kundenstimmen: Anführungszeichen im Kampagnen-Akzent + Platzhalter-Avatar */
+/* Kundenstimmen: Anführungszeichen im Kampagnen-Akzent + größerer Avatar (SEO-Seiten) + Platzhalter */
 .kampagne .testi__quote::before { color: var(--accent); }
+.kampagne .testi__avatar { width: 80px; height: 80px; }
 .testi__avatar--ph { background: var(--bg-elev-2); }
 
 /* Inline-Textlinks im SEO-/Content-Bereich: rein weiß, dezent (kein Konflikt mit Akzent-Eyebrows) */
