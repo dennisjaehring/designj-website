@@ -833,16 +833,15 @@ main > section.hero { background: #000; }
 .faq__item p { color: var(--fg-muted); line-height: 1.75; padding: 0 0 1.3rem; margin: 0; max-width: 70ch; }
 .kampagne .faq__item summary::after { color: var(--accent); } /* +/- im Kampagnen-Akzent */
 .kampagne .faq__item[open] summary { color: var(--accent); }
-/* Inline-Textlinks im SEO-/Content-Bereich sichtbar machen (Akzent + Unterstrich) */
+/* Inline-Textlinks im SEO-/Content-Bereich: rein weiß, dezent (kein Konflikt mit Akzent-Eyebrows) */
 .bio-block a, .seo-local a, .kmp-step p a, .kmp-acc__item p a, .faq__item p a {
-  color: var(--accent, var(--fg));
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
+  color: var(--fg);
+  font-weight: 600;
+  text-decoration: none;
   transition: opacity var(--t-fast);
 }
 .bio-block a:hover, .seo-local a:hover, .kmp-step p a:hover,
-.kmp-acc__item p a:hover, .faq__item p a:hover { opacity: .72; }
+.kmp-acc__item p a:hover, .faq__item p a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* SEO-Landingpage: Hero-Headline (einheitlich für alle SEO-Seiten, 2-zeilig) */
 .kmp-hero h1.seo-h1 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); line-height: 1.06; margin: .1em 0 .5em; }
