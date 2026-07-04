@@ -842,7 +842,7 @@ main > section.hero { background: #000; }
 .testi3-grid { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; gap: clamp(1rem,2vw,1.4rem); }
 .testi3 { display: grid; grid-template-columns: 1fr auto; gap: clamp(1.1rem,2vw,1.6rem); align-items: center; background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(1.5rem,2.4vw,1.9rem); }
 .testi3__quote { color: var(--fg); line-height: 1.5; font-size: .97rem; margin: 0 0 1.1rem; }
-.testi3__quote::before { content: '“'; display: block; font-size: 2.2rem; line-height: .5; color: var(--accent); margin-bottom: .35rem; }
+.testi3__quote::before { content: '“'; display: block; font-size: 2.2rem; line-height: .5; color: var(--accent, var(--fg)); margin-bottom: .35rem; }
 .testi3__who { font-size: .92rem; margin: 0; }
 .testi3__name { color: var(--fg); font-weight: 700; }
 .testi3__role { color: var(--fg-dim); }
