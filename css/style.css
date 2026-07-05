@@ -645,6 +645,19 @@ a.contact-loc:hover .contact-loc__addr { text-decoration: underline; }
 /* Footer rechte Spalte: gleicher Abstand Überschrift→Icons wie Überschrift→Impressum; Block bleibt oben/kompakt */
 .footer__top > div:nth-child(3) { align-self: start; }
 .footer__col .socials { margin: 1.2rem 0 1.1rem; }
+/* Footer Google-Bewertungs-Badge (unter Social Media) */
+.footer__col h4.footer__rate-h { margin-top: 1.3rem; }
+.footer__col a.footer__google {
+  display: inline-flex; align-items: center; gap: .6rem; width: auto;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  padding: .5rem .8rem; }
+.footer__col a.footer__google:hover { border-color: var(--line-strong); }
+.footer__google .fg-g { width: 18px; height: 18px; flex: none; color: var(--fg); }
+.footer__google .fg-meta { display: flex; flex-direction: column; gap: 2px; line-height: 1.25; }
+.footer__google .fg-top { display: flex; align-items: center; gap: .5rem; }
+.footer__google .fg-stars { color: var(--fg); letter-spacing: 1.5px; font-size: .82rem; }
+.footer__google .fg-rating { font-size: .84rem; font-weight: 600; color: var(--fg); }
+.footer__google .fg-count { font-size: .78rem; color: var(--fg-dim); }
 
 /* ============================================================
    SCROLL-ANIMATIONEN (Intersection Observer)
