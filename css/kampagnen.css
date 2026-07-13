@@ -41,9 +41,9 @@
 .kmp-hero h1 { font-size: clamp(2.6rem, 7vw, 5.6rem); margin: .1em 0 .5em; }
 .kmp-hero h1 .accentword { color: var(--accent); }
 .kmp-hero__answer { display: block; margin-top: .85rem; font-size: clamp(1.45rem, 2.7vw, 2.1rem); font-weight: 500; letter-spacing: -.01em; line-height: 1.2; color: var(--fg-muted); }
-.kmp-emph { color: var(--fg); font-weight: 700; }
+.kmp-emph { color: var(--fg); font-weight: 600; }
 .section-head--wide { max-width: none; }
-.kmp-fg { color: var(--fg); }
+.kmp-fg { color: var(--fg); font-weight: 600; }
 .kmp-hero .lead { max-width: 46ch; margin-bottom: 2rem; }
 .kmp-hero__media { width: 100%; }
 .kmp-hero__media .placeholder-img,

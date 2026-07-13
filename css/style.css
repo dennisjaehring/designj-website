@@ -13,7 +13,7 @@
   --line-strong:   rgba(255,255,255,0.22);
   --fg:            #ffffff;    /* Text Weiß */
   --fg-muted:      rgba(255,255,255,0.62);
-  --fg-dim:        rgba(255,255,255,0.40);
+  --fg-dim:        rgba(255,255,255,0.58);
 
   /* Akzentfarbe – aktuell bewusst Weiß (Platzhalter), spaeter ersetzbar */
   --accent-color:  #ffffff;
@@ -65,8 +65,8 @@ h1 { font-size: clamp(2.6rem, 7vw, 5.6rem); font-weight: 900; }
 h2 { font-size: clamp(2rem, 4.6vw, 3.4rem); }
 h3 { font-size: clamp(1.25rem, 2.2vw, 1.7rem); letter-spacing: -0.025em; }
 
-p  { color: var(--fg-muted); }
-.lead { font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--fg-muted); line-height: 1.5; }
+p  { color: var(--fg); }
+.lead { font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--fg); line-height: 1.5; }
 
 .eyebrow {
   display: inline-block;
