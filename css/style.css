@@ -12,7 +12,7 @@
   --line:          rgba(255,255,255,0.12);
   --line-strong:   rgba(255,255,255,0.22);
   --fg:            #ffffff;    /* Text Weiß */
-  --fg-muted:      rgba(255,255,255,0.62);
+  --fg-muted:      #ffffff;               
   --fg-dim:        rgba(255,255,255,0.58);
 
   /* Akzentfarbe – aktuell bewusst Weiß (Platzhalter), spaeter ersetzbar */
