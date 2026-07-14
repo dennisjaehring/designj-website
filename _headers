@@ -1,6 +1,11 @@
 # Caching nach Launch: HTML/CSS/JS immer frisch (revalidate), Fonts/Bilder länger cachen.
 /*
   Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=15552000
 
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
