@@ -1,4 +1,9 @@
-# Testphase: nichts cachen, damit Änderungen sofort sichtbar sind.
-# Vor dem echten Livegang wieder entfernen / auf sinnvolles Caching stellen.
+# Caching nach Launch: HTML/CSS/JS immer frisch (revalidate), Fonts/Bilder länger cachen.
 /*
-  Cache-Control: no-store
+  Cache-Control: public, max-age=0, must-revalidate
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=604800
