@@ -725,7 +725,7 @@ a.contact-loc:hover .contact-loc__addr { text-decoration: underline; }
   .hero__media { order: -1; min-height: auto; margin-bottom: 1rem; }
   .portrait-cut { max-width: 360px; }
   .hero--tuck .hero__media { order: 0; margin-bottom: 0; }
-  .hero--tuck .stats-tuck, .hero--tuck .mein-weg-tuck { margin-top: -5rem; }
+  .hero--tuck .stats-tuck, .hero--tuck .mein-weg-tuck { margin-top: -2rem; }
   .hero .lead { max-width: none; }
   .stats { grid-template-columns: repeat(2,1fr); }
   .stats__item:nth-child(2) { border-right: 0; }
