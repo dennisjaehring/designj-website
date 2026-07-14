@@ -218,14 +218,15 @@ body.nav-locked { overflow: hidden; }
 .hero {
   position: relative;
   padding-top: clamp(7rem, 14vw, 11rem);
-  padding-bottom: clamp(3rem, 7vw, 6rem);
+  padding-bottom: clamp(1rem, 2vw, 2rem);
   overflow: hidden;
 }
 .hero__grid {
   display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(1rem,4vw,3rem);
-  align-items: center;
+  align-items: start;
 }
 .hero__content { max-width: 640px; }
+.hero__grid .hero__content { padding-top: 6rem; }
 .hero h1 { margin-bottom: 1.4rem; }
 .hero .lead { margin-bottom: 2.2rem; max-width: 30ch; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: .9rem; }
