@@ -129,19 +129,4 @@
     });
   }
 
-  // Karten-Consent (DSGVO): Google Maps erst nach Klick laden
-  const mapBox = document.getElementById('contactMap');
-  if (mapBox) {
-    const frame = mapBox.querySelector('iframe');
-    const consent = document.getElementById('mapConsent');
-    const btn = document.getElementById('mapConsentBtn');
-    const loadMap = () => {
-      if (frame && frame.dataset.src) frame.src = frame.dataset.src;
-      if (consent) consent.hidden = true;
-      try { localStorage.setItem('mapConsent', '1'); } catch (e) {}
-    };
-    if (btn) btn.addEventListener('click', loadMap);
-    try { if (localStorage.getItem('mapConsent') === '1') loadMap(); } catch (e) {}
-  }
-
 })();
