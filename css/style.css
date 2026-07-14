@@ -256,6 +256,11 @@ body.nav-locked { overflow: hidden; }
 .hero--about .lead { max-width: none; }
 .hero--about .portrait-cut { max-width: 420px; }
 
+/* Start-Hero „Tuck": Bild endet HINTER der Stats-Karte (kein Verlauf, Karte überlappt) */
+.hero--tuck .portrait-cut { -webkit-mask-image: none; mask-image: none; }
+.hero--tuck { padding-bottom: 0; }
+.stats-tuck { position: relative; z-index: 3; margin-top: -4.5rem; }
+
 /* ============================================================
    VERTRAUENSLEISTE / STATS
    ============================================================ */
@@ -718,6 +723,8 @@ a.contact-loc:hover .contact-loc__addr { text-decoration: underline; }
   .hero__grid { grid-template-columns: 1fr; }
   .hero__media { order: -1; min-height: auto; margin-bottom: 1rem; }
   .portrait-cut { max-width: 360px; }
+  .hero--tuck .hero__media { order: 0; margin-bottom: 0; }
+  .hero--tuck .stats-tuck { margin-top: -5rem; }
   .hero .lead { max-width: none; }
   .stats { grid-template-columns: repeat(2,1fr); }
   .stats__item:nth-child(2) { border-right: 0; }
