@@ -257,7 +257,7 @@ body.nav-locked { overflow: hidden; }
 .hero--about .portrait-cut { max-width: 420px; }
 
 /* Start-Hero „Tuck": Bild endet HINTER der Stats-Karte (kein Verlauf, Karte überlappt) */
-.hero--tuck .portrait-cut { -webkit-mask-image: none; mask-image: none; transform: translateY(14%); }
+.hero--tuck .portrait-cut { -webkit-mask-image: none; mask-image: none; }
 .hero--tuck { padding-bottom: 0; }
 .stats-tuck, .mein-weg-tuck { position: relative; z-index: 3; margin-top: -1.5rem; }
 
