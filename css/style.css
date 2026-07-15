@@ -234,7 +234,7 @@ body.nav-locked { overflow: hidden; }
 .hero__media { position: relative; display: flex; justify-content: center; align-items: flex-end; min-height: 380px; }
 /* Freigestellte Portraits stehen direkt auf dem Hintergrund (kein Rahmen) */
 .portrait-cut {
-  width: 100%; max-width: 520px; height: auto;
+  width: 100%; max-width: 560px; height: auto;
   /* weicher Auslauf unten, damit der freigestellte Zuschnitt nicht "schwebt" */
   -webkit-mask-image: linear-gradient(to bottom, #000 86%, transparent 100%);
   mask-image: linear-gradient(to bottom, #000 86%, transparent 100%);
@@ -254,7 +254,7 @@ body.nav-locked { overflow: hidden; }
 /* Über-mich-Hero: kompaktere H1 (2 Zeilen) + kleineres Porträt */
 .hero--about .hero__grid { grid-template-columns: 1.25fr .75fr; }
 .hero--about .lead { max-width: none; }
-.hero--about .portrait-cut { max-width: 420px; }
+.hero--about .portrait-cut { max-width: 450px; }
 
 /* Start-Hero „Tuck": Bild endet HINTER der Stats-Karte (kein Verlauf, Karte überlappt) */
 .hero--tuck .portrait-cut { -webkit-mask-image: none; mask-image: none; }
