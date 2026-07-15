@@ -88,6 +88,13 @@ p  { color: var(--fg); }
 
 .divider { border: 0; border-top: 1px solid var(--line); }
 
+/* Zeilenumbrueche pro Breakpoint steuern – Desktop bleibt unberuehrt */
+br.br--mobile  { display: none; }            /* Standard (Desktop): aus */
+@media (max-width: 880px) {
+  br.br--mobile  { display: inline; }        /* nur mobil: an */
+  br.br--desktop { display: none; }          /* nur mobil: aus */
+}
+
 /* ============================================================
    BUTTONS
    ============================================================ */
