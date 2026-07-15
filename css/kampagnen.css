@@ -9,19 +9,24 @@
    PALETTE A (DESIGNJ-Kampagnen) – gleicher Hex 1:1 für InDesign / Firefly / CapCut / Print.
 
    ZUGEORDNET:
-     Kampagne   Body-Klasse          Akzent-Hex   Farbe   Zielgruppe
-     Macher     .kampagne-macher     #FF8A2B      Orange  Handwerk & Bau
-     Sport      .kampagne-sport      #3FBF6A      Grün    PlayersBranding / Spieler:innen
-     Bedarf     .kampagne-bedarf     #4F7DF5      Blau    Firmen mit Personalbedarf
+     Kampagne          Body-Klasse            Akzent-Hex   Farbe     Zielgruppe
+     Macher            .kampagne-macher       #FF8A2B      Orange    Handwerk & Bau
+     Sport             .kampagne-sport        #3FBF6A      Grün      Spieler:innen / Vereine
+     Bedarf            .kampagne-bedarf       #4F7DF5      Blau      Firmen mit Personalbedarf
+     Bau & Immobilien  .kampagne-immo         #28AEE6      Cyan      Makler/Architekten/Bauträger
+     Kanzlei           .kampagne-kanzlei      #8C6CF0      Violett   Recht & Steuer
+     Gesundheit        .kampagne-gesundheit   #1FC4A8      Türkis    Praxen & Pflege
 
    FREI (für künftige Kampagnen / Landingpage-Tests):
-     #FF5247 Rot (Aktion/Sale)      #FFB323 Bernstein (Print)   #9FD138 Limette (Eco/Gesundheit)
-     #1FC4A8 Türkis (Beratung/Web)  #28AEE6 Cyan (Tech/Digital)
-     #8C6CF0 Violett (Premium/Kreativ)   #F25C9E Magenta (Social/Content)
+     #FF5247 Rot (Aktion/Sale)   #FFB323 Bernstein (Print)
+     #9FD138 Limette (Eco)       #F25C9E Magenta (Social/Content)
 */
-.kampagne-macher { --accent: #FF8A2B; }
-.kampagne-sport  { --accent: #3FBF6A; }
-.kampagne-bedarf { --accent: #4F7DF5; }
+.kampagne-macher     { --accent: #FF8A2B; }
+.kampagne-sport      { --accent: #3FBF6A; }
+.kampagne-bedarf     { --accent: #4F7DF5; }
+.kampagne-immo       { --accent: #28AEE6; }
+.kampagne-kanzlei    { --accent: #8C6CF0; }
+.kampagne-gesundheit { --accent: #1FC4A8; }
 :root            { --accent: var(--accent-color, #ffffff); } /* Fallback = Hausfarbe */
 
 /* ---------- Akzent-Grundzüge im Kampagnenbereich ---------- */
