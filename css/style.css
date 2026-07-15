@@ -262,8 +262,8 @@ body.nav-locked { overflow: hidden; }
 .stats-tuck, .mein-weg-tuck { position: relative; z-index: 3; margin-top: -1.5rem; }
 /* Desktop: tieferer Tuck fuer ausgewogene Abstaende um den Kasten */
 @media (min-width: 881px) {
-  .mein-weg-tuck { margin-top: -120px; }
-  .stats-tuck { margin-top: -68px; }
+  .mein-weg-tuck { margin-top: -106px; }
+  .stats-tuck { margin-top: -85px; }
 }
 
 /* ============================================================
