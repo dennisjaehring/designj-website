@@ -226,7 +226,7 @@ body.nav-locked { overflow: hidden; }
   align-items: start;
 }
 .hero__content { max-width: 640px; }
-.hero__grid .hero__content { padding-top: 6rem; }
+.hero__grid .hero__content { padding-top: 0; }
 .hero h1 { margin-bottom: 1.4rem; }
 .hero .lead { margin-bottom: 2.2rem; max-width: 30ch; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: .9rem; }
@@ -260,6 +260,11 @@ body.nav-locked { overflow: hidden; }
 .hero--tuck .portrait-cut { -webkit-mask-image: none; mask-image: none; }
 .hero--tuck { padding-bottom: 0; }
 .stats-tuck, .mein-weg-tuck { position: relative; z-index: 3; margin-top: -1.5rem; }
+/* Desktop: tieferer Tuck fuer ausgewogene Abstaende um den Kasten */
+@media (min-width: 881px) {
+  .mein-weg-tuck { margin-top: -120px; }
+  .stats-tuck { margin-top: -68px; }
+}
 
 /* ============================================================
    VERTRAUENSLEISTE / STATS
