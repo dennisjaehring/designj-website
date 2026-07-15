@@ -12,7 +12,7 @@
      Kampagne          Body-Klasse            Akzent-Hex   Farbe     Zielgruppe
      Macher            .kampagne-macher       #FF8A2B      Orange    Handwerk & Bau
      Sport             .kampagne-sport        #3FBF6A      Grün      Spieler:innen / Vereine
-     Bedarf            .kampagne-bedarf       #4F7DF5      Blau      Firmen mit Personalbedarf
+     Bedarf            .kampagne-bedarf       #3D6BF0      Königsblau Firmen mit Personalbedarf
      Bau & Immobilien  .kampagne-immo         #28AEE6      Cyan      Makler/Architekten/Bauträger
      Kanzlei           .kampagne-kanzlei      #8C6CF0      Violett   Recht & Steuer
      Gesundheit        .kampagne-gesundheit   #1FC4A8      Türkis    Praxen & Pflege
@@ -23,7 +23,7 @@
 */
 .kampagne-macher     { --accent: #FF8A2B; }
 .kampagne-sport      { --accent: #3FBF6A; }
-.kampagne-bedarf     { --accent: #4F7DF5; }
+.kampagne-bedarf     { --accent: #3D6BF0; }
 .kampagne-immo       { --accent: #28AEE6; }
 .kampagne-kanzlei    { --accent: #8C6CF0; }
 .kampagne-gesundheit { --accent: #1FC4A8; }
