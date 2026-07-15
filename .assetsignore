@@ -1,0 +1,10 @@
+# Nicht-oeffentliche Dateien NICHT als statische Assets ausliefern.
+# (Syntax wie .gitignore; assets.directory = ".")
+# WICHTIG: js/main.js + _headers hier NICHT listen — werden gebraucht/konsumiert.
+wrangler.jsonc
+.assetsignore
+.gitignore
+DEPLOY.md
+*.md
+*.py
+_build/
