@@ -19,6 +19,9 @@
   <!-- Favicon (weißes Icon) -->
   <link rel="icon" type="image/svg+xml" href="designj_icon.svg">
 
+  <!-- LCP: Hero-Bild sofort vorab laden (verbessert Largest Contentful Paint) -->
+  <link rel="preload" as="image" href="images/dennis_hero_start_v2_720.webp" imagesrcset="images/dennis_hero_start_v2_720.webp 720w, images/dennis_hero_start_v2.webp 903w" imagesizes="(max-width: 880px) 360px, 560px" fetchpriority="high">
+
   <!-- Fonts -->
   <link rel="stylesheet" href="css/fonts.css">
 
