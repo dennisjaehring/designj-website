@@ -24,3 +24,10 @@ _seo/
 # Pausierte Keyword-LP – bewusst nicht live
 werbeagentur-weiden.html
 _build/fonts-orig/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
