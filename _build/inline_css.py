@@ -8,7 +8,7 @@ erneut laufen lassen:  python3 _build/inline_css.py
 Idempotent: erkennt einen bereits eingebetteten Block (<style id="inline-css">) und
 ersetzt dessen Inhalt statt zu duplizieren.
 """
-import re, glob, os
+import re, glob, os, rcssmin
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -19,15 +19,15 @@ def read(p):
 fonts = read("css/fonts.css").replace("../fonts/", "/fonts/")
 style = read("css/style.css")
 
-inlined = f"/* fonts.css (inline) */\n{fonts}\n/* style.css (inline) */\n{style}"
+inlined = rcssmin.cssmin(f"{fonts}\n{style}")   # Quelle bleibt lesbar, nur Inline-Kopie minifiziert
 block = ('  <!-- CSS inline eingebettet – kein Render-Blocking (Quelle: css/style.css, '
          'Build: _build/inline_css.py) -->\n'
          '  <style id="inline-css">\n' + inlined + '\n  </style>')
 
 # Kampagnen-CSS (nur auf 6 Kampagnen-/SEO-Seiten) ebenfalls inline
-kmp = read("css/kampagnen.css")
+kmp = rcssmin.cssmin(read("css/kampagnen.css"))
 kmp_block = ('  <!-- Kampagnen-CSS inline (Quelle: css/kampagnen.css) -->\n'
-             '  <style id="inline-css-kmp">\n/* kampagnen.css (inline) */\n' + kmp + '\n  </style>')
+             '  <style id="inline-css-kmp">\n' + kmp + '\n  </style>')
 
 existing = re.compile(r'  <!-- CSS inline eingebettet.*?-->\n  <style id="inline-css">.*?</style>', re.DOTALL)
 existing_kmp = re.compile(r'  <!-- Kampagnen-CSS inline.*?-->\n  <style id="inline-css-kmp">.*?</style>', re.DOTALL)
