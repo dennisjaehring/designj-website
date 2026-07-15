@@ -1,0 +1,15 @@
+{
+  // Cloudflare Workers – Static Assets Deploy-Konfiguration.
+  // Spiegelt die von Cloudflare automatisch erzeugte Config (Branch
+  // cloudflare/workers-autoconfig) und ergaenzt nur not_found_handling,
+  // damit unbekannte URLs die gebrandete 404.html mit Status 404 liefern.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "designj-website",
+  "compatibility_date": "2026-07-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}
