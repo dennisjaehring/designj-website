@@ -14,7 +14,7 @@
      Sport             .kampagne-sport        #3FBF6A      Grün      Spieler:innen / Vereine
      Bedarf            .kampagne-bedarf       #3D6BF0      Königsblau Firmen mit Personalbedarf
      Bau & Immobilien  .kampagne-immo         #28AEE6      Cyan      Makler/Architekten/Bauträger
-     Kanzlei           .kampagne-kanzlei      #8C6CF0      Violett   Recht & Steuer
+     Kanzlei           .kampagne-kanzlei      #A3283F      Bordeaux    Recht & Steuer
      Gesundheit        .kampagne-gesundheit   #1FC4A8      Türkis    Praxen & Pflege
 
    FREI (für künftige Kampagnen / Landingpage-Tests):
@@ -25,9 +25,15 @@
 .kampagne-sport      { --accent: #3FBF6A; }
 .kampagne-bedarf     { --accent: #3D6BF0; }
 .kampagne-immo       { --accent: #28AEE6; }
-.kampagne-kanzlei    { --accent: #8C6CF0; }
+.kampagne-kanzlei    { --accent: #A3283F; }
 .kampagne-gesundheit { --accent: #1FC4A8; }
 :root            { --accent: var(--accent-color, #ffffff); } /* Fallback = Hausfarbe */
+
+/* Bordeaux ist dunkel -> weiße Schrift auf Akzent-Flächen (Kanzlei) */
+.kampagne-kanzlei .btn--accent { color: #fff; }
+.kampagne-kanzlei .btn--accent .arrow,
+.kampagne-kanzlei .btn--accent .chev { color: #fff; }
+.kampagne-kanzlei .kmp-pack__badge { color: #fff; }
 
 /* ---------- Akzent-Grundzüge im Kampagnenbereich ---------- */
 .kampagne .eyebrow { color: var(--accent); }
