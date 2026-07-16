@@ -12,7 +12,7 @@
      Kampagne   Body-Klasse          Akzent-Hex   Farbe   Zielgruppe
      Macher     .kampagne-macher     #FF8A2B      Orange  Handwerk & Bau
      Sport      .kampagne-sport      #3FBF6A      Grün    PlayersBranding / Spieler:innen
-     Bedarf     .kampagne-bedarf     #4F7DF5      Blau    Firmen mit Personalbedarf
+     Bedarf     .kampagne-bedarf     #3D6BF0      Königsblau    Firmen mit Personalbedarf
 
    FREI (für künftige Kampagnen / Landingpage-Tests):
      #FF5247 Rot (Aktion/Sale)      #FFB323 Bernstein (Print)   #9FD138 Limette (Eco/Gesundheit)
@@ -21,7 +21,7 @@
 */
 .kampagne-macher { --accent: #FF8A2B; }
 .kampagne-sport  { --accent: #3FBF6A; }
-.kampagne-bedarf { --accent: #4F7DF5; }
+.kampagne-bedarf { --accent: #3D6BF0; }
 :root            { --accent: var(--accent-color, #ffffff); } /* Fallback = Hausfarbe */
 
 /* ---------- Akzent-Grundzüge im Kampagnenbereich ---------- */
