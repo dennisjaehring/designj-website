@@ -56,6 +56,10 @@
 .section-head--wide { max-width: none; }
 .kmp-fg { color: var(--fg); font-weight: 600; }
 .kmp-hero .lead { max-width: 46ch; margin-bottom: 2rem; }
+/* Hero-Lead voller (neue Nischen): Deckel weg -> füllt die Textspalte */
+.kampagne-immo .kmp-hero .lead,
+.kampagne-kanzlei .kmp-hero .lead,
+.kampagne-gesundheit .kmp-hero .lead { max-width: none; }
 .kmp-hero__media { width: 100%; }
 .kmp-hero__media .placeholder-img,
 .kmp-hero__media img { width: 100%; border-radius: var(--radius); }
