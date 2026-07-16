@@ -35,6 +35,10 @@
 .kampagne-kanzlei .btn--accent .chev { color: #fff; }
 .kampagne-kanzlei .kmp-pack__badge { color: #fff; }
 
+/* Mobil-only Bindestrich für saubere Silbentrennung (z.B. Praxis-/marketing) */
+.hy-m { display: none; }
+@media (max-width: 880px) { .hy-m { display: inline; } }
+
 /* ---------- Akzent-Grundzüge im Kampagnenbereich ---------- */
 .kampagne .eyebrow { color: var(--accent); }
 .kampagne .chev    { color: var(--accent); font-weight: 800; letter-spacing: -.04em; }
