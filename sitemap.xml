@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.designj.de/</loc><lastmod>2026-07-02</lastmod><priority>1.0</priority></url>
   <url><loc>https://www.designj.de/leistungen</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.designj.de/loesungen</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.designj.de/loesungen</loc><lastmod>2026-07-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.designj.de/projekte</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://www.designj.de/kunden</loc><lastmod>2026-07-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.designj.de/ueber-mich</loc><lastmod>2026-07-02</lastmod><priority>0.6</priority></url>
@@ -34,4 +34,7 @@
   <url><loc>https://www.designj.de/projekt-us-army</loc><lastmod>2026-07-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.designj.de/projekt-voit</loc><lastmod>2026-07-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://www.designj.de/projekt-zimmer-nr-zwei</loc><lastmod>2026-07-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.designj.de/immobilienmarketing</loc><lastmod>2026-07-17</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.designj.de/kanzleimarketing</loc><lastmod>2026-07-17</lastmod><priority>0.6</priority></url>
+  <url><loc>https://www.designj.de/praxismarketing</loc><lastmod>2026-07-17</lastmod><priority>0.6</priority></url>
 </urlset>
