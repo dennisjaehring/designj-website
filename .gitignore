@@ -27,3 +27,6 @@ _build/fonts-orig/
 
 # Kampagnen-Rohbilder (Firefly) – nicht deployen
 _neu-kanzlei-praxis/
+
+# Social: Quellbilder liegen im Drive (Social Media/_Social-Bilder)
+_social-bilder/
