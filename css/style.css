@@ -647,7 +647,7 @@ a.contact-loc:hover .contact-loc__addr { text-decoration: underline; }
 .footer__brand .claim { font-size: .82rem; letter-spacing: .18em; color: var(--fg-dim); text-transform: uppercase; margin-bottom: 1.4rem; }
 .footer__addr { font-size: .94rem; color: var(--fg-muted); line-height: 1.8; }
 .footer__addr a:hover { color: var(--fg); }
-.footer__col h4 { font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 1.1rem; font-weight: 600; }
+.footer__col h3, .footer__col h4 { font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 1.1rem; font-weight: 600; }
 .footer__col a { display: block; color: var(--fg-muted); padding: .1rem 0; font-size: .96rem; transition: color var(--t-fast); }
 .footer__col a:hover { color: var(--fg); }
 .footer__bottom {
@@ -664,7 +664,7 @@ a.contact-loc:hover .contact-loc__addr { text-decoration: underline; }
 .footer__top > div:nth-child(3) { align-self: start; }
 .footer__col .socials { margin: 1.2rem 0 1.1rem; }
 /* Footer Google-Bewertungs-Badge (unter Social Media) */
-.footer__col h4.footer__rate-h { margin-top: 1.3rem; }
+.footer__col h3.footer__rate-h, .footer__col h4.footer__rate-h { margin-top: 1.3rem; }
 .footer__col a.footer__google {
   display: inline-flex; align-items: center; gap: .6rem; width: auto;
   border: 1px solid var(--line); border-radius: var(--radius-sm);
