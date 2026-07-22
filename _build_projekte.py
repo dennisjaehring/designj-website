@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Generator für DESIGNJ Projekt-Detailseiten (nach Johnson-/Blue-Devils-Muster)
-import os, time, urllib.request
+import os, re, time, urllib.request
 from urllib.parse import urlparse
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -17,6 +17,7 @@ ORDER = [
     "salzhaus-altenstadt", "ravenna-wernberg", "voit", "12ender",
 ]
 def pfile(slug): return f"projekt-{slug}.html"
+def purl(slug):  return f"/projekt-{slug}"
 
 U = "https://www.designj.de/wp-content/uploads/2025/12/"
 
@@ -64,7 +65,7 @@ P["hofladen-weiden"] = dict(
 )
 P["hohpe"] = dict(
     name="HOHPE", bc="HOHPE",
-    title="HOHPE – Drucksachen & Werbemittel für Gesundheit & Fitness | DESIGNJ",
+    title="HOHPE – Drucksachen &amp; Werbemittel für Fitness | DESIGNJ",
     desc="Gutscheine, Banner, Werbemittel und Web für HOHPE aus den Bereichen Gesundheit, Wellness und Fitness in Weiden – von DESIGNJ.",
     eyebrow="Projekt · Print & Werbemittel",
     h1="HOHPE – Layouts, Drucksachen &amp; Werbemittel für Gesundheit, Wellness &amp; Fitness",
@@ -78,7 +79,7 @@ P["hohpe"] = dict(
 )
 P["onz"] = dict(
     name="ONZ", bc="ONZ",
-    title="ONZ – Dezente Fahrzeugbeklebung für Orthopädie & Chirurgie | DESIGNJ",
+    title="ONZ – Fahrzeugbeklebung für Orthopädie-Praxis | DESIGNJ",
     desc="Dezente, stilvolle Fahrzeugbeklebung für das ONZ Fachzentrum für Orthopädie, Unfallchirurgie und Chirurgie in Weiden – von DESIGNJ.",
     eyebrow="Projekt · Fahrzeugbeklebung",
     h1="Oberpfalz Nord Zentrum –<br>Dezente Fahrzeugbeklebung für<br>Orthopädie &amp; Chirurgie in Weiden",
@@ -90,7 +91,7 @@ P["onz"] = dict(
 )
 P["rupprecht-kappl"] = dict(
     name="Rupprecht & Kappl", bc="Rupprecht & Kappl",
-    title="Rupprecht & Kappl – Logo, Drucksachen & Werbemittel | DESIGNJ",
+    title="Rupprecht &amp; Kappl – Logo &amp; Drucksachen | DESIGNJ",
     desc="Logos, Drucksachen und Werbetechnik für die Rupprecht & Kappl GmbH und den Club Hashtag in Weiden – konsistentes Branding von DESIGNJ.",
     eyebrow="Projekt · Branding & Werbetechnik",
     h1="Rupprecht &amp; Kappl GmbH – Logo, Drucksachen &amp; Werbemittel für Immobilien, Freizeit &amp; Gastronomie",
@@ -105,7 +106,7 @@ P["rupprecht-kappl"] = dict(
 )
 P["sezayi-er"] = dict(
     name="SEZAYI ER", bc="SEZAYI ER",
-    title="SEZAYI ER – Gestaltung für Telekom Shops & Tiny Houses | DESIGNJ",
+    title="SEZAYI ER – Gestaltung für Telekom Shops | DESIGNJ",
     desc="Geschäftsausstattung, Drucksachen und Werbetechnik für die SE Center Telekom Shops und SEZI HOMES (Tiny Houses) in Weiden – von DESIGNJ.",
     eyebrow="Projekt · Branding & Print",
     h1="SEZAYI ER –<br>Gestaltung &amp; Drucksachen für<br>Telekom Shops und Tiny Houses",
@@ -126,7 +127,7 @@ P["sezayi-er"] = dict(
 )
 P["spvgg-schirmitz"] = dict(
     name="SpVgg Schirmitz", bc="SpVgg Schirmitz",
-    title="SpVgg Schirmitz – Drucksachen & Maskottchen „Drache Sigi“ | DESIGNJ",
+    title="SpVgg Schirmitz – Drucksachen &amp; Maskottchen | DESIGNJ",
     desc="Banner, Fahnen, Beklebungen und das Maskottchen „Drache Sigi“ für die SpVgg Schirmitz – Engagement und Design von DESIGNJ.",
     eyebrow="Projekt · Sport & Print",
     h1="SpVgg Schirmitz –<br>Drucksachen &amp; Engagement<br>für den Fußballverein",
@@ -153,7 +154,7 @@ P["spvgg-weiden"] = dict(
 )
 P["us-army"] = dict(
     name="US ARMY Garrison Bavaria", bc="US ARMY",
-    title="US ARMY Garrison Bavaria – Messe- & Eventausstattung | DESIGNJ",
+    title="US ARMY Garrison Bavaria – Eventausstattung | DESIGNJ",
     desc="Komplette Messe- und Eventausstattung, Werbetechnik und Drucksachen für die U.S. Army Garrison Bavaria in Hohenfels – von DESIGNJ.",
     eyebrow="Projekt · Messe & Werbetechnik",
     h1="US ARMY Garrison Bavaria – Messeausstattung, Werbetechnik &amp; Eventmaterial in Hohenfels",
@@ -165,7 +166,7 @@ P["us-army"] = dict(
 )
 P["caraservice"] = dict(
     name="CaraService", bc="CaraService",
-    title="CaraService – Messepaket, Drucksachen & Werbemittel | DESIGNJ",
+    title="CaraService – Messepaket &amp; Drucksachen | DESIGNJ",
     desc="Komplettes Messepaket aus Flyern, Gutscheinen, Roll-Ups und Square-Flags für die CaraService Holding GmbH an vier Standorten – von DESIGNJ.",
     eyebrow="Projekt · Messe & Print",
     h1="CaraService Holding GmbH – Messepaket, Drucksachen &amp; Werbemittel für Caravan Service",
@@ -193,7 +194,7 @@ P["sei-sport"] = dict(
 )
 P["djk-irchenrieth"] = dict(
     name="DJK Irchenrieth", bc="DJK Irchenrieth",
-    title="DJK Irchenrieth – Vereinskommunikation & Maskottchen „Arni“ | DESIGNJ",
+    title="DJK Irchenrieth – Vereinsauftritt &amp; Maskottchen | DESIGNJ",
     desc="Social-Media-Vorlagen, Flyer, Banner und das Maskottchen „Arni“ für die DJK Irchenrieth – Vereinskommunikation und Design von DESIGNJ.",
     eyebrow="Projekt · Sport & Branding",
     h1="DJK Irchenrieth – Grafiken,<br>Vereinskommunikation &amp; ein eigenes<br>Maskottchen für den Nachwuchs",
@@ -207,7 +208,7 @@ P["djk-irchenrieth"] = dict(
 )
 P["sparkasse-oberpfalz-nord"] = dict(
     name="Sparkasse Oberpfalz Nord", bc="Sparkasse Oberpfalz Nord",
-    title="Sparkasse Oberpfalz Nord – Jubiläumslogo Private Banking | DESIGNJ",
+    title="Sparkasse Oberpfalz Nord – Jubiläumslogo | DESIGNJ",
     desc="Jubiläumslogo und hochwertige Präsentationsmedien zu 10 Jahren Private Banking der Sparkasse Oberpfalz Nord – von DESIGNJ.",
     eyebrow="Projekt · Logo & Branding",
     h1="Sparkasse Oberpfalz Nord – Jubiläumslogo &amp; Präsentationsmedien für 10 Jahre Private Banking",
@@ -221,7 +222,7 @@ P["sparkasse-oberpfalz-nord"] = dict(
 )
 P["bike-station"] = dict(
     name="BIKE Station", bc="BIKE Station",
-    title="BIKE Station – Markenauftritt für Fahrradhandel & E-Bikes | DESIGNJ",
+    title="BIKE Station – Markenauftritt für Fahrradhandel | DESIGNJ",
     desc="Zeitungsbeilage, Flyer, Banner, Social-Media-Anzeigen und Beschilderung für die BIKE Station in Mitterteich – sichtbarer Markenauftritt von DESIGNJ.",
     eyebrow="Projekt · Print & Werbetechnik",
     h1="BIKE Station –<br>Markenauftritt für Fahrradhandel<br>und E-Bike-Spezialist in Mitterteich",
@@ -233,7 +234,7 @@ P["bike-station"] = dict(
 )
 P["zimmer-nr-zwei"] = dict(
     name="Zimmer Nr Zwei", bc="Zimmer Nr Zwei",
-    title="Zimmer Nr Zwei – Markenauftritt für Café, Restaurant & Bar | DESIGNJ",
+    title="Zimmer Nr Zwei – Markenauftritt für Café &amp; Bar | DESIGNJ",
     desc="Website, Social Media, Drucksachen und Textil für das Zimmer Nr Zwei in Weiden – ein durchgängig stimmiger Markenauftritt von DESIGNJ.",
     eyebrow="Projekt · Branding & Web",
     h1="Zimmer Nr Zwei – Kreativer Markenauftritt für Café, Restaurant &amp; Bar in Weiden",
@@ -259,7 +260,7 @@ P["nele-und-hannes-ocik"] = dict(
 )
 P["kurt-landauer-stiftung"] = dict(
     name="Kurt Landauer Stiftung", bc="Kurt Landauer Stiftung",
-    title="Kurt Landauer Stiftung – Magazin „KURT!“ & Gedenkbuch | DESIGNJ",
+    title="Kurt Landauer Stiftung – Magazin &amp; Gedenkbuch | DESIGNJ",
     desc="Layouts für das Magazin „KURT!“ und das Gedenkbuch 2024 der Kurt Landauer Stiftung zur Geschichte jüdischer FC-Bayern-Mitglieder – von DESIGNJ.",
     eyebrow="Projekt · Editorial & Layout",
     h1="Kurt Landauer Stiftung – Layouts für Print &amp; Digital",
@@ -271,7 +272,7 @@ P["kurt-landauer-stiftung"] = dict(
 )
 P["salzhaus-altenstadt"] = dict(
     name="Salzhaus Altenstadt", bc="Salzhaus Altenstadt",
-    title="Salzhaus Altenstadt – Logo & Branding für Physiotherapie | DESIGNJ",
+    title="Salzhaus Altenstadt – Logo &amp; Branding | DESIGNJ",
     desc="Logo-Modernisierung, Drucksachen, Textilien und Werbetechnik für die Physiotherapiepraxis Salzhaus Altenstadt – von DESIGNJ.",
     eyebrow="Projekt · Branding & Print",
     h1="Salzhaus Altenstadt –<br>Logo, Drucksachen &amp; Branding<br>für Physiotherapiepraxis",
@@ -283,7 +284,7 @@ P["salzhaus-altenstadt"] = dict(
 )
 P["ravenna-wernberg"] = dict(
     name="Ravenna Wernberg", bc="Ravenna Wernberg",
-    title="Ravenna Wernberg – Branding für Restaurant & Pizzeria | DESIGNJ",
+    title="Ravenna Wernberg – Branding für Restaurant | DESIGNJ",
     desc="Speisekarten, Flyer, Werbung und Textil für die Pizzeria & Restaurant Ravenna in Wernberg-Köblitz – ein stimmiges Konzept von DESIGNJ.",
     eyebrow="Projekt · Branding & Print",
     h1="Ravenna Wernberg –<br>Grafiken, Drucksachen &amp; Branding<br>für Restaurant &amp; Pizzeria",
@@ -299,7 +300,7 @@ P["ravenna-wernberg"] = dict(
 
 P["voit"] = dict(
     name="VOIT", bc="VOIT",
-    title="Partyservice & Eventcatering VOIT – Branding & Drucksachen | DESIGNJ",
+    title="Partyservice VOIT – Branding &amp; Drucksachen | DESIGNJ",
     desc="Aufkleber, Fahrzeugbeklebung, Flyer, Social Media und Geschäftsausstattung für Partyservice & Eventcatering VOIT in Weiden – konsistentes Branding von DESIGNJ.",
     eyebrow="Projekt · Branding & Print",
     h1="Partyservice &amp; Eventcatering VOIT –<br>Grafiken, Drucksachen &amp; Branding<br>für Metzgerei, Imbiss und Catering",
@@ -311,7 +312,7 @@ P["voit"] = dict(
 )
 P["12ender"] = dict(
     name="12Ender", bc="12Ender",
-    title="12Ender – Branding & Werbetechnik für Imbisse & Gastronomie | DESIGNJ",
+    title="12Ender – Branding &amp; Werbetechnik für Gastronomie | DESIGNJ",
     desc="Grafik und Beschilderung innen wie außen für die beiden „12Ender“-Imbisse in der Oberpfalz – stimmiges Design und Werbetechnik von DESIGNJ.",
     eyebrow="Projekt · Gastronomie & Werbetechnik",
     h1="12Ender –<br>Branding &amp; Werbetechnik<br>für Imbisse &amp; Gastronomie",
@@ -333,11 +334,15 @@ TPL = r"""<!DOCTYPE html>
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="@@CANON@@">
   <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
   <meta property="og:title" content="@@TITLE@@">
   <meta property="og:description" content="@@DESC@@">
   <meta property="og:image" content="@@OGIMAGE@@">
   <meta property="og:url" content="@@CANON@@">
-  <link rel="icon" type="image/svg+xml" href="designj_icon.svg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
@@ -367,7 +372,7 @@ TPL = r"""<!DOCTYPE html>
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://www.designj.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Projekte", "item": "https://www.designj.de/projekte.html" },
+      { "@type": "ListItem", "position": 2, "name": "Projekte", "item": "https://www.designj.de/projekte" },
       { "@type": "ListItem", "position": 3, "name": "@@BCNAME@@", "item": "@@CANON@@" }
     ]
   }
@@ -378,37 +383,55 @@ TPL = r"""<!DOCTYPE html>
 
 <header class="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="DESIGNJ Startseite"><img src="designj_logo.svg" alt="DESIGNJ – Design Druck Digital"></a>
+    <a href="/" class="nav__logo" aria-label="DESIGNJ Startseite"><img src="designj_logo.svg" alt="DESIGNJ – Design Druck Digital" width="158" height="38"></a>
     <nav class="nav__menu" aria-label="Hauptnavigation">
-      <a href="index.html">Start</a>
-      <a href="leistungen.html">Leistungen</a>
-      <a href="projekte.html">Projekte</a>
-      <a href="kunden.html">Kunden</a>
-      <a href="ueber-mich.html">Über mich</a>
-      <a href="kontakt.html">Kontakt</a>
+      <a href="/">Start</a>
+      <a href="/leistungen">Leistungen</a>
+      <span class="nav__item--drop">
+        <a href="/loesungen" class="nav__droptop">Lösungen <i class="nav__caret">▾</i></a>
+        <span class="nav__drop">
+          <a href="/sport">Sport &amp; Vereine</a>
+          <a href="/handwerk">Handwerk &amp; Bau</a>
+          <a href="/immobilien">Immobilien &amp; Bau</a>
+          <a href="/kanzlei">Recht &amp; Steuer</a>
+          <a href="/praxis">Praxen &amp; Pflege</a>
+          <a href="/marketing-extern">Externes Marketing</a>
+        </span>
+      </span>
+      <a href="/projekte">Projekte</a>
+      <a href="/kunden">Kunden</a>
+      <a href="/ueber-mich">Über mich</a>
+      <a href="/kontakt">Kontakt</a>
     </nav>
     <div class="nav__right">
-      <a href="kontakt.html" class="btn btn--primary">Projekt starten</a>
+      <a href="/kontakt" class="btn btn--primary">Projekt starten</a>
       <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileNav"><span></span></button>
     </div>
   </div>
 </header>
 <div class="nav__mobile" id="mobileNav">
   <div class="nav__mobile-head"><img src="designj_icon.svg" alt="DESIGNJ Icon"><span>Design | Druck | Digital</span></div>
-  <a href="index.html" class="m-link">Start</a>
-  <a href="leistungen.html" class="m-link">Leistungen</a>
-  <a href="projekte.html" class="m-link">Projekte</a>
-  <a href="kunden.html" class="m-link">Kunden</a>
-  <a href="ueber-mich.html" class="m-link">Über mich</a>
-  <a href="kontakt.html" class="m-link">Kontakt</a>
-  <a href="kontakt.html" class="btn btn--primary btn--block">Projekt starten</a>
+  <a href="/" class="m-link">Start</a>
+  <a href="/leistungen" class="m-link">Leistungen</a>
+  <a href="/loesungen" class="m-link">Lösungen</a>
+  <a href="/sport" class="m-link m-link--sub">Sport &amp; Vereine</a>
+  <a href="/handwerk" class="m-link m-link--sub">Handwerk &amp; Bau</a>
+  <a href="/immobilien" class="m-link m-link--sub">Immobilien &amp; Bau</a>
+  <a href="/kanzlei" class="m-link m-link--sub">Recht &amp; Steuer</a>
+  <a href="/praxis" class="m-link m-link--sub">Praxen &amp; Pflege</a>
+  <a href="/marketing-extern" class="m-link m-link--sub">Externes Marketing</a>
+  <a href="/projekte" class="m-link">Projekte</a>
+  <a href="/kunden" class="m-link">Kunden</a>
+  <a href="/ueber-mich" class="m-link">Über mich</a>
+  <a href="/kontakt" class="m-link">Kontakt</a>
+  <a href="/kontakt" class="btn btn--primary btn--block">Projekt starten</a>
 </div>
 
 <main class="proj-page">
 
 <section class="hero hero--text hero--project">
   <div class="container hero__content reveal">
-    <a href="projekte.html" class="back-link"><span class="arrow">←</span> Alle Projekte</a>
+    <a href="/projekte" class="back-link"><span class="arrow">←</span> Alle Projekte</a>
     <span class="eyebrow">@@EYEBROW@@</span>
     <h1>@@H1@@</h1>
     <p class="lead">@@LEAD@@</p>
@@ -426,8 +449,8 @@ TPL = r"""<!DOCTYPE html>
     <h2>Sollen wir auch dein Projekt angehen?</h2>
     <p class="lead">Vom ersten Entwurf bis zur fertigen Umsetzung – Design, Druck und Digital<br>aus einer Hand. Lass uns über dein Projekt sprechen.</p>
     <div class="cta-band__btns">
-      <a href="kontakt.html" class="btn btn--primary btn--lg">Projekt starten <span class="arrow">→</span></a>
-      <a href="projekte.html" class="btn btn--ghost btn--lg">Mehr Projekte ansehen</a>
+      <a href="/kontakt" class="btn btn--primary btn--lg">Projekt starten <span class="arrow">→</span></a>
+      <a href="/projekte" class="btn btn--ghost btn--lg">Mehr Projekte ansehen</a>
     </div>
   </div>
 </section>
@@ -435,7 +458,7 @@ TPL = r"""<!DOCTYPE html>
 <section class="container section--tight">
   <div class="proj-nav reveal">
     @@PREV@@
-    <a href="projekte.html" class="center">Alle Projekte</a>
+    <a href="/projekte" class="center">Alle Projekte</a>
     @@NEXT@@
   </div>
 </section>
@@ -446,29 +469,44 @@ TPL = r"""<!DOCTYPE html>
   <div class="container">
     <div class="footer__top">
       <div class="footer__brand">
-        <img src="designj_logo.svg" alt="DESIGNJ – Design Druck Digital">
+        <img src="designj_logo.svg" alt="DESIGNJ – Design Druck Digital" width="158" height="38">
         <p class="footer__addr">DESIGNJ | Dennis Jähring<br>Hasenweg 34<br>92699 Irchenrieth<br><a href="tel:+491702918305">+49 170 291 83 05</a><br><a href="mailto:info@designj.de">info@designj.de</a></p>
       </div>
       <div class="footer__col">
-        <h4>Navigation</h4>
-        <a href="index.html">Start</a><a href="leistungen.html">Leistungen</a><a href="projekte.html">Projekte</a><a href="kunden.html">Kunden</a><a href="ueber-mich.html">Über mich</a><a href="kontakt.html">Kontakt</a>
+        <h3>Navigation</h3>
+        <a href="/">Start</a><a href="/leistungen">Leistungen</a><a href="/loesungen">Lösungen</a><a href="/projekte">Projekte</a><a href="/kunden">Kunden</a><a href="/ueber-mich">Über mich</a><a href="/kontakt">Kontakt</a>
       </div>
       <div class="footer__col">
-        <h4>Social Media</h4>
+        <h3>Social Media</h3>
         <div class="socials">
           <a class="social-btn" href="https://www.instagram.com/designj.de/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="currentColor" mask="url(#sgl-ig)"/></svg></a>
           <a class="social-btn" href="https://www.facebook.com/designj.de" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="currentColor" mask="url(#sgl-fb)"/></svg></a>
           <a class="social-btn" href="https://www.linkedin.com/in/dennisjaehring/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="currentColor" mask="url(#sgl-li)"/></svg></a>
         </div>
+        <h3 class="footer__rate-h">Bewertungen</h3>
+        <a class="footer__google" href="https://share.google/FwIGlcb41GMlhqVmn" target="_blank" rel="noopener" aria-label="DESIGNJ auf Google – 5,0 von 5 Sternen aus 9 Rezensionen">
+          <svg class="fg-g" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 11v2.8h4.65c-.2 1.2-1.4 3.5-4.65 3.5-2.8 0-5.08-2.32-5.08-5.18S9.2 6.94 12 6.94c1.6 0 2.67.68 3.28 1.27l2.23-2.15C16.1 4.7 14.25 3.9 12 3.9 7.55 3.9 3.94 7.5 3.94 12S7.55 20.1 12 20.1c4.63 0 7.7-3.25 7.7-7.83 0-.53-.06-.93-.13-1.33H12z"/></svg>
+          <span class="fg-meta">
+            <span class="fg-top"><span class="fg-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="fg-rating">5,0</span></span>
+            <span class="fg-count">9 Google-Rezensionen</span>
+          </span>
+        </a>
       </div>
     </div>
     <div class="footer__bottom">
       <span>© <span data-year>2026</span> DESIGNJ – Dennis Jähring. Alle Rechte vorbehalten.</span>
-      <span class="footer__legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span>
+      <span class="footer__legal"><a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a></span>
     </div>
   </div>
 </footer>
 
+<!-- Unter-Footer: SEO-Themenseiten (interne Verlinkung) -->
+<nav class="seo-cluster" aria-label="Weitere Themen">
+  <div class="container">
+    <span class="seo-cluster__label">Weitere Themen:</span>
+    <span class="seo-cluster__links"><a href="/marketing-fuers-handwerk">Marketing fürs Handwerk</a> · <a href="/sportmarketing">Sportmarketing</a> · <a href="/marketing-auslagern">Marketing auslagern</a> · <a href="/immobilienmarketing">Marketing für Immobilien</a> · <a href="/kanzleimarketing">Marketing für Kanzleien</a> · <a href="/praxismarketing">Marketing für Praxen</a></span>
+  </div>
+</nav>
 <script src="js/main.js"></script>
 </body>
 </html>
@@ -490,25 +528,33 @@ def gallery(imgs, name, block=False, cols=None):
         for u in imgs)
     return f'  <div class="proj-gallery reveal"{style}>\n{items}\n  </div>'
 
+# Anzeigename eines Projekts – auch für Slugs ohne P-Daten (z.B. manuell gepflegte Seiten)
+EXTRA_NAMES = {"autoservice-johnson": "Autoservice Johnson", "blue-devils": "Blue Devils Weiden"}
+def pname(slug):
+    d = P.get(slug)
+    if d and d.get("name"): return d["name"]
+    return EXTRA_NAMES.get(slug, slug.replace("-", " ").title())
+
 def navlink(slug, label, arrow_before):
     if slug is None:
         if arrow_before:
             return '<a class="is-disabled" aria-disabled="true"><span class="arrow">←</span> Vorheriges</a>'
         return '<a class="is-disabled" aria-disabled="true">Nächstes <span class="arrow">→</span></a>'
+    nm = pname(slug)
     if arrow_before:
-        return f'<a href="{pfile(slug)}"><span class="arrow">←</span> Vorheriges</a>'
-    return f'<a href="{pfile(slug)}">Nächstes <span class="arrow">→</span></a>'
+        return f'<a href="{purl(slug)}"><span class="arrow">←</span> Vorheriges: {nm}</a>'
+    return f'<a href="{purl(slug)}">Nächstes: {nm} <span class="arrow">→</span></a>'
 
 all_imgs = []
 def brk(s):
     # Überschrift „schöner aufteilen": Umbruch nach dem ersten Gedankenstrich „ – ".
     # Wenn schon ein manueller <br> drin ist, nichts ändern (Override pro Projekt möglich).
     if "<br>" in s:
-        return s
-    return s.replace(" – ", " –<br>", 1)
+        return re.sub(r"(?<![\s>])<br>", " <br>", s)
+    return s.replace(" – ", " – <br>", 1)
 
 def build(slug, d):
-    canon = f"https://www.designj.de/{pfile(slug)}"
+    canon = f"https://www.designj.de/projekt-{slug}"
     # og image = erstes Bild
     first = (d["main"] or (d["blocks"][0]["imgs"] if d["blocks"] and d["blocks"][0]["imgs"] else []))
     ogimg = f"https://www.designj.de/{local(first[0])}" if first else "https://www.designj.de/og-image.jpg"
