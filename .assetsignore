@@ -8,3 +8,7 @@ DEPLOY.md
 *.md
 *.py
 _build/
+_social/
+_social-grundgeruest/
+_neu-kanzlei-praxis/
+_briefing/
