@@ -3,7 +3,8 @@
 """Baut eine Kampagnenseite (Menü) auf Macher-Basis (handwerk.html) mit voller Niche-Copy.
 Aufruf: python3 _build/build_campaign.py   (baut kanzlei.html + praxis.html)
 """
-import re, shutil, os
+import re, shutil, os, sys
+FORCE = '--force' in sys.argv
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 
@@ -38,6 +39,8 @@ def swap(h, start, nxt, block):
     return h2
 
 def build(cfg):
+    if os.path.exists(cfg['file']) and not FORCE:
+        print(f"{cfg['file']} — existiert bereits, UEBERSPRUNGEN (handgepflegt; nur mit --force ueberschreiben)"); return
     shutil.copy("handwerk.html", cfg['file'])
     h = open(cfg['file'], encoding="utf-8").read()
 

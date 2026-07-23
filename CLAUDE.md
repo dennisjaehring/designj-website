@@ -38,3 +38,25 @@ Diese Website ist **LIVE** unter https://www.designj.de (Static Site, Cloudflare
 - Zentrales Regelwerk für alle Nischen-/Kampagnen-Bilder: **`_briefing/BILD-SYSTEM.md`**
   (Stil, Farben je Nische, Maße, Dateinamen, Formate). Vor Bild-Arbeiten dort nachsehen.
 - Roh-Firefly-Bilder in `_neu-kanzlei-praxis/` (nicht deployt), live in `images/`.
+
+## Build-Skripte / Generatoren (WICHTIG – Regressions-Falle!)
+
+Einige Seiten werden von Skripten erzeugt. Diese dürfen den **handgepflegten Live-Stand
+NIEMALS zurückdrehen** (Clean-URLs, Bilder, Titel, og:description, Formular-Tracking,
+Mobil-Umbrüche). Zwei abgesicherte Muster:
+
+- **`_build_projekte.py`** (Projekt-Detailseiten): **synchron gehalten** – Vorlage + Daten
+  im Skript sind die Quelle. Änderungen an Projektseiten dort mitpflegen.
+- **`_build/build_seo.py`** (SEO: immobilien-/kanzlei-/praxismarketing) &
+  **`_build/build_campaign.py`** (Kampagne: kanzlei/praxis): haben einen **Guard** –
+  überschreiben existierende Seiten **nicht** (nur mit `--force`). Ein normaler Lauf baut
+  nur **fehlende** Seiten.
+
+**GOLDENE REGEL – nach jedem Build-Skript-Lauf: `git diff` prüfen.**
+Er muss **leer** sein (Guard-Skripte) bzw. **nur die gewollte Änderung** zeigen (synchrone).
+Ist er es nicht, dreht das Skript etwas zurück → erst Skript/Vorlage angleichen, dann committen.
+
+**Neue Nischen-/SEO-Seite anlegen:** cfg-Block in `build_seo.py` ergänzen →
+`python3 _build/build_seo.py` (baut nur die Neue) → Firefly-Bilder gemäß
+`_briefing/BILD-SYSTEM.md` einbauen, Meta/Formular prüfen. Nach CSS-Änderungen
+immer `python3 _build/inline_css.py`. Master für neue SEO-Seiten: `marketing-fuers-handwerk.html`.
