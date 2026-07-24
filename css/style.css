@@ -207,13 +207,17 @@ br.br--mobile  { display: none; }            /* Standard (Desktop): aus */
   overflow-y: auto;
 }
 .nav__mobile.is-open { transform: translateX(0); }
-.nav__mobile-head { display: flex; align-items: center; gap: .8rem; margin-bottom: 2rem; }
+.nav__mobile-head { display: flex; align-items: center; gap: .8rem; margin-bottom: 1.3rem; }
 .nav__mobile-head img { width: 40px; height: 40px; }
 .nav__mobile-head span { font-size: .8rem; letter-spacing: .2em; color: var(--fg-dim); text-transform: uppercase; }
 .nav__mobile a.m-link {
-  font-size: 1.7rem; font-weight: 700; letter-spacing: -0.03em;
-  padding: .55rem 0; border-bottom: 1px solid var(--line);
+  font-size: 1.12rem; font-weight: 600; letter-spacing: -0.01em;
+  padding: .78rem 0; border-bottom: 1px solid var(--line);
   color: var(--fg);
+}
+.nav__mobile a.m-link.m-link--sub {
+  font-size: 1rem; font-weight: 400; color: var(--fg-muted);
+  padding-top: .64rem; padding-bottom: .64rem;
 }
 .nav__mobile .btn { margin-top: 2rem; }
 
