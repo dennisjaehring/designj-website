@@ -24,6 +24,7 @@ U = "https://www.designj.de/wp-content/uploads/2025/12/"
 # ---- Projektdaten ----
 P = {}
 P["dj-dollar-bill"] = dict(
+    ergebnis="Über alle Event-Medien hinweg – Plakat, Flyer, Ticket, Banner – entsteht ein einheitlicher, wiedererkennbarer Look.",
     name="DJ DOLLAR BILL", bc="DJ DOLLAR BILL",
     title="DJ DOLLAR BILL – Eventlayouts & Werbemittel | DESIGNJ",
     desc="Plakate, Flyer, Tickets und Banner für die Events von DJ DOLLAR BILL – ein einheitlicher, kreativer Look von DESIGNJ, Werbeagentur Weiden.",
@@ -38,6 +39,7 @@ P["dj-dollar-bill"] = dict(
                  imgs=[U+"designj_referenz_dj_dollar_bill_02.webp", U+"designj_referenz_dj_dollar_bill_03.webp", U+"designj_referenz_dj_dollar_bill_04.webp"])],
 )
 P["friedmann"] = dict(
+    ergebnis="Vom Bauzaun über die Fahrzeugflotte bis zur Stellenanzeige zieht sich ein professioneller roter Faden durch den gesamten Auftritt.",
     name="Ing. Carl Friedmann", bc="Friedmann",
     title="Carl Friedmann – Fahrzeugbeklebung & Werbeartikel | DESIGNJ",
     desc="Fahrzeugbeklebung, Bauzaunwerbung und Werbeartikel für die Ing. Carl Friedmann GmbH & Co KG in Weiden – konsistenter Markenauftritt von DESIGNJ.",
@@ -50,6 +52,7 @@ P["friedmann"] = dict(
     blocks=[],
 )
 P["hofladen-weiden"] = dict(
+    ergebnis="Regionalität und Qualität spiegeln sich heute in jedem Etikett, Plakat und saisonalen Werbemittel wider.",
     name="Hofladen Weiden", bc="Hofladen Weiden",
     title="Hofladen Weiden – Regionales Design & Packaging | DESIGNJ",
     desc="Etiketten, Flyer, Plakate und das Packaging-Design für Max Reger Kaffee – regionales Design für den Hofladen Weiden von DESIGNJ.",
@@ -64,6 +67,7 @@ P["hofladen-weiden"] = dict(
                  imgs=[U+"designj_referenz_hofladen_weiden_01.webp"])],
 )
 P["hohpe"] = dict(
+    ergebnis="Vom Gutschein bis zum Giveaway wirkt HOHPE über alle Materialien hinweg professionell und aus einem Guss.",
     name="HOHPE", bc="HOHPE",
     title="HOHPE – Drucksachen &amp; Werbemittel für Fitness | DESIGNJ",
     desc="Gutscheine, Banner, Werbemittel und Web für HOHPE aus den Bereichen Gesundheit, Wellness und Fitness in Weiden – von DESIGNJ.",
@@ -78,6 +82,7 @@ P["hohpe"] = dict(
                  imgs=[U+"Bildschirmfoto-2025-12-11-um-15.39.48.png"])],
 )
 P["onz"] = dict(
+    ergebnis="Die dezente Fahrzeugbeklebung erhöht die Sichtbarkeit des Fachzentrums, ohne den seriösen Charakter zu verlieren – vor Ort wie unterwegs.",
     name="ONZ", bc="ONZ",
     title="ONZ – Fahrzeugbeklebung für Orthopädie-Praxis | DESIGNJ",
     desc="Dezente, stilvolle Fahrzeugbeklebung für das ONZ Fachzentrum für Orthopädie, Unfallchirurgie und Chirurgie in Weiden – von DESIGNJ.",
@@ -90,6 +95,7 @@ P["onz"] = dict(
     blocks=[],
 )
 P["rupprecht-kappl"] = dict(
+    ergebnis="So treten die verschiedenen Geschäftsbereiche unter einem klaren, einheitlichen Design auf – vom Immobilienmakler bis zur Gastronomie.",
     name="Rupprecht & Kappl", bc="Rupprecht & Kappl",
     title="Rupprecht &amp; Kappl – Logo &amp; Drucksachen | DESIGNJ",
     desc="Logos, Drucksachen und Werbetechnik für die Rupprecht & Kappl GmbH und den Club Hashtag in Weiden – konsistentes Branding von DESIGNJ.",
@@ -105,6 +111,7 @@ P["rupprecht-kappl"] = dict(
                  imgs=[])],
 )
 P["sezayi-er"] = dict(
+    ergebnis="Zwei sehr unterschiedliche Bereiche – Telekom Shops und Tiny Houses – erhalten je einen eigenständigen, professionellen Auftritt aus einer Hand.",
     name="SEZAYI ER", bc="SEZAYI ER",
     title="SEZAYI ER – Gestaltung für Telekom Shops | DESIGNJ",
     desc="Geschäftsausstattung, Drucksachen und Werbetechnik für die SE Center Telekom Shops und SEZI HOMES (Tiny Houses) in Weiden – von DESIGNJ.",
@@ -126,6 +133,7 @@ P["sezayi-er"] = dict(
                name="Sezayi Er", role="Unternehmer", logo="images/kunden/designj_kunde_sezihomes.webp", photo="images/kunden/designj_kundenstimme_sezayier.webp"),
 )
 P["spvgg-schirmitz"] = dict(
+    ergebnis="Vom Banner bis zum eigenen Maskottchen entsteht ein einheitlicher Vereinsauftritt, der auch den Nachwuchs sichtbar stärkt.",
     name="SpVgg Schirmitz", bc="SpVgg Schirmitz",
     title="SpVgg Schirmitz – Drucksachen &amp; Maskottchen | DESIGNJ",
     desc="Banner, Fahnen, Beklebungen und das Maskottchen „Drache Sigi“ für die SpVgg Schirmitz – Engagement und Design von DESIGNJ.",
@@ -140,6 +148,7 @@ P["spvgg-schirmitz"] = dict(
                  imgs=[U+"designj_referenz_spvgg_schirmitz_03.webp", U+"designj_referenz_spvgg_schirmitz_04.webp", U+"designj_referenz_spvgg_schirmitz_05.webp"])],
 )
 P["spvgg-weiden"] = dict(
+    ergebnis="Das Spieltagsheft „Wasserwerk Echo“ bündelt Infos und Emotionen – ein informativer, optisch starker Auftritt für die Fans.",
     name="SpVgg Weiden", bc="SpVgg Weiden",
     title="SpVgg Weiden – Spieltagsheft „Wasserwerk Echo“ | DESIGNJ",
     desc="Gestaltung des Spieltagshefts „Wasserwerk Echo“ für die SpVgg Weiden in der Bayernliga Nord – von DESIGNJ, Werbeagentur Weiden.",
@@ -153,6 +162,7 @@ P["spvgg-weiden"] = dict(
     blocks=[],
 )
 P["us-army"] = dict(
+    ergebnis="Mit der kompletten Messe- und Eventausstattung tritt die Garnison bei internen wie externen Veranstaltungen einheitlich und professionell auf.",
     name="US ARMY Garrison Bavaria", bc="US ARMY",
     title="US ARMY Garrison Bavaria – Eventausstattung | DESIGNJ",
     desc="Komplette Messe- und Eventausstattung, Werbetechnik und Drucksachen für die U.S. Army Garrison Bavaria in Hohenfels – von DESIGNJ.",
@@ -165,6 +175,7 @@ P["us-army"] = dict(
     blocks=[],
 )
 P["caraservice"] = dict(
+    ergebnis="Das abgestimmte Messe-Paket sorgt dafür, dass CaraService auf Messen und Events sofort präsent und wiedererkennbar ist.",
     name="CaraService", bc="CaraService",
     title="CaraService – Messepaket &amp; Drucksachen | DESIGNJ",
     desc="Komplettes Messepaket aus Flyern, Gutscheinen, Roll-Ups und Square-Flags für die CaraService Holding GmbH an vier Standorten – von DESIGNJ.",
@@ -177,6 +188,7 @@ P["caraservice"] = dict(
     blocks=[],
 )
 P["sei-sport"] = dict(
+    ergebnis="Ein durchgängiges Branding stärkt das Bild von SEI Sport und den persönlichen Draht zu Spielerinnen, Partnern und Vereinen.",
     name="SEI SPORT", bc="SEI SPORT",
     title="SEI SPORT – Branding & Spielerinnen-Visuals | DESIGNJ",
     desc="Grafik, Branding und Spielerinnen-Visuals für die Frauenfußball-Agentur SEI SPORT sowie die Werbung fürs SEI SPORT Fußballcamp – von DESIGNJ.",
@@ -193,6 +205,7 @@ P["sei-sport"] = dict(
                name="Felix Seidel", role="SEI Sport", logo="images/kunden/designj_kunde_seisport.webp", photo="images/kunden/designj_kundenstimme_seisport.webp"),
 )
 P["djk-irchenrieth"] = dict(
+    ergebnis="Mit eigenen Vorlagen und dem Nachwuchsadler führt der Verein seine Kommunikation heute selbstständig weiter – klar und modern.",
     name="DJK Irchenrieth", bc="DJK Irchenrieth",
     title="DJK Irchenrieth – Vereinsauftritt &amp; Maskottchen | DESIGNJ",
     desc="Social-Media-Vorlagen, Flyer, Banner und das Maskottchen „Arni“ für die DJK Irchenrieth – Vereinskommunikation und Design von DESIGNJ.",
@@ -207,6 +220,7 @@ P["djk-irchenrieth"] = dict(
                name="Silke Stader", role="DJK Irchenrieth", logo="images/kunden/designj_kunde_djkirchenrieth.webp", photo="images/kunden/designj_kundenstimme_djk_irchenrieth.webp"),
 )
 P["sparkasse-oberpfalz-nord"] = dict(
+    ergebnis="Am Ende steht eine eigenständige Jubiläumsmarke, die sich nahtlos in die bestehende Corporate Identity einfügt.",
     name="Sparkasse Oberpfalz Nord", bc="Sparkasse Oberpfalz Nord",
     title="Sparkasse Oberpfalz Nord – Jubiläumslogo | DESIGNJ",
     desc="Jubiläumslogo und hochwertige Präsentationsmedien zu 10 Jahren Private Banking der Sparkasse Oberpfalz Nord – von DESIGNJ.",
@@ -221,6 +235,7 @@ P["sparkasse-oberpfalz-nord"] = dict(
                name="Sparkasse Oberpfalz Nord", role="Private Banking", logo="images/kunden/designj_kunde_sparkasse_oberpfalz_nord-1.webp"),
 )
 P["bike-station"] = dict(
+    ergebnis="So präsentiert die BIKE Station Sortiment und Aktionen modern und verkaufsstark – passend zum technischen Anspruch des Hauses.",
     name="BIKE Station", bc="BIKE Station",
     title="BIKE Station – Markenauftritt für Fahrradhandel | DESIGNJ",
     desc="Zeitungsbeilage, Flyer, Banner, Social-Media-Anzeigen und Beschilderung für die BIKE Station in Mitterteich – sichtbarer Markenauftritt von DESIGNJ.",
@@ -233,6 +248,7 @@ P["bike-station"] = dict(
     blocks=[],
 )
 P["zimmer-nr-zwei"] = dict(
+    ergebnis="Von der Website bis zur Speisekarte zieht sich ein kreativer, wiedererkennbarer Auftritt durch alle Kanäle.",
     name="Zimmer Nr Zwei", bc="Zimmer Nr Zwei",
     title="Zimmer Nr Zwei – Markenauftritt für Café &amp; Bar | DESIGNJ",
     desc="Website, Social Media, Drucksachen und Textil für das Zimmer Nr Zwei in Weiden – ein durchgängig stimmiger Markenauftritt von DESIGNJ.",
@@ -245,6 +261,7 @@ P["zimmer-nr-zwei"] = dict(
     blocks=[],
 )
 P["nele-und-hannes-ocik"] = dict(
+    ergebnis="Zwei starke Personenmarken erhalten je einen hochwertigen, eigenständigen Auftritt – von der Geschäftsausstattung bis zur Website.",
     name="Nele und Hannes Ocik", bc="Nele und Hannes Ocik",
     title="Nele & Hannes Ocik – Persönliches Branding & Web | DESIGNJ",
     desc="Persönliches Branding, Geschäftsausstattung und Homepages für Sportmoderatorin Nele Ocik und Olympia-Ruderer Hannes Ocik – von DESIGNJ.",
@@ -259,6 +276,7 @@ P["nele-und-hannes-ocik"] = dict(
                name="Nele Ocik", role="Sky Sportmoderatorin", logo="images/kunden/designj_kunde_neleocik.webp", photo="images/kunden/designj_kundenstimme_nele_ocik.webp"),
 )
 P["kurt-landauer-stiftung"] = dict(
+    ergebnis="Print und Digital greifen ineinander und geben der Erinnerungsarbeit der Stiftung eine würdige, zeitgemäße Form.",
     name="Kurt Landauer Stiftung", bc="Kurt Landauer Stiftung",
     title="Kurt Landauer Stiftung – Magazin &amp; Gedenkbuch | DESIGNJ",
     desc="Layouts für das Magazin „KURT!“ und das Gedenkbuch 2024 der Kurt Landauer Stiftung zur Geschichte jüdischer FC-Bayern-Mitglieder – von DESIGNJ.",
@@ -271,6 +289,7 @@ P["kurt-landauer-stiftung"] = dict(
     blocks=[],
 )
 P["salzhaus-altenstadt"] = dict(
+    ergebnis="Mit aufgefrischtem Logo und einheitlichen Materialien wirkt die Physiotherapiepraxis heute modern und einladend.",
     name="Salzhaus Altenstadt", bc="Salzhaus Altenstadt",
     title="Salzhaus Altenstadt – Logo &amp; Branding | DESIGNJ",
     desc="Logo-Modernisierung, Drucksachen, Textilien und Werbetechnik für die Physiotherapiepraxis Salzhaus Altenstadt – von DESIGNJ.",
@@ -283,6 +302,7 @@ P["salzhaus-altenstadt"] = dict(
     blocks=[],
 )
 P["ravenna-wernberg"] = dict(
+    ergebnis="Über Speisekarte, Lieferservice und Team-Textilien hinweg entsteht ein rundes, wiedererkennbares Gastro-Branding.",
     name="Ravenna Wernberg", bc="Ravenna Wernberg",
     title="Ravenna Wernberg – Branding für Restaurant | DESIGNJ",
     desc="Speisekarten, Flyer, Werbung und Textil für die Pizzeria & Restaurant Ravenna in Wernberg-Köblitz – ein stimmiges Konzept von DESIGNJ.",
@@ -299,6 +319,7 @@ P["ravenna-wernberg"] = dict(
 )
 
 P["voit"] = dict(
+    ergebnis="Vom Fahrzeug bis zur Social-Media-Grafik tritt VOIT über alle Kanäle konsistent und professionell auf.",
     name="VOIT", bc="VOIT",
     title="Partyservice VOIT – Branding &amp; Drucksachen | DESIGNJ",
     desc="Aufkleber, Fahrzeugbeklebung, Flyer, Social Media und Geschäftsausstattung für Partyservice & Eventcatering VOIT in Weiden – konsistentes Branding von DESIGNJ.",
@@ -311,6 +332,7 @@ P["voit"] = dict(
     blocks=[],
 )
 P["12ender"] = dict(
+    ergebnis="Stimmiges Design und passende Werbetechnik machen die beiden Imbisse innen wie außen sofort sichtbar und wiedererkennbar.",
     name="12Ender", bc="12Ender",
     title="12Ender – Branding &amp; Werbetechnik für Gastronomie | DESIGNJ",
     desc="Grafik und Beschilderung innen wie außen für die beiden „12Ender“-Imbisse in der Oberpfalz – stimmiges Design und Werbetechnik von DESIGNJ.",
@@ -443,6 +465,7 @@ TPL = r"""<!DOCTYPE html>
 </section>
 @@MAINGALLERY@@
 @@BLOCKS@@
+@@ERGEBNIS@@
 @@TESTIMONIAL@@
 <section class="container section">
   <div class="cta-band reveal">
@@ -589,6 +612,10 @@ def build(slug, d):
                f'      <div class="proj-quote__name">{q["name"]}</div>\n'
                f'      <div class="proj-quote__role">{q["role"]}</div>\n'
                f'    </div>\n  </figure>\n</section>\n')
+    erg = ""
+    e = d.get("ergebnis")
+    if e:
+        erg = f'\n<section class="container section--tight">\n  <p class="proj-ergebnis reveal">{e}</p>\n</section>\n'
     i = ORDER.index(slug)
     prev = ORDER[i-1] if i > 0 else None
     nxt = ORDER[i+1] if i < len(ORDER)-1 else None
@@ -605,6 +632,7 @@ def build(slug, d):
         .replace("@@TAGS@@", tags)
         .replace("@@MAINGALLERY@@", mg)
         .replace("@@BLOCKS@@", blk)
+        .replace("@@ERGEBNIS@@", erg)
         .replace("@@TESTIMONIAL@@", tst)
         .replace("@@PREV@@", navlink(prev, "Vorheriges", True))
         .replace("@@NEXT@@", navlink(nxt, "Nächstes", False)))
