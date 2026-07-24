@@ -130,3 +130,30 @@
   }
 
 })();
+
+
+/* ---- Testimonial-Slider: Autoplay 6s (Pause bei Hover), Pfeile, Punkte, wischbar ---- */
+(function(){
+  var sl=document.querySelector('.testi-slider'); if(!sl) return;
+  var vp=sl.querySelector('.testi-slider__viewport'),
+      prev=sl.querySelector('.testi-slider__prev'),
+      next=sl.querySelector('.testi-slider__next'),
+      dots=sl.querySelector('.testi-slider__dots');
+  var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function pages(){ var w=vp.clientWidth; if(!w) return 1; return Math.max(1, Math.min(24, Math.round(vp.scrollWidth / w))); }
+  function cur(){ var w=vp.clientWidth; if(!w) return 0; return Math.round(vp.scrollLeft / w); }
+  function go(i){ var n=pages(); i=((i%n)+n)%n; vp.scrollTo({left:i*vp.clientWidth, behavior:'smooth'}); }
+  function update(){ var c=cur(); Array.prototype.forEach.call(dots.children,function(d,i){ d.classList.toggle('is-active', i===c); }); }
+  function build(){ dots.innerHTML=''; var n=pages(); for(var i=0;i<n;i++){ var b=document.createElement('button'); b.className='testi-slider__dot'; b.type='button'; b.setAttribute('aria-label','Seite '+(i+1)); (function(k){ b.addEventListener('click',function(){ go(k); }); })(i); dots.appendChild(b);} update(); }
+  if(prev) prev.addEventListener('click',function(){ go(cur()-1); });
+  if(next) next.addEventListener('click',function(){ go(cur()+1); });
+  vp.addEventListener('scroll',function(){ window.requestAnimationFrame(update); },{passive:true});
+  var timer=null;
+  function play(){ if(reduce) return; stop(); timer=setInterval(function(){ go(cur()+1); },6000); }
+  function stop(){ if(timer){ clearInterval(timer); timer=null; } }
+  sl.addEventListener('mouseenter',stop); sl.addEventListener('mouseleave',play);
+  sl.addEventListener('focusin',stop); sl.addEventListener('focusout',play);
+  vp.addEventListener('touchstart',stop,{passive:true});
+  var rt; window.addEventListener('resize',function(){ clearTimeout(rt); rt=setTimeout(build,200); });
+  build(); play();
+})();
