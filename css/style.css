@@ -975,3 +975,10 @@ main > section.hero { background: #000; }
 @media (max-width:900px){.testi-slider .testi3{flex:0 0 100%}.testi-slider__nav{display:none}}
 
 .proj-ergebnis{max-width:820px;margin:0;font-size:clamp(1.15rem,2.1vw,1.5rem);line-height:1.5;font-weight:500;color:var(--fg);border-left:3px solid var(--fg);padding-left:1.3rem}
+
+.proj-umfang{max-width:820px}
+.proj-umfang h2{font-size:clamp(1.25rem,2.3vw,1.7rem);margin-bottom:1rem}
+.proj-umfang__list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.6rem;margin:0;padding:0}
+.proj-umfang__list li{position:relative;padding-left:1.4rem;color:var(--fg-muted);line-height:1.5}
+.proj-umfang__list li::before{content:"\203A";position:absolute;left:0;color:var(--fg-dim);font-weight:700}
+@media(max-width:560px){.proj-umfang__list{grid-template-columns:1fr}}
