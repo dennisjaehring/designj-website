@@ -82,7 +82,7 @@ P["hohpe"] = dict(
                  imgs=[U+"Bildschirmfoto-2025-12-11-um-15.39.48.png"])],
 )
 P["onz"] = dict(
-    ergebnis="Die dezente Fahrzeugbeklebung erhöht die Sichtbarkeit des Fachzentrums, ohne den seriösen Charakter zu verlieren – vor Ort wie unterwegs.",
+    ergebnis="Die dezente Fahrzeugbeklebung erhöht die Sichtbarkeit der Praxis, ohne den seriösen Charakter zu verlieren – vor Ort wie unterwegs.",
     name="ONZ", bc="ONZ",
     title="ONZ – Fahrzeugbeklebung für Orthopädie-Praxis | DESIGNJ",
     desc="Dezente, stilvolle Fahrzeugbeklebung für das ONZ Fachzentrum für Orthopädie, Unfallchirurgie und Chirurgie in Weiden – von DESIGNJ.",
@@ -205,7 +205,7 @@ P["sei-sport"] = dict(
                name="Felix Seidel", role="SEI Sport", logo="images/kunden/designj_kunde_seisport.webp", photo="images/kunden/designj_kundenstimme_seisport.webp"),
 )
 P["djk-irchenrieth"] = dict(
-    ergebnis="Mit eigenen Vorlagen und dem Nachwuchsadler führt der Verein seine Kommunikation heute selbstständig weiter – klar und modern.",
+    ergebnis="Mit eigenen Vorlagen und dem Nachwuchsadler führt der Verein seinen Vereinsauftritt heute selbstständig weiter – klar und modern.",
     name="DJK Irchenrieth", bc="DJK Irchenrieth",
     title="DJK Irchenrieth – Vereinsauftritt &amp; Maskottchen | DESIGNJ",
     desc="Social-Media-Vorlagen, Flyer, Banner und das Maskottchen „Arni“ für die DJK Irchenrieth – Vereinskommunikation und Design von DESIGNJ.",
@@ -263,7 +263,7 @@ P["zimmer-nr-zwei"] = dict(
 P["nele-und-hannes-ocik"] = dict(
     ergebnis="Zwei starke Personenmarken erhalten je einen hochwertigen, eigenständigen Auftritt – von der Geschäftsausstattung bis zur Website.",
     name="Nele und Hannes Ocik", bc="Nele und Hannes Ocik",
-    title="Nele & Hannes Ocik – Persönliches Branding & Web | DESIGNJ",
+    title="Nele & Hannes Ocik – Personal Branding & Web | DESIGNJ",
     desc="Persönliches Branding, Geschäftsausstattung und Homepages für Sportmoderatorin Nele Ocik und Olympia-Ruderer Hannes Ocik – von DESIGNJ.",
     eyebrow="Projekt · Personal Branding & Web",
     h1="Nele und Hannes Ocik –<br>Personal Branding &amp; digitale Präsenz<br>für Spitzensportler und Moderatorin",
