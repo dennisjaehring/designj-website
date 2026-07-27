@@ -201,7 +201,7 @@ P["caraservice"] = dict(
 P["sei-sport"] = dict(
     umfang=["Branding", "Spieler:innen-Visuals", "Social-Media-Grafiken", "Weihnachtsgeschenke", "Postkarten", "Fußballcamp-Material"],
     ergebnis="Ein durchgängiges Branding stärkt das Bild von SEI Sport und den persönlichen Draht zu Spielerinnen, Partnern und Vereinen.",
-    fazit_h="Zusammengefasst",
+    fazit_h="Ein Look über alle Kanäle",
     fazit="Für SEI SPORT entsteht ein durchgängiger Auftritt aus einer Hand – vom Branding über Spieler:innen-Visuals und Social-Media-Grafiken bis zu Postkarten, Weihnachtsgeschenken und den Materialien fürs jährliche Fußballcamp. So bleibt die Frauenfußball-Agentur über alle Kanäle wiedererkennbar, und der persönliche Draht zu Spielerinnen, Partnern und Vereinen wird sichtbar gestärkt.",
     name="SEI SPORT", bc="SEI SPORT",
     title="SEI SPORT – Branding & Spielerinnen-Visuals | DESIGNJ",
