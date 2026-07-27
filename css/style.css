@@ -239,7 +239,7 @@ body.nav-locked { overflow: hidden; }
 .hero__content { max-width: 640px; }
 .hero__grid .hero__content { padding-top: 0; }
 .hero h1 { margin-bottom: 1.4rem; }
-.hero .lead { margin-bottom: 2.2rem; max-width: 30ch; }
+.hero .lead { margin-bottom: 2.2rem; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: .9rem; }
 
 .hero__media { position: relative; display: flex; justify-content: center; align-items: flex-end; min-height: 380px; }
