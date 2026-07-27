@@ -201,6 +201,8 @@ P["caraservice"] = dict(
 P["sei-sport"] = dict(
     umfang=["Branding", "Spieler:innen-Visuals", "Social-Media-Grafiken", "Weihnachtsgeschenke", "Postkarten", "Fußballcamp-Material"],
     ergebnis="Ein durchgängiges Branding stärkt das Bild von SEI Sport und den persönlichen Draht zu Spielerinnen, Partnern und Vereinen.",
+    fazit_h="Zusammengefasst",
+    fazit="Für SEI SPORT entsteht ein durchgängiger Auftritt aus einer Hand – vom Branding über Spieler:innen-Visuals und Social-Media-Grafiken bis zu Postkarten, Weihnachtsgeschenken und den Materialien fürs jährliche Fußballcamp. So bleibt die Frauenfußball-Agentur über alle Kanäle wiedererkennbar, und der persönliche Draht zu Spielerinnen, Partnern und Vereinen wird sichtbar gestärkt.",
     name="SEI SPORT", bc="SEI SPORT",
     title="SEI SPORT – Branding & Spielerinnen-Visuals | DESIGNJ",
     desc="Grafik, Branding und Spielerinnen-Visuals für die Frauenfußball-Agentur SEI SPORT sowie die Werbung fürs SEI SPORT Fußballcamp – von DESIGNJ.",
@@ -636,14 +638,20 @@ def build(slug, d):
                f'      <div class="proj-quote__role">{q["role"]}</div>\n'
                f'    </div>\n  </figure>\n</section>\n')
     umf = ""
-    u = d.get("umfang")
-    if u:
-        items = "\n".join(f'      <li>{x.replace(chr(38),"&amp;")}</li>' for x in u)
-        umf = f'\n<section class="container section--tight">\n  <div class="proj-umfang reveal">\n    <h2>Umfang</h2>\n    <ul class="proj-umfang__list">\n{items}\n    </ul>\n  </div>\n</section>\n'
     erg = ""
-    e = d.get("ergebnis")
-    if e:
-        erg = f'\n<section class="container section--tight">\n  <p class="proj-ergebnis reveal">{e}</p>\n</section>\n'
+    faz = d.get("fazit")
+    if faz:
+        # Kombinierter Prosa-Block: Umfang + Ergebnis in einem Text (statt Liste + Satz)
+        fh = d.get("fazit_h", "Fazit")
+        umf = f'\n<section class="container section--tight">\n  <div class="proj-fazit reveal">\n    <h2>{fh}</h2>\n    <p>{faz}</p>\n  </div>\n</section>\n'
+    else:
+        u = d.get("umfang")
+        if u:
+            items = "\n".join(f'      <li>{x.replace(chr(38),"&amp;")}</li>' for x in u)
+            umf = f'\n<section class="container section--tight">\n  <div class="proj-umfang reveal">\n    <h2>Umfang</h2>\n    <ul class="proj-umfang__list">\n{items}\n    </ul>\n  </div>\n</section>\n'
+        e = d.get("ergebnis")
+        if e:
+            erg = f'\n<section class="container section--tight">\n  <p class="proj-ergebnis reveal">{e}</p>\n</section>\n'
     i = ORDER.index(slug)
     prev = ORDER[i-1] if i > 0 else None
     nxt = ORDER[i+1] if i < len(ORDER)-1 else None
