@@ -766,6 +766,9 @@ a.contact-loc:hover .contact-loc__addr { text-decoration: underline; }
 
 @media (max-width: 560px) {
   body { font-size: 16px; }
+  /* Hero-Subline auf schmalen Phones so skalieren, dass die lange 1. Zeile
+     ('Ein Ansprechpartner, ein starkes Netzwerk.') in EINE Zeile passt */
+  .hero .lead { font-size: clamp(0.85rem, 4vw, 1.1rem); }
   .services-grid { grid-template-columns: 1fr; }
   .service-card:nth-child(5) { grid-column: span 1; }
   .referenz-grid, .projekte-grid, .kunden-grid, .icon-cards { grid-template-columns: 1fr; }
