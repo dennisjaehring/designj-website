@@ -47,6 +47,11 @@ Mobil-Umbrüche). Zwei abgesicherte Muster:
 
 - **`_build_projekte.py`** (Projekt-Detailseiten): **synchron gehalten** – Vorlage + Daten
   im Skript sind die Quelle. Änderungen an Projektseiten dort mitpflegen.
+  **Abschluss-Block-Standard:** Jede Projektseite endet vor der Kundenstimme mit einem
+  **Prosa-„Fazit"** (`.proj-fazit`) statt Aufzählung – gesetzt über `fazit_h` (kurze,
+  individuelle Überschrift) + `fazit` (2–3 Sätze, Umfang/Leistungen eingewoben, mündet
+  ins Ergebnis). **Neue Projekte immer mit `fazit_h` + `fazit` anlegen.** Die alten Felder
+  `umfang=[…]` / `ergebnis="…"` sind nur Fallback (greifen nur ohne `fazit`).
 - **`_build/build_seo.py`** (SEO: immobilien-/kanzlei-/praxismarketing) &
   **`_build/build_campaign.py`** (Kampagne: kanzlei/praxis): haben einen **Guard** –
   überschreiben existierende Seiten **nicht** (nur mit `--force`). Ein normaler Lauf baut
