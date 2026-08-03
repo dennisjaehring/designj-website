@@ -66,7 +66,7 @@ P["friedmann"] = dict(
 )
 P["hofladen-weiden"] = dict(
     fazit_h="Regionalität, die man sieht",
-    fazit="Für den Hofladen Weiden gestalte ich vom Produktetikett über das Verpackungsdesign des Max Reger Kaffees bis zu Flyern, Plakaten und saisonalen Werbemitteln. So spiegeln sich Regionalität und Qualität heute in jedem Etikett und jedem Werbemittel wider – hochwertig und mit echtem Charakter.",
+    fazit="Regionales Design zieht sich durch den ganzen Auftritt des Hofladen Weiden – vom Produktetikett über das Verpackungsdesign des Max Reger Kaffees bis zu Flyern, Plakaten und saisonalen Werbemitteln. So spiegeln sich Regionalität und Qualität heute in jedem Etikett und jedem Werbemittel wider – hochwertig und mit echtem Charakter.",
     umfang=["Produktetiketten", "Verpackungsdesign (Max Reger Kaffee)", "Flyer", "Plakate", "saisonale Werbemittel"],
     ergebnis="Regionalität und Qualität spiegeln sich heute in jedem Etikett, Plakat und saisonalen Werbemittel wider.",
     name="Hofladen Weiden", bc="Hofladen Weiden",
@@ -102,7 +102,7 @@ P["hohpe"] = dict(
 )
 P["onz"] = dict(
     fazit_h="Sichtbar, aber seriös",
-    fazit="Für das ONZ Fachzentrum für Orthopädie, Unfallchirurgie und Chirurgie entstand eine dezente Fahrzeugbeklebung samt passender Werbetechnik. Sie erhöht die Sichtbarkeit der Praxis spürbar – vor Ort wie unterwegs – ohne den seriösen Charakter des Fachzentrums zu verlieren.",
+    fazit="Für das ONZ Fachzentrum für Orthopädie, Unfallchirurgie und Chirurgie entstand eine dezente Fahrzeugbeklebung samt passender Werbetechnik. Sie erhöht die Sichtbarkeit der Orthopädie-Praxis spürbar – vor Ort wie unterwegs – ohne den seriösen Charakter des Fachzentrums zu verlieren.",
     umfang=["Dezente Fahrzeugbeklebung", "Werbetechnik"],
     ergebnis="Die dezente Fahrzeugbeklebung erhöht die Sichtbarkeit der Praxis, ohne den seriösen Charakter zu verlieren – vor Ort wie unterwegs.",
     name="ONZ", bc="ONZ",
@@ -111,7 +111,7 @@ P["onz"] = dict(
     eyebrow="Projekt · Fahrzeugbeklebung",
     h1="Oberpfalz Nord Zentrum –<br>Dezente Fahrzeugbeklebung für<br>Orthopädie &amp; Chirurgie in Weiden",
     lead="Dezente Fahrzeugbeklebung, die Seriosität<br>bewahrt und die Marke sichtbar macht.",
-    intro="Für das ONZ Fachzentrum für Orthopädie, Unfallchirurgie und Chirurgie in Weiden in der Oberpfalz entstand eine dezente, stilvolle Fahrzeugbeklebung. Das Ziel bestand darin, den seriösen Charakter des Fachzentrums zu bewahren und gleichzeitig die Markenpräsenz unterwegs zu erhöhen. So entsteht ein professioneller, wiedererkennbarer Markenauftritt, der das Fachzentrum vor Ort und mobil sichtbar macht.",
+    intro="Für das ONZ Fachzentrum für Orthopädie, Unfallchirurgie und Chirurgie in Weiden, Oberpfalz Nord, entstand eine dezente, stilvolle Fahrzeugbeklebung. Das Ziel bestand darin, den seriösen Charakter des Fachzentrums zu bewahren und gleichzeitig die Markenpräsenz unterwegs zu erhöhen. So entsteht ein professioneller, wiedererkennbarer Markenauftritt, der das Fachzentrum vor Ort und mobil sichtbar macht.",
     tags=["Fahrzeugbeklebung", "Werbetechnik"],
     main=[U+"designj_referenz_onz_weiden_01.webp", U+"designj_referenz_onz_weiden_02.webp", U+"designj_referenz_onz_weiden_03.webp"],
     blocks=[],
@@ -249,7 +249,7 @@ P["sei-sport"] = dict(
 )
 P["djk-irchenrieth"] = dict(
     fazit_h="Vorlagen, die der Verein selbst nutzt",
-    fazit="Für die DJK Irchenrieth gestalte ich einheitliche Social-Media-Vorlagen für Infos, Spieltagsposts und Ergebnisse, dazu Flyer, Plakate und Banner, Logos sowie das Maskottchen „Nachwuchsadler“. Mit diesen Vorlagen führt der Verein seinen Auftritt heute selbstständig weiter – klar, modern und wiedererkennbar.",
+    fazit="Für die DJK Irchenrieth gestalte ich einheitliche Social-Media-Vorlagen für Infos, Spieltagsposts und Ergebnisse, dazu Flyer, Plakate und Banner, Logos sowie ein eigenes Maskottchen „Nachwuchsadler“. Mit diesen Vorlagen führt der Verein seinen Auftritt heute selbstständig weiter – klar, modern und wiedererkennbar.",
     umfang=["Social-Media-Vorlagen (Infos, Spieltagsposts, Ergebnisse)", "Flyer, Plakate, Banner", "Maskottchen „Nachwuchsadler“", "Logos & Vorlagen"],
     ergebnis="Mit eigenen Vorlagen und dem Nachwuchsadler führt der Verein seinen Vereinsauftritt heute selbstständig weiter – klar und modern.",
     name="DJK Irchenrieth", bc="DJK Irchenrieth",
@@ -267,7 +267,7 @@ P["djk-irchenrieth"] = dict(
 )
 P["sparkasse-oberpfalz-nord"] = dict(
     fazit_h="Eine Marke fürs Jubiläum",
-    fazit="Für die Sparkasse Oberpfalz Nord entstand ein Jubiläumslogo zum 10-jährigen Bestehen des Private Banking, ergänzt um Roll-Ups und Präsentationsmedien. Das Ergebnis ist eine eigenständige, wertige Jubiläumsmarke, die sich nahtlos in die bestehende Corporate Identity einfügt.",
+    fazit="Für die Sparkasse Oberpfalz Nord entstand ein Jubiläumslogo für 10 Jahre Private Banking, ergänzt um Roll-Ups und Präsentationsmedien. Das Ergebnis ist eine eigenständige, wertige Jubiläumsmarke, die sich nahtlos in die bestehende Corporate Identity einfügt.",
     umfang=["Jubiläumslogo (10 Jahre Private Banking)", "Roll-Ups", "Präsentationsmedien"],
     ergebnis="Am Ende steht eine eigenständige Jubiläumsmarke, die sich nahtlos in die bestehende Corporate Identity einfügt.",
     name="Sparkasse Oberpfalz Nord", bc="Sparkasse Oberpfalz Nord",
