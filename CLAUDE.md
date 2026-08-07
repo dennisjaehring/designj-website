@@ -61,6 +61,12 @@ Mobil-Umbrüche). Zwei abgesicherte Muster:
 Er muss **leer** sein (Guard-Skripte) bzw. **nur die gewollte Änderung** zeigen (synchrone).
 Ist er es nicht, dreht das Skript etwas zurück → erst Skript/Vorlage angleichen, dann committen.
 
+**Wichtig – Nischen-Texte sind absichtlich UNTERSCHIEDLICH:** Die Prozess-/CTA-Absätze
+auf immobilien-/kanzlei-/praxis-/sportmarketing & marketing-auslagern wurden bewusst je
+Nische individuell formuliert (gegen Seobility-Duplicate-Content). NICHT wieder
+vereinheitlichen; bei `build_seo.py --force` würden sie überschrieben → danach die
+Nischen-Formulierungen wieder herstellen.
+
 **Neue Nischen-/SEO-Seite anlegen:** cfg-Block in `build_seo.py` ergänzen →
 `python3 _build/build_seo.py` (baut nur die Neue) → Firefly-Bilder gemäß
 `_briefing/BILD-SYSTEM.md` einbauen, Meta/Formular prüfen. Nach CSS-Änderungen
