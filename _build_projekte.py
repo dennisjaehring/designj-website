@@ -249,7 +249,7 @@ P["sei-sport"] = dict(
 )
 P["djk-irchenrieth"] = dict(
     fazit_h="Vorlagen, die der Verein selbst nutzt",
-    fazit="Für die DJK Irchenrieth gestalte ich einheitliche Social-Media-Vorlagen für Infos, Spieltagsposts und Ergebnisse, dazu Flyer, Plakate und Banner, Logos sowie ein eigenes Maskottchen „Nachwuchsadler“. Mit diesen Vorlagen führt der Verein seinen Auftritt heute selbstständig weiter – klar, modern und wiedererkennbar.",
+    fazit="Für die DJK Irchenrieth gestalte ich einheitliche Social-Media-Vorlagen für Infos, Spieltagsposts und Ergebnisse, dazu Flyer, Plakate und Banner, Logos sowie ein eigenes Maskottchen „Nachwuchsadler“. Mit diesen Vorlagen führt der Verein seinen Vereinsauftritt heute selbstständig weiter – klar, modern und wiedererkennbar.",
     umfang=["Social-Media-Vorlagen (Infos, Spieltagsposts, Ergebnisse)", "Flyer, Plakate, Banner", "Maskottchen „Nachwuchsadler“", "Logos & Vorlagen"],
     ergebnis="Mit eigenen Vorlagen und dem Nachwuchsadler führt der Verein seinen Vereinsauftritt heute selbstständig weiter – klar und modern.",
     name="DJK Irchenrieth", bc="DJK Irchenrieth",
