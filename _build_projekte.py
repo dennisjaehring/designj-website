@@ -31,6 +31,7 @@ U = "https://www.designj.de/wp-content/uploads/2025/12/"
 # ---- Projektdaten ----
 P = {}
 P["dj-dollar-bill"] = dict(
+    cta="Von Plakat und Flyer bis zur Social-Media-Kampagne – für dein Event gestalte ich einen Look, der sofort hängen bleibt. Lass uns dein Event angehen.",
     fazit_h="Ein Look für die ganze Eventreihe",
     fazit="Seit rund 20 Jahren gestalte ich für DJ DOLLAR BILL die komplette Eventwerbung – von Plakaten, Flyern und Eintrittskarten über Bauzaunbanner bis zu den Social-Media-Grafiken der Reihe „Hip Hop BBQ“. Über alle Medien hinweg entsteht ein einheitlicher, wiedererkennbarer Look, der die Veranstaltungen sofort erkennbar macht.",
     umfang=["Plakate", "Flyer", "Eintrittskarten", "Bauzaunbanner", "Social-Media-Grafiken (Reihe „Hip Hop BBQ“)"],
@@ -49,6 +50,7 @@ P["dj-dollar-bill"] = dict(
                  imgs=[U+"designj_referenz_dj_dollar_bill_02.webp", U+"designj_referenz_dj_dollar_bill_03.webp", U+"designj_referenz_dj_dollar_bill_04.webp"])],
 )
 P["friedmann"] = dict(
+    cta="Von der Bauzaunwerbung bis zur Fahrzeugflotte – für dein Unternehmen ziehe ich einen roten Faden durch den Auftritt. Sag mir, was ansteht.",
     fazit_h="Ein roter Faden durch den Auftritt",
     fazit="Für die Ing. Carl Friedmann GmbH betreue ich seit Jahren alle grafischen Projekte – von der Bauzaunwerbung über Fahrzeugbeklebungen und Visitenkarten bis zu Stellenanzeigen und Werbeartikeln wie Lanyards, Zollstöcken und Kalendern. So zieht sich vom Bauzaun bis zur Fahrzeugflotte ein professioneller roter Faden durch den gesamten Auftritt.",
     umfang=["Bauzaunwerbung", "Fahrzeugbeklebung", "Visitenkarten", "Stellenanzeigen", "Werbeartikel (Lanyards, Zollstöcke, Kalender)"],
@@ -65,6 +67,7 @@ P["friedmann"] = dict(
     blocks=[],
 )
 P["hofladen-weiden"] = dict(
+    cta="Vom Etikett bis zur Verpackung – für deine Produkte gestalte ich ein regionales Design mit Charakter. Lass uns über dein Projekt sprechen.",
     fazit_h="Regionalität, die man sieht",
     fazit="Regionales Design zieht sich durch den ganzen Auftritt des Hofladen Weiden – vom Produktetikett über das Verpackungsdesign des Max Reger Kaffees bis zu Flyern, Plakaten und saisonalen Werbemitteln. So spiegeln sich Regionalität und Qualität heute in jedem Etikett und jedem Werbemittel wider – hochwertig und mit echtem Charakter.",
     umfang=["Produktetiketten", "Verpackungsdesign (Max Reger Kaffee)", "Flyer", "Plakate", "saisonale Werbemittel"],
@@ -83,6 +86,7 @@ P["hofladen-weiden"] = dict(
                  imgs=[U+"designj_referenz_hofladen_weiden_01.webp"])],
 )
 P["hohpe"] = dict(
+    cta="Von Gutschein und Banner bis zu Website und Giveaway – für dein Studio entsteht ein Auftritt aus einem Guss. Erzähl mir von deinem Vorhaben.",
     fazit_h="Aus einem Guss – vom Gutschein bis zur Website",
     fazit="Für HOHPE aus den Bereichen Gesundheit, Wellness und Fitness entstehen Drucksachen wie Gutscheine, Weihnachtskarten und Banner, dazu Werbemittel von Event-Armbändern bis Kugelschreibern sowie Flyer und Website für die Physiopraxis Seeblick. Vom kleinen Giveaway bis zum großen Auftritt wirkt alles professionell und aus einem Guss.",
     umfang=["Gutscheine", "Weihnachtskarten", "Banner", "Werbemittel (Armbänder, Lippenpflege, Kugelschreiber)", "Flyer & Website (Physiopraxis Seeblick)"],
@@ -101,6 +105,7 @@ P["hohpe"] = dict(
                  imgs=[U+"Bildschirmfoto-2025-12-11-um-15.39.48.png"])],
 )
 P["onz"] = dict(
+    cta="Ob Praxisschild, Fahrzeug oder Drucksache – für deine Praxis gestalte ich einen seriösen Auftritt aus einer Hand. Lass uns deinen Auftritt angehen.",
     fazit_h="Sichtbar, aber seriös",
     fazit="Für das ONZ Fachzentrum für Orthopädie, Unfallchirurgie und Chirurgie entstand eine dezente Fahrzeugbeklebung samt passender Werbetechnik. Sie erhöht die Sichtbarkeit der Orthopädie-Praxis spürbar – vor Ort wie unterwegs – ohne den seriösen Charakter des Fachzentrums zu verlieren.",
     umfang=["Dezente Fahrzeugbeklebung", "Werbetechnik"],
@@ -117,6 +122,7 @@ P["onz"] = dict(
     blocks=[],
 )
 P["rupprecht-kappl"] = dict(
+    cta="Vom Logo bis zur Eventgrafik – für deine Marken schaffe ich ein einheitliches Design über alle Bereiche. Sag mir, was du brauchst.",
     fazit_h="Viele Bereiche, ein Design",
     fazit="Seit über 10 Jahren betreue ich die Rupprecht & Kappl GmbH mit ihren verschiedenen Marken: überarbeitete Logos, ein einheitliches Design für alle Geschäftsbereiche, sämtliche Drucksachen und Layouts, Werbemittel sowie Eventgrafiken und Werbetechnik für den Club Hashtag. So treten Bereiche vom Immobilienmakler bis zur Gastronomie unter einem klaren, einheitlichen Design auf.",
     umfang=["Logo-Überarbeitung", "Einheitliches Design mehrerer Bereiche", "Drucksachen & Layouts", "Werbemittel", "Eventgrafiken (Club Hashtag)"],
@@ -136,6 +142,7 @@ P["rupprecht-kappl"] = dict(
                  imgs=[])],
 )
 P["sezayi-er"] = dict(
+    cta="Egal wie unterschiedlich deine Geschäftsfelder sind – ich gebe jedem einen eigenständigen, professionellen Auftritt. Lass uns über dein Projekt sprechen.",
     fazit_h="Zwei Welten, ein Partner",
     fazit="Seit 13 Jahren begleite ich SEZAYI ER in allen grafischen Belangen – für die beiden sehr unterschiedlichen Geschäftsbereiche SE Center (Telekom Shops) und SEZI HOMES (Tiny Houses), inklusive Geschäftsausstattung und Werbetechnik. Beide Welten erhalten so einen eigenständigen, professionellen Auftritt aus einer Hand.",
     umfang=["SE Center – Telekom Shops (Gestaltung & Drucksachen)", "SEZI HOMES – Tiny Houses", "Geschäftsausstattung", "Werbetechnik"],
@@ -161,6 +168,7 @@ P["sezayi-er"] = dict(
                name="Sezayi Er", role="Unternehmer", logo="images/kunden/designj_kunde_sezihomes.webp", photo="images/kunden/designj_kundenstimme_sezayier.webp"),
 )
 P["spvgg-schirmitz"] = dict(
+    cta="Vom Banner bis zum eigenen Maskottchen – für deinen Verein entsteht ein Auftritt, der auch den Nachwuchs stärkt. Erzähl mir von deinem Verein.",
     fazit_h="Vereinsauftritt mit eigenem Gesicht",
     fazit="Für die SpVgg Schirmitz gestalte ich Drucksachen wie Banner, Fahnen und Beklebungen und habe mit „Drache Sigi“ ein eigenes Maskottchen für die Jugendabteilung entwickelt – ergänzt um Bandenwerbung und Sponsoring. So entsteht ein einheitlicher Vereinsauftritt, der auch den Nachwuchs sichtbar stärkt.",
     umfang=["Banner", "Fahnen", "Beklebungen", "Maskottchen „Drache Sigi“", "Bandenwerbung / Sponsoring"],
@@ -179,6 +187,7 @@ P["spvgg-schirmitz"] = dict(
                  imgs=[U+"designj_referenz_spvgg_schirmitz_03.webp", U+"designj_referenz_spvgg_schirmitz_04.webp", U+"designj_referenz_spvgg_schirmitz_05.webp"])],
 )
 P["spvgg-weiden"] = dict(
+    cta="Ob Spieltagsheft, Statistik oder Layout – für deinen Verein bündle ich Infos und Emotionen zu einem starken Auftritt. Lass uns dein Heft angehen.",
     fazit_h="Das Heft zum Heimspiel",
     fazit="Seit 2018 gestalte ich für die SpVgg Weiden das Spieltagsheft „Wasserwerk Echo“ – von Layout und Satz über aktuelle Statistiken bis zu den Hintergrundinfos zu jedem Gegner. So bündelt das Heft Infos und Emotionen zu einem informativen, optisch starken Auftritt für die Fans.",
     umfang=["Spieltagsheft „Wasserwerk Echo“", "Layout & Satz", "Statistiken & Gegner-Infos"],
@@ -196,6 +205,7 @@ P["spvgg-weiden"] = dict(
     blocks=[],
 )
 P["us-army"] = dict(
+    cta="Von der Beachflag bis zum Messestand – für deine Veranstaltung liefere ich eine komplette Ausstattung aus einer Hand. Sag mir, was du brauchst.",
     fazit_h="Ein Auftritt für jede Veranstaltung",
     fazit="Für die U.S. Army Garrison Bavaria in Hohenfels habe ich eine komplette Messe- und Eventausstattung umgesetzt – von Bauzaunbannern, Visitenkarten und Kugelschreibern bis zu Pavillons, Tischhussen und Beachflags. Damit tritt die Garnison bei internen wie externen Veranstaltungen einheitlich und professionell auf.",
     umfang=["Bauzaunbanner", "Visitenkarten", "Kugelschreiber", "Pavillons", "Tischhussen", "Beachflags"],
@@ -212,6 +222,7 @@ P["us-army"] = dict(
     blocks=[],
 )
 P["caraservice"] = dict(
+    cta="Vom Produktflyer bis zum Roll-Up – für deinen Messeauftritt entsteht ein Paket, das sofort präsent ist. Lass uns über deinen Messeauftritt sprechen.",
     fazit_h="Präsenz auf jeder Messe",
     fazit="Für die CaraService Holding entsteht ein komplettes Messe-Paket – von DIN-lang-Produktflyern über Gutscheine und Postkarten bis zu Roll-Ups und Square-Flags. Alles ist aufeinander abgestimmt, damit CaraService auf Messen und Events sofort präsent und wiedererkennbar ist.",
     umfang=["DIN-lang Produktflyer", "Gutscheine", "Postkarten", "Roll-Ups", "Square-Flags"],
@@ -228,6 +239,7 @@ P["caraservice"] = dict(
     blocks=[],
 )
 P["sei-sport"] = dict(
+    cta="Vom Branding bis zu Spieler:innen-Visuals – für deine Sportmarke entsteht ein Auftritt über alle Kanäle. Erzähl mir von deinem Vorhaben.",
     fazit_h="Ein Look über alle Kanäle",
     fazit="Für SEI SPORT entsteht ein durchgängiger Auftritt aus einer Hand – vom Branding über Spieler:innen-Visuals und Social-Media-Grafiken bis zu Postkarten, Weihnachtsgeschenken und den Materialien fürs jährliche Fußballcamp. So bleibt die Frauenfußball-Agentur über alle Kanäle wiedererkennbar, und der persönliche Draht zu Spielerinnen, Partnern und Vereinen wird sichtbar gestärkt.",
     umfang=["Branding", "Spieler:innen-Visuals", "Social-Media-Grafiken", "Weihnachtsgeschenke", "Postkarten", "Fußballcamp-Material"],
@@ -248,6 +260,7 @@ P["sei-sport"] = dict(
                name="Felix Seidel", role="SEI Sport", logo="images/kunden/designj_kunde_seisport.webp", photo="images/kunden/designj_kundenstimme_seisport.webp"),
 )
 P["djk-irchenrieth"] = dict(
+    cta="Von Social-Media-Vorlagen bis zum eigenen Maskottchen – für deinen Verein baue ich einen Auftritt, den du selbst weiterführst. Lass uns deinen Auftritt angehen.",
     fazit_h="Vorlagen, die der Verein selbst nutzt",
     fazit="Für die DJK Irchenrieth gestalte ich einheitliche Social-Media-Vorlagen für Infos, Spieltagsposts und Ergebnisse, dazu Flyer, Plakate und Banner, Logos sowie ein eigenes Maskottchen „Nachwuchsadler“. Mit diesen Vorlagen führt der Verein seinen Vereinsauftritt heute selbstständig weiter – klar, modern und wiedererkennbar.",
     umfang=["Social-Media-Vorlagen (Infos, Spieltagsposts, Ergebnisse)", "Flyer, Plakate, Banner", "Maskottchen „Nachwuchsadler“", "Logos & Vorlagen"],
@@ -266,6 +279,7 @@ P["djk-irchenrieth"] = dict(
                name="Silke Stader", role="DJK Irchenrieth", logo="images/kunden/designj_kunde_djkirchenrieth.webp", photo="images/kunden/designj_kundenstimme_djk_irchenrieth.webp"),
 )
 P["sparkasse-oberpfalz-nord"] = dict(
+    cta="Ob Jubiläumslogo, Roll-Up oder Präsentation – für deine Marke entsteht ein wertiger, eigenständiger Auftritt. Sag mir, was du brauchst.",
     fazit_h="Eine Marke fürs Jubiläum",
     fazit="Für die Sparkasse Oberpfalz Nord entstand ein Jubiläumslogo für 10 Jahre Private Banking, ergänzt um Roll-Ups und Präsentationsmedien. Das Ergebnis ist eine eigenständige, wertige Jubiläumsmarke, die sich nahtlos in die bestehende Corporate Identity einfügt.",
     umfang=["Jubiläumslogo (10 Jahre Private Banking)", "Roll-Ups", "Präsentationsmedien"],
@@ -284,6 +298,7 @@ P["sparkasse-oberpfalz-nord"] = dict(
                name="Sparkasse Oberpfalz Nord", role="Private Banking", logo="images/kunden/designj_kunde_sparkasse_oberpfalz_nord-1.webp"),
 )
 P["bike-station"] = dict(
+    cta="Von der Zeitungsbeilage bis zur Social-Media-Grafik – für deinen Handel gestalte ich einen modernen, verkaufsstarken Auftritt. Lass uns über dein Projekt sprechen.",
     fazit_h="Modern und verkaufsstark",
     fazit="Für die BIKE Station in Mitterteich entstehen eine vierseitige Zeitungsbeilage, Werbeanzeigen, Beschilderung und Social-Media-Grafiken. So präsentiert der Fahrrad- und E-Bike-Spezialist sein Sortiment und seine Aktionen modern und verkaufsstark – passend zum technischen Anspruch des Hauses.",
     umfang=["4-seitige Zeitungsbeilage", "Werbeanzeigen", "Beschilderung", "Social-Media-Grafiken"],
@@ -300,6 +315,7 @@ P["bike-station"] = dict(
     blocks=[],
 )
 P["zimmer-nr-zwei"] = dict(
+    cta="Von der Speisekarte bis zur Website – für deine Gastronomie entsteht ein kreativer Auftritt über alle Kanäle. Erzähl mir von deinem Vorhaben.",
     fazit_h="Vom Menü bis zur Website",
     fazit="Seit der Eröffnung 2018 begleite ich das Zimmer Nr Zwei in Weiden in wirklich allen Bereichen – von Website und Social-Media-Grafiken über Speise- und Getränkekarten bis zu Plakaten, Aufklebern, Visitenkarten und saisonalen Aktionsmaterialien. So zieht sich ein kreativer, wiedererkennbarer Auftritt durch alle Kanäle.",
     umfang=["Website", "Social-Media-Grafiken", "Speise- & Getränkekarten", "Plakate", "Aufkleber", "Visitenkarten", "Aktionsmaterialien"],
@@ -316,6 +332,7 @@ P["zimmer-nr-zwei"] = dict(
     blocks=[],
 )
 P["nele-und-hannes-ocik"] = dict(
+    cta="Von der Geschäftsausstattung bis zur Website – für deine Personenmarke entsteht ein hochwertiger, eigenständiger Auftritt. Lass uns deine Personenmarke angehen.",
     fazit_h="Zwei starke Personenmarken",
     fazit="Seit 2018 unterstütze ich Nele und Hannes Ocik beim Personal Branding – von Briefpapier und Visitenkarten bis zur Homepage-Gestaltung. So erhalten die Sportmoderatorin und der Olympiasieger je einen hochwertigen, eigenständigen Auftritt, der zu ihrer öffentlichen Rolle passt.",
     umfang=["Personal Branding", "Briefpapier", "Visitenkarten", "Homepage-Gestaltung"],
@@ -334,6 +351,7 @@ P["nele-und-hannes-ocik"] = dict(
                name="Nele Ocik", role="Sky Sportmoderatorin", logo="images/kunden/designj_kunde_neleocik.webp", photo="images/kunden/designj_kundenstimme_nele_ocik.webp"),
 )
 P["kurt-landauer-stiftung"] = dict(
+    cta="Vom Magazin bis zum Gedenkbuch – für deine Institution gebe ich Inhalten eine würdige, zeitgemäße Form. Sag mir, was du brauchst.",
     fazit_h="Erinnerung in würdiger Form",
     fazit="Für die Kurt Landauer Stiftung gestalte ich das Magazin „KURT!“, ein Gedenkbuch sowie Print- und Digital-Layouts und Social-Media-Grafiken. Print und Digital greifen dabei ineinander und geben der Erinnerungsarbeit der Stiftung eine würdige, zeitgemäße Form.",
     umfang=["Magazin „KURT!“", "Gedenkbuch", "Print- & Digital-Layouts", "Social-Media-Grafiken"],
@@ -350,6 +368,7 @@ P["kurt-landauer-stiftung"] = dict(
     blocks=[],
 )
 P["salzhaus-altenstadt"] = dict(
+    cta="Vom Logo bis zur Werbetechnik – für deine Praxis entsteht ein moderner, einladender Auftritt aus einer Hand. Lass uns über dein Projekt sprechen.",
     fazit_h="Modern und einladend",
     fazit="Seit 2016 begleite ich das Salzhaus Altenstadt in Branding, Corporate Design und Marketing – vom modernisierten Logo über das einheitliche Corporate Design bis zu Drucksachen und Werbetechnik. So wirkt die Physiotherapiepraxis heute rundum modern und einladend.",
     umfang=["Logo-Modernisierung", "Corporate Design", "Drucksachen", "Werbetechnik"],
@@ -366,6 +385,7 @@ P["salzhaus-altenstadt"] = dict(
     blocks=[],
 )
 P["ravenna-wernberg"] = dict(
+    cta="Von der Speisekarte bis zu den Team-Textilien – für deine Gastronomie entsteht ein rundes, wiedererkennbares Branding. Erzähl mir von deinem Vorhaben.",
     fazit_h="Ein rundes Gastro-Branding",
     fazit="Seit über 10 Jahren begleite ich das Ravenna Wernberg in allen grafischen Belangen – von Speisekarten über Flyer und Folder für den Lieferservice bis zu Visitenkarten, Bannerwerbung, Plakaten und Team-Textilien. Über alle Materialien hinweg entsteht ein rundes, wiedererkennbares Gastro-Branding.",
     umfang=["Speisekarten", "Flyer & Folder (Lieferservice)", "Visitenkarten", "Bannerwerbung", "Plakate", "Team-Textilien"],
@@ -386,6 +406,7 @@ P["ravenna-wernberg"] = dict(
 )
 
 P["voit"] = dict(
+    cta="Ob Fahrzeug, Drucksache oder Social-Media-Grafik – ich bringe deinen Gastro-Auftritt aus einer Hand auf die Straße. Lass uns über dein Projekt sprechen.",
     fazit_h="Vom Fahrzeug bis zum Post",
     fazit="Seit 2011 betreue ich den Partyservice & das Eventcatering VOIT umfassend – von Aufklebern, Fahrzeugbeklebungen und Drucksachen wie Flyern, Plakaten und Foldern über Social-Media-Grafiken bis zu Geschäftsausstattung und Präsentationen. Vom Fahrzeug bis zur Social-Media-Grafik tritt VOIT so über alle Kanäle konsistent und professionell auf.",
     umfang=["Aufkleber", "Fahrzeugbeklebung", "Flyer, Plakate, Folder", "Social-Media-Grafiken", "Geschäftsausstattung", "Präsentationen"],
@@ -402,6 +423,7 @@ P["voit"] = dict(
     blocks=[],
 )
 P["12ender"] = dict(
+    cta="Von der Beschilderung bis zur Drucksache – für deinen Imbiss entsteht ein appetitlicher Auftritt aus einer Hand. Sag mir, was du brauchst.",
     fazit_h="Ein Auftritt für beide Imbisse",
     fazit="Für die beiden „12Ender“-Imbisse übernehme ich das Branding, die Beschilderung innen und außen, Werbetechnik und Drucksachen. So erhalten beide Gastronomie-Betriebe einen einheitlichen, appetitlichen Auftritt, der die frische bayerische Küche vom Schild bis zur Speisekarte transportiert.",
     umfang=["Branding", "Beschilderung innen & außen", "Werbetechnik", "Drucksachen"],
@@ -544,7 +566,7 @@ TPL = r"""<!DOCTYPE html>
 <section class="container section">
   <div class="cta-band reveal">
     <h2>Sollen wir auch dein Projekt angehen?</h2>
-    <p class="lead">Vom ersten Entwurf bis zur fertigen Umsetzung – Design, Druck und Digital<br>aus einer Hand. Lass uns über dein Projekt sprechen.</p>
+    <p class="lead">@@CTA@@</p>
     <div class="cta-band__btns">
       <a href="/kontakt" class="btn btn--primary btn--lg">Projekt starten <span class="arrow">→</span></a>
       <a href="/projekte" class="btn btn--ghost btn--lg">Mehr Projekte ansehen</a>
@@ -686,6 +708,7 @@ def build(slug, d):
                f'      <div class="proj-quote__name">{q["name"]}</div>\n'
                f'      <div class="proj-quote__role">{q["role"]}</div>\n'
                f'    </div>\n  </figure>\n</section>\n')
+    cta = d.get("cta", "Vom ersten Entwurf bis zur fertigen Umsetzung – Design, Druck und Digital<br>aus einer Hand. Lass uns über dein Projekt sprechen.")
     umf = ""
     erg = ""
     faz = d.get("fazit")
@@ -717,6 +740,7 @@ def build(slug, d):
         .replace("@@TAGS@@", tags)
         .replace("@@MAINGALLERY@@", mg)
         .replace("@@BLOCKS@@", blk)
+        .replace("@@CTA@@", cta)
         .replace("@@UMFANG@@", umf)
         .replace("@@ERGEBNIS@@", erg)
         .replace("@@TESTIMONIAL@@", tst)
