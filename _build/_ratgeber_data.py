@@ -332,6 +332,7 @@ ARTICLES = [
         desc="Fahrzeugbeschriftung als Werbung: Warum dein Auto der günstigste Werbeträger ist, worauf es beim Motiv ankommt und was Teil- vs. Vollfolierung bringt.",
         teaser="Warum dein Auto der günstigste Werbeträger ist, den du hast.",
         eyebrow="Ratgeber · Print", service_href="/print-produktion", service_label="Print & Produktion",
+        hero_img="referenzen/designj_referenz_rupprecht_kappl_02",
         h1="Werbung an<br>deinem Fahrzeug,<br>die 24/7 mitfährt",
         lead="Dein Auto fährt eh jeden Tag durch die Gegend –<br>warum also nicht gleich für dich werben lassen?",
         blocks=[
