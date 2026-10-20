@@ -170,6 +170,7 @@ main.kampagne h1, main.kampagne h2 { hyphens: none; overflow-wrap: normal; text-
 .nav__logo img { height: 38px; width: auto; }
 
 .nav__menu { display: flex; align-items: center; gap: clamp(1rem, 2vw, 2.1rem); }
+.nav__menu a { white-space: nowrap; }
 .nav__menu a {
   font-size: .96rem; font-weight: 500; color: var(--fg-muted);
   position: relative; padding: .3em 0;
@@ -745,6 +746,9 @@ a.contact-loc:hover .contact-loc__addr { text-decoration: underline; }
   .footer__brand { grid-column: 1 / -1; }
 }
 
+/* 8 Menuepunkte: Nav frueher auf Hamburger (<=1080), damit NIE etwas umbricht.
+   Steht nach der Basis-Regel .nav__toggle, damit sie greift. */
+@media (max-width: 1080px) { .nav__menu, .nav__right .btn { display: none; } .nav__toggle { display: block; } }
 @media (max-width: 880px) {
   .nav__menu, .nav__right .btn { display: none; }
   .nav__toggle { display: block; }

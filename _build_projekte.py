@@ -524,9 +524,15 @@ TPL = r"""<!DOCTYPE html>
           <a href="/marketing-extern">Externes Marketing</a>
         </span>
       </span>
-      <a href="/projekte">Projekte</a>
-      <a href="/kunden">Kunden</a>
+      <span class="nav__item--drop">
+        <a href="/referenzen" class="nav__droptop">Referenzen <i class="nav__caret">▾</i></a>
+        <span class="nav__drop">
+          <a href="/projekte">Projekte</a>
+          <a href="/kunden">Kunden</a>
+        </span>
+      </span>
       <a href="/ueber-mich">Über mich</a>
+      <a href="/ratgeber">Ratgeber</a>
       <a href="/kontakt">Kontakt</a>
     </nav>
     <div class="nav__right">
@@ -551,9 +557,11 @@ TPL = r"""<!DOCTYPE html>
   <a href="/kanzlei" class="m-link m-link--sub">Recht &amp; Steuer</a>
   <a href="/praxis" class="m-link m-link--sub">Praxen &amp; Pflege</a>
   <a href="/marketing-extern" class="m-link m-link--sub">Externes Marketing</a>
-  <a href="/projekte" class="m-link">Projekte</a>
-  <a href="/kunden" class="m-link">Kunden</a>
+  <a href="/referenzen" class="m-link">Referenzen</a>
+  <a href="/projekte" class="m-link m-link--sub">Projekte</a>
+  <a href="/kunden" class="m-link m-link--sub">Kunden</a>
   <a href="/ueber-mich" class="m-link">Über mich</a>
+  <a href="/ratgeber" class="m-link">Ratgeber</a>
   <a href="/kontakt" class="m-link">Kontakt</a>
   <a href="/kontakt" class="btn btn--primary btn--block">Projekt starten</a>
 </div>
@@ -607,7 +615,7 @@ TPL = r"""<!DOCTYPE html>
       </div>
       <div class="footer__col">
         <h3>Navigation</h3>
-        <a href="/">Start</a><a href="/leistungen">Leistungen</a><a href="/loesungen">Lösungen</a><a href="/projekte">Projekte</a><a href="/kunden">Kunden</a><a href="/ueber-mich">Über mich</a><a href="/kontakt">Kontakt</a>
+        <a href="/">Start</a><a href="/leistungen">Leistungen</a><a href="/loesungen">Lösungen</a><a href="/referenzen">Referenzen</a><a href="/projekte">Projekte</a><a href="/kunden">Kunden</a><a href="/ueber-mich">Über mich</a><a href="/ratgeber">Ratgeber</a><a href="/kontakt">Kontakt</a>
       </div>
       <div class="footer__col">
         <h3>Social Media</h3>
