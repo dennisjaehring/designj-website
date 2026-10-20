@@ -915,6 +915,7 @@ main > section.hero { background: #000; }
 .seo-cluster a:hover { color: var(--fg); }
 
 /* ---------- Ratgeber ---------- */
+.rg-hero__img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
 .rg-meta { font-size: .9rem; color: var(--fg-dim); margin: .3rem 0 1.2rem; }
 .rg-meta a { color: var(--fg-muted); } .rg-meta a:hover { color: var(--fg); }
 .rg-prose { max-width: 760px; margin: 0 auto; }

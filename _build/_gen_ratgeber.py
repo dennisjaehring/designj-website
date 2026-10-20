@@ -52,7 +52,7 @@ def build_article_main(a):
       <p class="lead" style="max-width:none">{hb(a["lead"])}</p>
     </div>
     <div class="kmp-hero__media reveal" data-delay="120">
-      <img src="images/{hero_img(a)}.webp" alt="{a["service_label"]} – Beispiel von DESIGNJ" style="border-radius:var(--radius)">
+      <img class="rg-hero__img" src="images/{hero_img(a)}.webp" alt="{a["service_label"]} – Beispiel von DESIGNJ" style="border-radius:var(--radius)">
     </div>
   </div>
 </section>
