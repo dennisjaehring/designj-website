@@ -2,7 +2,7 @@
 # Einmal-Generator fuer 4 Service-Seiten (Logik wie webdesign.html / Skelett marketing-auslagern.html)
 import re, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SKEL = (ROOT / "marketing-auslagern.html").read_text(encoding="utf-8")
+SKEL = (ROOT / "_build" / "_skeleton.html").read_text(encoding="utf-8")
 CK = '<svg class="mk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>'
 R = "images/referenzen/designj_referenz_"
 

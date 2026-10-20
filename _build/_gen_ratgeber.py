@@ -3,7 +3,7 @@
 # Basis-Chrome (Head/Nav/Footer) aus marketing-auslagern.html geklont, <main> ersetzt.
 import re, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SKEL = (ROOT / "marketing-auslagern.html").read_text(encoding="utf-8")
+SKEL = (ROOT / "_build" / "_skeleton.html").read_text(encoding="utf-8")
 
 BRD = ' <br class="br--desktop">'            # desktop-only Umbruch mit Leerzeichen
 CK = ('<svg class="mk" viewBox="0 0 24 24" fill="none" stroke="currentColor" '

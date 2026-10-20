@@ -1,0 +1,14 @@
+# 301-Weiterleitungen: alte Branchen-URLs -> konsolidierte SEO-Seiten
+/sport              /sportmarketing              301
+/handwerk           /marketing-fuers-handwerk    301
+/immobilien         /immobilienmarketing         301
+/kanzlei            /kanzleimarketing            301
+/praxis             /praxismarketing             301
+/marketing-extern   /marketing-auslagern         301
+# auch die .html-Direktaufrufe absichern
+/sport.html             /sportmarketing              301
+/handwerk.html          /marketing-fuers-handwerk    301
+/immobilien.html        /immobilienmarketing         301
+/kanzlei.html           /kanzleimarketing            301
+/praxis.html            /praxismarketing             301
+/marketing-extern.html  /marketing-auslagern         301
