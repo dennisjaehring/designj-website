@@ -95,6 +95,18 @@ br.br--mobile  { display: none; }            /* Standard (Desktop): aus */
   br.br--desktop { display: none; }          /* nur mobil: aus */
 }
 
+/* Ausgewogene Zeilenlaengen: zusammengehoerende Textbloecke bekommen
+   moeglichst gleich lange Zeilen (keine einzelne kurze/lange Zeile).
+   Greift v.a. mobil, wo die Desktop-Umbrueche (.br--desktop) aus sind
+   und der Text frei umbricht; auf Desktop ein No-Op, wo harte Umbrueche
+   stehen. Standard fuer alle Leistungs-/Service-Seiten. */
+.lead        { text-wrap: balance; }   /* kurze Leads: gleichmaessig */
+.bio-block p { text-wrap: pretty;  }   /* laengere Absaetze: keine Schusterjungen */
+
+/* Headlines: nie mitten im Wort trennen, immer ausgewogen umbrechen
+   (greift v.a. mobil, wo die Desktop-Umbrueche .br--desktop aus sind) */
+main.kampagne h1, main.kampagne h2 { hyphens: none; overflow-wrap: normal; text-wrap: balance; }
+
 /* ============================================================
    BUTTONS
    ============================================================ */

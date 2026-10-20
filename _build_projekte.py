@@ -503,7 +503,16 @@ TPL = r"""<!DOCTYPE html>
     <a href="/" class="nav__logo" aria-label="DESIGNJ Startseite"><img src="designj_logo.svg" alt="DESIGNJ – Design Druck Digital" width="158" height="38"></a>
     <nav class="nav__menu" aria-label="Hauptnavigation">
       <a href="/">Start</a>
-      <a href="/leistungen">Leistungen</a>
+      <span class="nav__item--drop">
+        <a href="/leistungen" class="nav__droptop">Leistungen <i class="nav__caret">▾</i></a>
+        <span class="nav__drop">
+          <a href="/webdesign">Webdesign</a>
+          <a href="/branding">Branding</a>
+          <a href="/print-produktion">Print &amp; Produktion</a>
+          <a href="/social-media">Social Media</a>
+          <a href="/marketing-betreuung">Marketing &amp; Betreuung</a>
+        </span>
+      </span>
       <span class="nav__item--drop">
         <a href="/loesungen" class="nav__droptop">Lösungen <i class="nav__caret">▾</i></a>
         <span class="nav__drop">
@@ -530,6 +539,11 @@ TPL = r"""<!DOCTYPE html>
   <div class="nav__mobile-head"><img src="designj_icon.svg" alt="DESIGNJ Icon"><span>Design | Druck | Digital</span></div>
   <a href="/" class="m-link">Start</a>
   <a href="/leistungen" class="m-link">Leistungen</a>
+  <a href="/webdesign" class="m-link m-link--sub">Webdesign</a>
+  <a href="/branding" class="m-link m-link--sub">Branding</a>
+  <a href="/print-produktion" class="m-link m-link--sub">Print &amp; Produktion</a>
+  <a href="/social-media" class="m-link m-link--sub">Social Media</a>
+  <a href="/marketing-betreuung" class="m-link m-link--sub">Marketing &amp; Betreuung</a>
   <a href="/loesungen" class="m-link">Lösungen</a>
   <a href="/sport" class="m-link m-link--sub">Sport &amp; Vereine</a>
   <a href="/handwerk" class="m-link m-link--sub">Handwerk &amp; Bau</a>
@@ -593,7 +607,7 @@ TPL = r"""<!DOCTYPE html>
       </div>
       <div class="footer__col">
         <h3>Navigation</h3>
-        <a href="/">Start</a><a href="/leistungen">Leistungen</a><a href="/loesungen">Lösungen</a><a href="/projekte">Projekte</a><a href="/kunden">Kunden</a><a href="/ueber-mich">Über mich</a><a href="/kontakt">Kontakt</a>
+        <a href="/">Start</a><a href="/leistungen">Leistungen</a><a href="/webdesign">Webdesign</a><a href="/branding">Branding</a><a href="/print-produktion">Print &amp; Produktion</a><a href="/social-media">Social Media</a><a href="/marketing-betreuung">Marketing &amp; Betreuung</a><a href="/loesungen">Lösungen</a><a href="/projekte">Projekte</a><a href="/kunden">Kunden</a><a href="/ueber-mich">Über mich</a><a href="/kontakt">Kontakt</a>
       </div>
       <div class="footer__col">
         <h3>Social Media</h3>
