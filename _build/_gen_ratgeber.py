@@ -32,8 +32,29 @@ CAT_PILL = {"Social Media": "Social", "Sport & Vereine": "Sport", "Handwerk": "H
 def display_name(a):
     return (a.get("h1","").replace("<br>", " ").strip() or a["title"])
 
+# verwandte Beitraege: gleiche Kategorie zuerst, dann auffuellen (max 2)
+def related_articles(a, articles):
+    pub = [x for x in articles if x.get("published") and x["slug"] != a["slug"]]
+    same = [x for x in pub if x["cat"] == a["cat"]]
+    other = [x for x in pub if x["cat"] != a["cat"]]
+    return (same + other)[:2]
+
+def related_block(a, articles):
+    rel = related_articles(a, articles)
+    if not rel:
+        return ""
+    links = ' <span class="rg-dot">·</span> '.join(
+        f'<a href="/{r["slug"]}">{display_name(r)}</a>' for r in rel)
+    return f'''
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <p class="rg-note"><strong>Das könnte dich auch interessieren:</strong> {links}</p>
+  </div>
+</section>
+'''
+
 # ---------- Artikel-Main ----------
-def build_article_main(a):
+def build_article_main(a, articles):
     blocks = []
     for h2, paras in a["blocks"]:
         blocks.append(f'      <h2>{hb(h2)}</h2>')
@@ -70,7 +91,7 @@ def build_article_main(a):
     </article>
   </div>
 </section>
-
+{related_block(a, articles)}
 <section class="section">
   <div class="container">
     <div class="rg-cta reveal">
@@ -187,7 +208,7 @@ from _ratgeber_data import OVERVIEW, ARTICLES  # noqa
 for a in ARTICLES:
     if not a.get("published"):
         continue
-    write_page(a["slug"], a["title"], a["desc"], build_article_main(a), article_schema(a))
+    write_page(a["slug"], a["title"], a["desc"], build_article_main(a, ARTICLES), article_schema(a))
     print("gebaut:", a["slug"] + ".html")
 
 # Uebersicht
