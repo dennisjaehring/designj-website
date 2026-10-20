@@ -607,7 +607,7 @@ TPL = r"""<!DOCTYPE html>
       </div>
       <div class="footer__col">
         <h3>Navigation</h3>
-        <a href="/">Start</a><a href="/leistungen">Leistungen</a><a href="/webdesign">Webdesign</a><a href="/branding">Branding</a><a href="/print-produktion">Print &amp; Produktion</a><a href="/social-media">Social Media</a><a href="/marketing-betreuung">Marketing &amp; Betreuung</a><a href="/loesungen">Lösungen</a><a href="/projekte">Projekte</a><a href="/kunden">Kunden</a><a href="/ueber-mich">Über mich</a><a href="/kontakt">Kontakt</a>
+        <a href="/">Start</a><a href="/leistungen">Leistungen</a><a href="/loesungen">Lösungen</a><a href="/projekte">Projekte</a><a href="/kunden">Kunden</a><a href="/ueber-mich">Über mich</a><a href="/kontakt">Kontakt</a>
       </div>
       <div class="footer__col">
         <h3>Social Media</h3>
@@ -636,8 +636,14 @@ TPL = r"""<!DOCTYPE html>
 <!-- Unter-Footer: SEO-Themenseiten (interne Verlinkung) -->
 <nav class="seo-cluster" aria-label="Weitere Themen">
   <div class="container">
-    <span class="seo-cluster__label">Weitere Themen:</span>
-    <span class="seo-cluster__links"><a href="/webdesign">Webdesign</a> · <a href="/marketing-fuers-handwerk">Marketing fürs Handwerk</a> · <a href="/sportmarketing">Sportmarketing</a> · <a href="/marketing-auslagern">Marketing auslagern</a> · <a href="/immobilienmarketing">Marketing für Immobilien</a> · <a href="/kanzleimarketing">Marketing für Kanzleien</a> · <a href="/praxismarketing">Marketing für Praxen</a></span>
+    <div class="seo-cluster__row">
+      <span class="seo-cluster__label">Leistungen:</span>
+      <span class="seo-cluster__links"><a href="/webdesign">Webdesign</a> · <a href="/branding">Branding</a> · <a href="/print-produktion">Print &amp; Produktion</a> · <a href="/social-media">Social Media</a> · <a href="/marketing-betreuung">Marketing &amp; Betreuung</a></span>
+    </div>
+    <div class="seo-cluster__row">
+      <span class="seo-cluster__label">Weitere Themen:</span>
+      <span class="seo-cluster__links"><a href="/marketing-fuers-handwerk">Marketing fürs Handwerk</a> · <a href="/sportmarketing">Sportmarketing</a> · <a href="/marketing-auslagern">Marketing auslagern</a> · <a href="/immobilienmarketing">Marketing für Immobilien</a> · <a href="/kanzleimarketing">Marketing für Kanzleien</a> · <a href="/praxismarketing">Marketing für Praxen</a></span>
+    </div>
   </div>
 </nav>
 <script src="js/main.js"></script>

@@ -907,7 +907,8 @@ main > section.hero { background: #000; }
 
 /* Unter-Footer: dezenter SEO-Link-Cluster (verlinkt die SEO-Themenseiten) */
 .seo-cluster { border-top: 1px solid var(--line); padding: 1.3rem 0; font-size: .8rem; }
-.seo-cluster .container { display: flex; flex-wrap: wrap; gap: .35em .7em; align-items: baseline; }
+.seo-cluster .container { display: flex; flex-wrap: wrap; gap: .5em .7em; align-items: baseline; }
+.seo-cluster__row { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: .35em .7em; align-items: baseline; }
 .seo-cluster__label { text-transform: uppercase; letter-spacing: .1em; color: var(--fg-dim); }
 .seo-cluster__links { color: var(--fg-dim); }
 .seo-cluster a { color: var(--fg-muted); }
