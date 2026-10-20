@@ -59,17 +59,17 @@ ARTICLES = [
         lead="Eine Website entsteht nicht über Nacht –<br>aber der Weg dahin ist klar und planbar.<br>So läuft's von der Idee bis online.",
         blocks=[
             ("1. Gespräch & Ziel", [
-                "Zuerst klären wir, was die Seite leisten soll: Kunden gewinnen, informieren, Termine bringen? Und wen du erreichen willst. Daraus ergibt sich alles Weitere.",
+                "Zuerst finde ich mit dir heraus, was die Seite leisten soll: Kunden gewinnen, informieren, Termine bringen? Und wen du erreichen willst. Daraus ergibt sich alles Weitere.",
             ]),
             ("2. Struktur & Inhalte", [
-                "Wir legen fest, welche Seiten es gibt und was wo steht. Gute Struktur heißt: Besucher finden sofort, was sie suchen – und Google versteht die Seite auch.",
-                "Texte und Bilder sammeln wir gemeinsam; wo etwas fehlt, kümmere ich mich darum.",
+                "Ich lege mit dir fest, welche Seiten es gibt und was wo steht. Gute Struktur heißt: Besucher finden sofort, was sie suchen – und Google versteht die Seite auch.",
+                "Texte und Bilder trägst du zusammen; wo etwas fehlt, kümmere ich mich darum.",
             ]),
             ("3. Design & Umsetzung", [
                 "Jetzt bekommt die Seite ihr Gesicht – passend zu deiner Marke, auf dem Handy genauso wie am Rechner. Anschließend wird alles sauber und schnell umgesetzt.",
             ]),
             ("4. Launch & danach", [
-                "Vor dem Livegang prüfen wir alles: Technik, Mobildarstellung, Google-Grundlagen. Nach dem Start kann die Seite jederzeit wachsen – auf Wunsch pflege ich sie laufend.",
+                "Vor dem Livegang prüfe ich alles: Technik, Mobildarstellung, Google-Grundlagen. Nach dem Start kann die Seite jederzeit wachsen – auf Wunsch pflege ich sie laufend.",
             ]),
         ],
         key=[
@@ -145,7 +145,7 @@ ARTICLES = [
             "Keine Zeit? Dann übernehme ich komplett.",
         ],
         cta_h2="Unsicher, welcher Weg zu dir passt?",
-        cta_lead="Wir finden den Mix, der zu deiner Zeit und deinen Zielen passt.",
+        cta_lead="Ich finde mit dir den Mix, der zu deiner Zeit und deinen Zielen passt.",
         published=True,
     ),
     # ---------- Branche: Sport & Vereine ----------
@@ -289,7 +289,7 @@ ARTICLES = [
             "Ein Logo allein ist noch keine Marke.",
         ],
         cta_h2="Noch unsicher, was du brauchst?",
-        cta_lead="Wir schauen gemeinsam, was für dich Sinn macht – vom Logo bis zur ganzen Markenwelt.",
+        cta_lead="Ich schaue mit dir, was für dich Sinn macht – vom Logo bis zur ganzen Markenwelt.",
         published=True,
     ),
     # ---------- Social: einheitlicher Look ----------
@@ -332,11 +332,11 @@ ARTICLES = [
         desc="Fahrzeugbeschriftung als Werbung: Warum dein Auto der günstigste Werbeträger ist, worauf es beim Motiv ankommt und was Teil- vs. Vollfolierung bringt.",
         teaser="Warum dein Auto der günstigste Werbeträger ist, den du hast.",
         eyebrow="Ratgeber · Print", service_href="/print-produktion", service_label="Print & Produktion",
-        h1="Fahrzeugbeschriftung:<br>Werbung, die 24/7 mitfährt",
-        lead="Dein Fahrzeug fährt eh jeden Tag durch die Gegend –<br>warum also nicht gleich für dich werben lassen?",
+        h1="Werbung an<br>deinem Fahrzeug,<br>die 24/7 mitfährt",
+        lead="Dein Auto fährt eh jeden Tag durch die Gegend –<br>warum also nicht gleich für dich werben lassen?",
         blocks=[
             ("Der Werbeträger, den du schon hast", [
-                "Dein Transporter steht täglich bei Kunden, an der Baustelle und an der Ampel. Eine Beschriftung ist Werbung, die ohne laufende Kosten arbeitet: einmal gemacht, jahrelang sichtbar.",
+                "Dein Transporter steht täglich bei Kunden, an der Baustelle und an der Ampel. Eine Fahrzeugbeschriftung ist Werbung, die ohne laufende Kosten arbeitet: einmal gemacht, jahrelang sichtbar.",
             ]),
             ("Weniger ist lesbar – mehr nicht", [
                 "Bei Tempo 50 hat niemand Zeit, deine komplette Leistungsliste zu lesen. Drei Dinge reichen: Logo, was du machst, und wie man dich erreicht. Groß, klar und mit viel Kontrast – damit es in Sekunden hängen bleibt.",
@@ -412,7 +412,7 @@ ARTICLES = [
                 "Mehr Seiten füllen sich nicht von allein – lieber eine starke Seite als zehn halbleere. Fang lieber kompakt an und bau aus, wenn wirklich Inhalt dazukommt.",
             ]),
             ("Du musst dich nicht sofort festlegen", [
-                "Wir nehmen das, was jetzt passt. Der Schritt vom Onepager zur großen Website ist später problemlos möglich – deine Seite darf mitwachsen.",
+                "Ich nehme das, was jetzt passt. Der Schritt vom Onepager zur großen Website ist später problemlos möglich – deine Seite darf mitwachsen.",
             ]),
         ],
         key=[
@@ -422,7 +422,7 @@ ARTICLES = [
             "Vom Onepager zur großen Website jederzeit möglich.",
         ],
         cta_h2="Unsicher, was für dich passt?",
-        cta_lead="Wir finden den richtigen Umfang – und du kannst später jederzeit wachsen.",
+        cta_lead="Ich finde mit dir den richtigen Umfang – und du kannst später jederzeit wachsen.",
         published=True,
     ),
 ]

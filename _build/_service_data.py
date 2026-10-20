@@ -69,7 +69,7 @@ def shot_campaign(cap, client, posts, delay=0, zoom=False):
 def opts(lst):
     return "".join(f"<option>{o}</option>" for o in lst)
 
-NOTE = 'Noch unsicher, was du brauchst?<br>Wir finden im Gespräch den passenden Umfang – du bekommst ein <strong>individuelles Angebot</strong>.'
+NOTE = 'Noch unsicher, was du brauchst?<br>Im Gespräch finde ich mit dir den passenden Umfang – du bekommst ein <strong>individuelles Angebot</strong>.'
 
 PAGES = {}
 
@@ -98,9 +98,9 @@ PAGES["branding"] = dict(
     net_items=["Durchdachtes Konzept", "Varianten zur Auswahl", "Dateien für Print &amp; Web", "Einheitliche Vorlagen", "Persönliche Beratung", "Ein fester Ansprechpartner"],
     abl_h2="Von der Idee zur<br>fertigen Marke.", abl_lead="Klarer Ablauf, kein Fachchinesisch.<br>Du erzählst mir, wofür deine Marke steht – um den Rest kümmere ich mich.",
     steps=[
-        step("Gespräch &amp; Zielsetzung", "Wofür steht deine Marke, wen willst du erreichen? Wir klären Ziel, Werte und Stil – unverbindlich."),
+        step("Gespräch &amp; Zielsetzung", "Wofür steht deine Marke, wen willst du erreichen? Ich kläre mit dir Ziel, Werte und Stil – unverbindlich."),
         step("Konzept &amp; Entwürfe", "Ich entwickle mehrere Richtungen und zeige dir, wie deine Marke aussehen kann.", 100),
-        step("Feinschliff &amp; Umsetzung", "Wir verfeinern gemeinsam, bis es sitzt – bis zum fertigen Erscheinungsbild.", 200),
+        step("Feinschliff &amp; Umsetzung", "Ich verfeinere mit dir, bis es sitzt – bis zum fertigen Erscheinungsbild.", 200),
         step("Übergabe", "Du bekommst alle Dateien für Print &amp; Web, auf Wunsch mit Styleguide.", 300),
     ],
     ref_h2="Marken, die ich<br>gestaltet habe.", ref_lead="Eine Auswahl von Logos, Corporate Designs<br>und Markenauftritten aus der Region.",
@@ -205,7 +205,7 @@ PAGES["social-media"] = dict(
     net_items=["Einheitlicher Marken-Look", "Formate für alle Kanäle", "Leicht selbst nutzbar", "Profil- &amp; Headerbilder", "Auf Wunsch Newsletter-/Signatur-Vorlagen", "Ein fester Ansprechpartner"],
     abl_h2="Von der Idee zum<br>fertigen Feed.", abl_lead="Klarer Ablauf, kein Fachchinesisch.<br>Du sagst mir, wo du hin willst – ich gestalte den Look.",
     steps=[
-        step("Gespräch &amp; Zielsetzung", "Welche Kanäle, welche Themen, welcher Look? Wir klären, was zu dir passt – unverbindlich."),
+        step("Gespräch &amp; Zielsetzung", "Welche Kanäle, welche Themen, welcher Look? Ich kläre mit dir, was zu dir passt – unverbindlich."),
         step("Look &amp; Konzept", "Ich entwickle einen einheitlichen Stil für deinen Auftritt auf allen Kanälen.", 100),
         step("Umsetzung", "Ich gestalte Vorlagen und Content – fertig zum Posten oder zum Selbstbefüllen.", 200),
         step("Übergabe", "Du bekommst alles sauber aufbereitet – auf Wunsch kümmere ich mich laufend weiter.", 300),
