@@ -666,8 +666,9 @@ ARTICLES = [
         desc="Lokal gefunden werden: Wie du mit dem Google-Unternehmensprofil, Bewertungen und einheitlichen Daten in deiner Region ganz oben auftauchst.",
         teaser="Wie du in deiner Region ganz oben auftauchst.",
         eyebrow="Ratgeber · Marketing", service_href="/marketing-betreuung", service_label="Marketing & Betreuung",
+        hero_img="ratgeber_lokal",
         h1="Lokal gefunden werden",
-        lead="Wenn jemand in deiner Nähe sucht, willst du oben stehen.<br>Ein paar Grundlagen entscheiden, ob Google<br>dich deiner Region zuordnet.",
+        lead="Wenn jemand in deiner Nähe sucht,<br>willst du oben stehen.<br>Ein paar Grundlagen entscheiden,<br>ob Google dich deiner Region zuordnet.",
         blocks=[
             ("Das Google-Unternehmensprofil ist Pflicht", [
                 "Der kostenlose Eintrag (früher „Google My Business“) ist für lokale Suchen der größte Hebel – er füllt die Karte und den Kasten rechts in der Google-Suche.",
