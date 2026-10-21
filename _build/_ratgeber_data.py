@@ -565,7 +565,7 @@ ARTICLES = [
         desc="Mitarbeiter finden im Handwerk: Wie du mit Website, Social Media und Fahrzeug die richtigen Leute anziehst – ohne teure Stellenportale.",
         teaser="Wie dein eigener Auftritt die richtigen Leute anzieht.",
         eyebrow="Ratgeber · Handwerk", service_href="/marketing-fuers-handwerk", service_label="Marketing fürs Handwerk",
-        hero_img="handwerk_beispiel_01",
+        hero_img="handwerk_hero",
         h1="Mitarbeiter finden –<br>mit deinem eigenen Auftritt",
         lead="Gute Leute suchen sich ihren Arbeitgeber aus.<br>Wer sichtbar und sympathisch auftritt,<br>bekommt die besseren Bewerbungen.",
         blocks=[
@@ -599,6 +599,7 @@ ARTICLES = [
         desc="Großformat-Werbung erklärt: Banner, Rollup oder Plakat – welches Format wofür und worauf du bei Material und Gestaltung achten musst.",
         teaser="Welches Großformat sich wofür wirklich eignet.",
         eyebrow="Ratgeber · Print", service_href="/print-produktion", service_label="Print & Produktion",
+        hero_img="handwerk_beispiel_01",
         h1="Banner, Rollup oder Plakat –<br>wann was?",
         lead="Großformat wirkt – wenn Format und Botschaft<br>zum Ort passen. Ein kurzer Überblick,<br>was wofür gemacht ist.",
         blocks=[
