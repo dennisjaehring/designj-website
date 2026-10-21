@@ -426,4 +426,270 @@ ARTICLES = [
         cta_lead="Ich finde mit dir den richtigen Umfang – und du kannst später jederzeit wachsen.",
         published=True,
     ),
+    # ---------- Social Media ----------
+    dict(
+        slug="ratgeber-social-media-ideen", cat="Social Media", read="ca. 3 Min",
+        title="Social-Media-Ideen: was posten, wenn dir nichts einfällt? | DESIGNJ",
+        desc="Social-Media-Ideen für Unternehmen: einfache Content-Formate und ein Mini-Plan, damit dir nie wieder die Themen ausgehen – verständlich erklärt.",
+        teaser="Content-Formate und ein Mini-Plan gegen den leeren Kopf.",
+        eyebrow="Ratgeber · Social Media", service_href="/social-media", service_label="Social Media",
+        h1="Was posten, wenn dir<br>nichts einfällt?",
+        lead="Dir fehlt nicht die Zeit – dir fehlen die Ideen.<br>Mit ein paar festen Formaten postest du<br>regelmäßig, ohne jedes Mal neu zu grübeln.",
+        blocks=[
+            ("Denk in Formaten, nicht in Einzelposts", [
+                "Der häufigste Fehler: jedes Mal bei null anfangen. Leichter wird's mit wiederkehrenden Formaten – „Schubladen“, die du immer wieder neu füllst.",
+                "Ein paar, die bei fast jedem Betrieb funktionieren: Vorher/Nachher, „So entsteht …“, häufige Kundenfragen, ein Blick hinter die Kulissen, fertige Projekte.",
+            ]),
+            ("Zeig, was du sowieso machst", [
+                "Du musst nichts inszenieren. Das echte Tagesgeschäft ist der beste Content: die Baustelle, der frisch beklebte Transporter, das fertige Logo auf dem Schreibtisch.",
+                "Mach dir zur Gewohnheit, nebenbei ein, zwei Fotos zu knipsen – dann hast du Material, wenn du es brauchst.",
+            ]),
+            ("Ein Mini-Plan reicht", [
+                "Du brauchst keinen ausgefeilten Redaktionsplan. Leg dir 3–4 Formate fest und einen festen Tag pro Woche. Das schlägt „viel auf einmal und dann wochenlang nichts“.",
+                "Regelmäßig und ruhig ist besser als sporadisch und hektisch – für dich und für den Algorithmus.",
+            ]),
+        ],
+        key=[
+            "In Formaten denken statt in Einzelposts.",
+            "Das echte Tagesgeschäft ist dein bester Content.",
+            "3–4 Formate + fester Tag = genug.",
+            "Regelmäßig schlägt viel-auf-einmal.",
+        ],
+        cta_h2="Keine Lust, selbst zu grübeln?",
+        cta_lead="Ich entwickle dir Vorlagen und einen Plan, mit dem Posten leicht von der Hand geht.",
+        published=True,
+    ),
+    dict(
+        slug="ratgeber-reel-post-story", cat="Social Media", read="ca. 3 Min",
+        title="Reel, Post oder Story – was bringt was? | DESIGNJ Ratgeber",
+        desc="Reel, Post oder Story: Was die drei Formate können und wann du welches nimmst – einfach erklärt, damit sich dein Social-Media-Aufwand lohnt.",
+        teaser="Welches Format wofür – und wann sich was lohnt.",
+        eyebrow="Ratgeber · Social Media", service_href="/social-media", service_label="Social Media",
+        h1="Reel, Post oder Story –<br>was bringt was?",
+        lead="Drei Formate, drei Jobs. Wer sie auseinanderhält,<br>spart Aufwand und erreicht die richtigen Leute<br>zur richtigen Zeit.",
+        blocks=[
+            ("Reels: für neue Leute", [
+                "Kurze Videos werden am breitesten ausgespielt – auch an Menschen, die dir noch nicht folgen. Reels sind dein Werkzeug für Reichweite und neue Kontakte.",
+                "Es muss kein Hochglanz sein. Ein ehrlicher Clip vom Arbeiten funktioniert oft besser als perfekt Produziertes.",
+            ]),
+            ("Posts: fürs Schaufenster", [
+                "Der normale Feed-Post bleibt auf deinem Profil und baut dein „Schaufenster“ auf. Hierhin gehören deine besten Ergebnisse, Referenzen und Kernbotschaften.",
+                "Wer dich prüft, bevor er anfragt, schaut genau hierhin.",
+            ]),
+            ("Stories: für die Stammgäste", [
+                "Stories verschwinden nach 24 Stunden und erreichen vor allem, wer dir eh folgt. Perfekt für Alltag, Schnelles, Persönliches – und um in Erinnerung zu bleiben.",
+                "Merksatz: Reel für Reichweite, Post fürs Schaufenster, Story für die Bindung.",
+            ]),
+        ],
+        key=[
+            "Reel = Reichweite und neue Leute.",
+            "Post = dein dauerhaftes Schaufenster.",
+            "Story = Bindung zu bestehenden Followern.",
+            "Der Mix macht's – nicht nur ein Format.",
+        ],
+        cta_h2="Content, der zu dir passt?",
+        cta_lead="Ich gestalte dir Vorlagen für Reels, Posts und Stories in einem einheitlichen Look.",
+        published=True,
+    ),
+    # ---------- Sport & Vereine ----------
+    dict(
+        slug="ratgeber-trikot-banden-sponsoring", cat="Sport & Vereine", read="ca. 3 Min",
+        title="Trikot- & Bandenwerbung: Was bringt Sponsoring? | DESIGNJ",
+        desc="Trikot- und Bandenwerbung: Was Sponsoring deinem Unternehmen wirklich bringt, worauf es beim Logo ankommt und wie du mehr herausholst.",
+        teaser="Was Trikot & Bande dem Sponsor wirklich bringen.",
+        eyebrow="Ratgeber · Sport & Vereine", service_href="/sportmarketing", service_label="Sportmarketing",
+        hero_img="sport_beispiel_01",
+        h1="Trikot & Bande:<br>was bringt dir das als Sponsor?",
+        lead="Sponsoring ist mehr als ein Logo auf Stoff.<br>Richtig gemacht, bringt es Sichtbarkeit,<br>Sympathie und lokale Kundschaft.",
+        blocks=[
+            ("Sichtbarkeit, Woche für Woche", [
+                "Ein Logo auf Trikot oder Bande läuft jedes Spiel mit – vor Zuschauern, auf Fotos, in Vereins-Posts. Das ist dauerhafte lokale Präsenz mit wenig Streuverlust.",
+                "Wichtig: Dein Logo muss auch klein und aus der Distanz funktionieren. Verschnörkeltes verschwindet auf dem Trikot.",
+            ]),
+            ("Sympathie, die auf dich abfärbt", [
+                "Wer den Verein vor Ort unterstützt, gilt als bodenständig und verbunden. Diese Sympathie überträgt sich – gerade im Handwerk und bei lokalen Betrieben ein echter Pluspunkt.",
+                "Menschen kaufen lieber bei Firmen, die „auch was für die Gegend tun“.",
+            ]),
+            ("Mehr rausholen als nur das Logo", [
+                "Das Maximum holst du, wenn du das Sponsoring sichtbar machst: ein Post „Wir unterstützen …“, ein Foto mit der Mannschaft, eine Erwähnung auf deiner Seite.",
+                "So wird aus einem stillen Logo eine Geschichte, die Leute sehen und teilen.",
+            ]),
+        ],
+        key=[
+            "Dauerhafte lokale Sichtbarkeit, wenig Streuverlust.",
+            "Logo muss klein und aus Distanz funktionieren.",
+            "Die Sympathie des Vereins färbt auf dich ab.",
+            "Sichtbar machen (Posts/Fotos) holt das Maximum raus.",
+        ],
+        cta_h2="Sponsoring, das man sieht?",
+        cta_lead="Ich sorge dafür, dass dein Logo auf Trikot, Bande & Co. wirklich wirkt.",
+        published=True,
+    ),
+    dict(
+        slug="ratgeber-vereinsauftritt", cat="Sport & Vereine", read="ca. 3 Min",
+        title="Vereinsauftritt aus einem Guss: Logo, Trikot, Social | DESIGNJ",
+        desc="Vereinsauftritt aus einem Guss: Wie Logo, Trikot, Banden und Social Media zusammen ein starkes Vereinsbild ergeben – und mehr Sponsoren anziehen.",
+        teaser="Logo, Trikot, Banden & Social als ein starkes Bild.",
+        eyebrow="Ratgeber · Sport & Vereine", service_href="/sportmarketing", service_label="Sportmarketing",
+        hero_img="sport_beispiel_02",
+        h1="Vereinsauftritt,<br>der zusammenpasst",
+        lead="Ein Verein wirkt stark, wenn alles zusammenspielt –<br>vom Logo übers Trikot bis zum Instagram-Kanal.<br>Aus einem Guss statt zusammengewürfelt.",
+        blocks=[
+            ("Ein Logo als Anker", [
+                "Alles beginnt beim Vereinslogo. Es muss auf Trikot, Bande, Urkunde und Handy gleichermaßen funktionieren – also klar, einfarbig-tauglich und in jeder Größe lesbar.",
+                "Ein aufgeräumtes Logo macht alles danach leichter.",
+            ]),
+            ("Überall derselbe Look", [
+                "Trikot, Banden, Aushänge, Social-Grafiken, Urkunden – wenn alles dieselben Farben, Schriften und das gleiche Logo nutzt, wirkt der Verein professionell und wiedererkennbar.",
+                "Das ist kein Luxus: Ein einheitlicher Auftritt macht Vereine auch für Sponsoren attraktiver.",
+            ]),
+            ("Social hält den Verein lebendig", [
+                "Ein gepflegter Instagram- oder Facebook-Kanal mit einheitlichen Vorlagen (Spieltag, Ergebnis, Neuzugang) hält Mitglieder, Fans und Sponsoren bei der Stange.",
+                "Mit fertigen Vorlagen füllt das auch ein ehrenamtliches Team locker.",
+            ]),
+        ],
+        key=[
+            "Logo als Anker: klar, einfarbig-tauglich, skalierbar.",
+            "Überall gleiche Farben/Schriften = professionell.",
+            "Einheitlicher Auftritt zieht Sponsoren an.",
+            "Social mit Vorlagen hält den Verein lebendig.",
+        ],
+        cta_h2="Zeit für einen runden Vereinsauftritt?",
+        cta_lead="Ich bringe Logo, Trikot, Banden und Social in einen einheitlichen Look.",
+        published=True,
+    ),
+    # ---------- Handwerk ----------
+    dict(
+        slug="ratgeber-mitarbeiter-finden", cat="Handwerk", read="ca. 3 Min",
+        title="Mitarbeiter finden übers eigene Marketing | DESIGNJ Ratgeber",
+        desc="Mitarbeiter finden im Handwerk: Wie du mit Website, Social Media und Fahrzeug die richtigen Leute anziehst – ohne teure Stellenportale.",
+        teaser="Wie dein eigener Auftritt die richtigen Leute anzieht.",
+        eyebrow="Ratgeber · Handwerk", service_href="/marketing-fuers-handwerk", service_label="Marketing fürs Handwerk",
+        hero_img="handwerk_beispiel_01",
+        h1="Mitarbeiter finden –<br>mit deinem eigenen Auftritt",
+        lead="Gute Leute suchen sich ihren Arbeitgeber aus.<br>Wer sichtbar und sympathisch auftritt,<br>bekommt die besseren Bewerbungen.",
+        blocks=[
+            ("Deine Website ist das erste Bewerbungsgespräch", [
+                "Wer bei dir anfangen will, schaut dich vorher an – Website und Social. Finden sie dort echte Bilder, ein eingespieltes Team und klare Infos, bewerben sie sich eher.",
+                "Eine kurze „Jobs/Team“-Seite mit ehrlichen Fotos wirkt oft mehr als die zehnte Stellenanzeige.",
+            ]),
+            ("Zeig das Team, nicht nur die Maschinen", [
+                "Menschen bewerben sich bei Menschen. Gesichter, Alltag, Zusammenhalt – das zieht mehr als Hochglanz-Technik. Zeig, wie es bei euch wirklich zugeht.",
+                "Ein zufriedenes Team im Bild ist das beste Recruiting-Argument.",
+            ]),
+            ("Sichtbar sein, bevor du suchst", [
+                "Wer dich schon kennt – vom beklebten Transporter, von Social, vom Schild an der Baustelle – bewirbt sich leichter. Recruiting fängt lange vor der Stellenanzeige an.",
+                "Ein starker, sichtbarer Auftritt arbeitet im Hintergrund für dich, auch bei der Personalsuche.",
+            ]),
+        ],
+        key=[
+            "Website/Social = das erste Bewerbungsgespräch.",
+            "Team zeigen schlägt Maschinen zeigen.",
+            "Sichtbarkeit (Fahrzeug, Schild, Social) bringt Bewerbungen.",
+            "Recruiting beginnt vor der Stellenanzeige.",
+        ],
+        cta_h2="Die richtigen Leute anziehen?",
+        cta_lead="Ich mach deinen Betrieb so sichtbar, dass gute Bewerbungen von selbst kommen.",
+        published=True,
+    ),
+    # ---------- Print ----------
+    dict(
+        slug="ratgeber-grossformat", cat="Print", read="ca. 3 Min",
+        title="Banner, Rollup oder Plakat – wann was? | DESIGNJ Ratgeber",
+        desc="Großformat-Werbung erklärt: Banner, Rollup oder Plakat – welches Format wofür und worauf du bei Material und Gestaltung achten musst.",
+        teaser="Welches Großformat sich wofür wirklich eignet.",
+        eyebrow="Ratgeber · Print", service_href="/print-produktion", service_label="Print & Produktion",
+        h1="Banner, Rollup oder Plakat –<br>wann was?",
+        lead="Großformat wirkt – wenn Format und Botschaft<br>zum Ort passen. Ein kurzer Überblick,<br>was wofür gemacht ist.",
+        blocks=[
+            ("Banner: für draußen & dauerhaft", [
+                "Das Banner (meist PVC-Plane mit Ösen) ist der Allrounder für außen: Bauzaun, Fassade, Sportplatz-Bande. Robust, wetterfest und auf großer Fläche günstig.",
+                "Faustregel: je größer die Distanz zum Betrachter, desto größer Logo und Schrift – und desto weniger Text.",
+            ]),
+            ("Rollup: für drinnen & mobil", [
+                "Das Rollup steht in Sekunden: Messe, Empfang, Veranstaltung, Ladenlokal. Du ziehst es aus der Kassette, fertig. Ideal, wenn du flexibel bleiben willst.",
+                "Das Wichtigste gehört ins obere Drittel – unten verdecken es oft Köpfe und Tische.",
+            ]),
+            ("Plakat: für den Blick im Vorbeigehen", [
+                "Plakate (A1, A0 …) leben von einer einzigen klaren Botschaft. Wer im Vorbeigehen nur zwei Sekunden hat, braucht eine Aussage, nicht fünf.",
+                "Ein Gedanke, ein großes Bild, ein klarer Aufruf – der Rest lenkt nur ab.",
+            ]),
+        ],
+        key=[
+            "Banner = außen, robust, große Fläche.",
+            "Rollup = drinnen, mobil, schnell aufgebaut.",
+            "Plakat = eine klare Botschaft fürs Vorbeigehen.",
+            "Je weiter weg der Betrachter, desto weniger Text.",
+        ],
+        cta_h2="Großformat, das sitzt?",
+        cta_lead="Ich gestalte und produziere Banner, Rollups und Plakate, die aus der Distanz wirken.",
+        published=True,
+    ),
+    dict(
+        slug="ratgeber-visitenkarte", cat="Print", read="ca. 3 Min",
+        title="Die Visitenkarte, die hängenbleibt | DESIGNJ Ratgeber",
+        desc="Visitenkarte gestalten lassen: Was eine Karte wirklich gut macht – Material, Veredelung und die Infos, die draufgehören (und die nicht).",
+        teaser="Was eine Visitenkarte wirklich gut macht.",
+        eyebrow="Ratgeber · Print", service_href="/print-produktion", service_label="Print & Produktion",
+        hero_img="kontakt_setup",
+        h1="Die Visitenkarte,<br>die hängenbleibt",
+        lead="Die Visitenkarte ist oft dein erster Eindruck<br>zum Anfassen. Ein bisschen Sorgfalt macht<br>aus Papier einen bleibenden Eindruck.",
+        blocks=[
+            ("Weniger drauf ist mehr", [
+                "Name, was du machst, ein Weg dich zu erreichen, das Logo – mehr braucht's meist nicht. Eine überfüllte Karte wirkt hektisch und wird eher weggelegt.",
+                "Lieber eine klare Info gut lesbar als acht kleine, die niemand entziffert.",
+            ]),
+            ("Das Material fühlt man", [
+                "Eine Karte wird angefasst – und gutes Papier spürt man sofort. Etwas dickerer Karton oder eine dezente Veredelung (matt, Prägung, Spotlack) hebt dich vom 08/15-Stapel ab.",
+                "Dieser kurze Moment „oh, die ist ja wertig“ bleibt hängen.",
+            ]),
+            ("Teil deines großen Ganzen", [
+                "Die Visitenkarte steht nie allein: Farben, Schrift und Logo sollten zu Website, Fahrzeug und Schild passen. So wirkt alles wie aus einer Hand.",
+                "Eine Karte, die zum Rest passt, verstärkt deine Marke bei jedem Handschlag.",
+            ]),
+        ],
+        key=[
+            "Nur das Nötige drauf – klar lesbar.",
+            "Gutes Papier/Veredelung fühlt man sofort.",
+            "Muss zu Website, Fahrzeug & Logo passen.",
+            "Erster Eindruck zum Anfassen – nutz ihn.",
+        ],
+        cta_h2="Eine Karte, die man behält?",
+        cta_lead="Ich gestalte und drucke dir Visitenkarten, die zu deiner Marke passen und wertig wirken.",
+        published=True,
+    ),
+    # ---------- Marketing / Lokal ----------
+    dict(
+        slug="ratgeber-lokal-gefunden-werden", cat="Marketing", read="ca. 4 Min",
+        title="Lokal gefunden werden: dein Google-Unternehmensprofil | DESIGNJ",
+        desc="Lokal gefunden werden: Wie du mit dem Google-Unternehmensprofil, Bewertungen und einheitlichen Daten in deiner Region ganz oben auftauchst.",
+        teaser="Wie du in deiner Region ganz oben auftauchst.",
+        eyebrow="Ratgeber · Marketing", service_href="/marketing-betreuung", service_label="Marketing & Betreuung",
+        hero_img="kontakt_karte",
+        h1="Lokal gefunden werden",
+        lead="Wenn jemand in deiner Nähe sucht, willst du oben stehen.<br>Ein paar Grundlagen entscheiden, ob Google<br>dich deiner Region zuordnet.",
+        blocks=[
+            ("Das Google-Unternehmensprofil ist Pflicht", [
+                "Der kostenlose Eintrag (früher „Google My Business“) ist für lokale Suchen der größte Hebel – er füllt die Karte und den Kasten rechts in der Google-Suche.",
+                "Vollständig ausgefüllt, mit Kategorie, Öffnungszeiten, Leistungen und echten Fotos, schlägt er in der lokalen Suche fast jede Website.",
+            ]),
+            ("Überall dieselben Daten", [
+                "Name, Adresse und Telefon müssen überall gleich geschrieben sein – auf deiner Website, im Google-Profil, in Branchenbüchern. Google wertet diese Übereinstimmung als Vertrauen.",
+                "Schon unterschiedliche Schreibweisen der Telefonnummer können das Signal verwässern.",
+            ]),
+            ("Bewertungen sind lokale Währung", [
+                "Echte Bewertungen gehören zu den stärksten Faktoren dafür, wer lokal oben steht – und sie schaffen Vertrauen bei neuen Kunden. Frag zufriedene Kunden aktiv (aber kauf dir nie welche).",
+                "Schon ein, zwei neue Bewertungen pro Monat bringen dich über die Zeit spürbar nach vorn.",
+            ]),
+        ],
+        key=[
+            "Google-Unternehmensprofil vollständig ausfüllen.",
+            "Name/Adresse/Telefon überall identisch schreiben.",
+            "Echte Bewertungen aktiv einsammeln.",
+            "Lokal oben = Profil + saubere Daten + Reviews.",
+        ],
+        cta_h2="In deiner Region nach vorn?",
+        cta_lead="Ich bringe deinen lokalen Auftritt auf Vordermann – von der Website bis zum Google-Profil.",
+        published=True,
+    ),
 ]
