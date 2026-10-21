@@ -661,7 +661,7 @@ ARTICLES = [
     ),
     # ---------- Marketing / Lokal ----------
     dict(
-        slug="ratgeber-lokal-gefunden-werden", cat="Marketing", read="ca. 4 Min",
+        slug="ratgeber-lokal-gefunden-werden", cat="Marketing", read="ca. 5 Min",
         title="Lokal gefunden werden: dein Google-Unternehmensprofil | DESIGNJ",
         desc="Lokal gefunden werden: Wie du mit dem Google-Unternehmensprofil, Bewertungen und einheitlichen Daten in deiner Region ganz oben auftauchst.",
         teaser="Wie du in deiner Region ganz oben auftauchst.",
@@ -670,24 +670,47 @@ ARTICLES = [
         h1="Lokal gefunden werden",
         lead="Wenn jemand in deiner Nähe sucht,<br>willst du oben stehen.<br>Ein paar Grundlagen entscheiden,<br>ob Google dich deiner Region zuordnet.",
         blocks=[
-            ("Das Google-Unternehmensprofil ist Pflicht", [
-                "Der kostenlose Eintrag (früher „Google My Business“) ist für lokale Suchen der größte Hebel – er füllt die Karte und den Kasten rechts in der Google-Suche.",
+            ("Das Google-Unternehmensprofil ist fast Pflicht", [
+                "Der <a href=\"https://www.google.com/business/\" target=\"_blank\" rel=\"noopener\">kostenlose Eintrag</a> (früher „Google My Business“) ist für lokale Suchen der größte Hebel – er füllt die Karte und den Kasten rechts in der Google-Suche.",
                 "Vollständig ausgefüllt, mit Kategorie, Öffnungszeiten, Leistungen und echten Fotos, schlägt er in der lokalen Suche fast jede Website.",
             ]),
-            ("Überall dieselben Daten", [
-                "Name, Adresse und Telefon müssen überall gleich geschrieben sein – auf deiner Website, im Google-Profil, in Branchenbüchern. Google wertet diese Übereinstimmung als Vertrauen.",
-                "Schon unterschiedliche Schreibweisen der Telefonnummer können das Signal verwässern.",
+            ("Die richtige Kategorie entscheidet", [
+                "Die wichtigste Stellschraube ist deine Hauptkategorie – sie sagt Google, wofür du überhaupt infrage kommst. „Werbeagentur“ bringt dich bei anderen Suchen nach vorn als „Grafikdesigner“. Wähl die, die dein Kerngeschäft am besten trifft.",
+                "Dazu passende Nebenkategorien und deine einzelnen Leistungen eintragen – so tauchst du bei mehr passenden Suchen auf, ohne zu verwässern.",
+            ]),
+            ("Überall dieselben Daten (NAP)", [
+                "Name, Adresse und Telefon (im Marketing „NAP“ genannt) müssen überall zeichengenau gleich sein – Website, Google-Profil, Branchenbücher. Google wertet diese Übereinstimmung als Vertrauensbeweis.",
+                "Schon unterschiedliche Schreibweisen der Telefonnummer oder „Str.“ statt „Straße“ können das Signal verwässern. Einmal sauber festlegen, überall gleich verwenden.",
             ]),
             ("Bewertungen sind lokale Währung", [
                 "Echte Bewertungen gehören zu den stärksten Faktoren dafür, wer lokal oben steht – und sie schaffen Vertrauen bei neuen Kunden. Frag zufriedene Kunden aktiv (aber kauf dir nie welche).",
                 "Schon ein, zwei neue Bewertungen pro Monat bringen dich über die Zeit spürbar nach vorn.",
             ]),
+            ("Halt das Profil lebendig", [
+                "Ein gepflegtes Profil rankt besser als eine Karteileiche. Lad regelmäßig echte Fotos hoch, schreib ab und zu einen kurzen Google-Beitrag (Angebot, Projekt, Neuigkeit) und beantworte Fragen, die dort auftauchen.",
+                "Diese Aktivität signalisiert Google: Hier ist ein lebendiges Unternehmen – und genau das will die lokale Suche nach vorn stellen.",
+            ]),
+            ("Nicht nur Google: Bing, Apple & Verzeichnisse", [
+                "Google ist der größte Hebel, aber nicht der einzige. Ein Eintrag bei Bing Places (ChatGPT & Copilot ziehen aus Bing) und bei Apple („Karten“/Siri) bringt dich auch dort auf die Landkarte.",
+                "Dazu ein paar seriöse Branchenverzeichnisse – überall mit denselben Daten. Je mehr verlässliche Quellen dasselbe über dich sagen, desto sicherer ordnet dich auch die KI-Suche richtig ein.",
+            ]),
         ],
         key=[
-            "Google-Unternehmensprofil vollständig ausfüllen.",
-            "Name/Adresse/Telefon überall identisch schreiben.",
-            "Echte Bewertungen aktiv einsammeln.",
-            "Lokal oben = Profil + saubere Daten + Reviews.",
+            "Hauptkategorie sorgfältig wählen – sie entscheidet, wofür du erscheinst.",
+            "Google-Unternehmensprofil vollständig ausfüllen und pflegen.",
+            "Name/Adresse/Telefon (NAP) überall zeichengleich.",
+            "Echte Bewertungen aktiv einsammeln (nie kaufen).",
+            "Auch Bing, Apple & Verzeichnisse mitnehmen – für Google UND KI-Suche.",
+        ],
+        faq=[
+            ("Kostet ein Google-Unternehmensprofil etwas?",
+             "Das Google-Unternehmensprofil ist komplett kostenlos – du brauchst nur ein Google-Konto und etwas Zeit fürs Einrichten. Wer keine Zeit hat, gibt es ab; ich richte es ein und pflege es."),
+            ("Wie lange dauert es, bis ich lokal oben stehe?",
+             "Lokale Sichtbarkeit baut sich über Wochen auf: Profil vollständig ausfüllen, Daten überall gleich halten und Schritt für Schritt Bewertungen sammeln. Es ist kein Schalter, sondern ein stetiger Prozess – der sich aber lohnt."),
+            ("Brauche ich dafür eine eigene Website?",
+             "Für die lokale Suche bringt dich schon ein gepflegtes Google-Unternehmensprofil weit – eine Website ist kein Muss. Sie verstärkt dein lokales Ranking aber deutlich, wenn Website und Profil dieselben Daten und denselben Auftritt zeigen."),
+            ("Darf ich Kunden um Bewertungen bitten?",
+             "Zufriedene Kunden aktiv um eine Google-Bewertung zu bitten ist erlaubt und sinnvoll. Nicht erlaubt ist, Bewertungen zu kaufen oder mit Rabatten zu belohnen – das verstößt gegen die Google-Richtlinien."),
         ],
         cta_h2="In deiner Region nach vorn?",
         cta_lead="Ich bringe deinen lokalen Auftritt auf Vordermann – von der Website bis zum Google-Profil.",

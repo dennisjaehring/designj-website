@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Generator fuer den Ratgeber: /ratgeber (Uebersicht) + /ratgeber-<slug> (Artikel).
 # Basis-Chrome (Head/Nav/Footer) aus marketing-auslagern.html geklont, <main> ersetzt.
-import re, pathlib
+import re, json, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SKEL = (ROOT / "_build" / "_skeleton.html").read_text(encoding="utf-8")
 
@@ -48,7 +48,34 @@ def related_block(a, articles):
     return f'''
 <section class="section" style="padding-top:0">
   <div class="container">
-    <p class="rg-note"><strong>Das könnte dich auch interessieren:</strong> {links}</p>
+    <p class="rg-note" style="max-width:760px;margin-left:auto;margin-right:auto"><strong>Das könnte dich auch interessieren:</strong> {links}</p>
+  </div>
+</section>
+'''
+
+# optionaler FAQ-Block (nur bei ausfuehrlichen Artikeln) – identische Optik wie auf
+# den Leistungsseiten: natives <details>-Toggle (+/-), .faq-CSS ist bereits inline.
+def faq_block(a):
+    faqs = a.get("faq")
+    if not faqs:
+        return ""
+    def esc(t): return hb(t.replace("&", "&amp;"))
+    items = "\n".join(
+        '      <details class="faq__item">\n'
+        f'        <summary>{esc(q)}</summary>\n'
+        f'        <p>{esc(ans)}</p>\n'
+        '      </details>'
+        for q, ans in faqs)
+    return f'''
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Häufige Fragen</span>
+      <h2>Kurz &amp; ehrlich beantwortet.</h2>
+    </div>
+    <div class="faq reveal">
+{items}
+    </div>
   </div>
 </section>
 '''
@@ -91,7 +118,7 @@ def build_article_main(a, articles):
     </article>
   </div>
 </section>
-{related_block(a, articles)}
+{faq_block(a)}{related_block(a, articles)}
 <section class="section">
   <div class="container">
     <div class="rg-cta reveal">
@@ -189,17 +216,29 @@ def write_page(slug, title, desc, main_html, schema_json):
     (ROOT / f"{slug}.html").write_text(s, encoding="utf-8")
 
 def article_schema(a):
-    name = display_name(a).replace('"', "'")
-    desc = a["desc"].replace('"', "'")
-    return ('{\n'
-            '    "@context": "https://schema.org",\n'
-            '    "@type": "BlogPosting",\n'
-            f'    "headline": "{name}",\n'
-            f'    "description": "{desc}",\n'
-            '    "author": {"@type": "Person", "name": "Dennis Jähring"},\n'
-            '    "publisher": {"@type": "Organization", "name": "DESIGNJ", "logo": {"@type": "ImageObject", "url": "https://www.designj.de/designj_logo.svg"}},\n'
-            f'    "mainEntityOfPage": "https://www.designj.de/{a["slug"]}"\n'
-            '  }')
+    blog = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": display_name(a),
+        "description": a["desc"],
+        "author": {"@type": "Person", "name": "Dennis Jähring"},
+        "publisher": {"@type": "Organization", "name": "DESIGNJ",
+                      "logo": {"@type": "ImageObject", "url": "https://www.designj.de/designj_logo.svg"}},
+        "mainEntityOfPage": f"https://www.designj.de/{a['slug']}",
+    }
+    if not a.get("faq"):
+        return json.dumps(blog, ensure_ascii=False, indent=2)
+    # Ausfuehrliche Artikel: FAQPage ergaenzen -> JSON-LD-Array
+    faqpage = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": q,
+             "acceptedAnswer": {"@type": "Answer", "text": ans}}
+            for q, ans in a["faq"]
+        ],
+    }
+    return json.dumps([blog, faqpage], ensure_ascii=False, indent=2)
 
 # ---------------- DATEN ----------------
 from _ratgeber_data import OVERVIEW, ARTICLES  # noqa
