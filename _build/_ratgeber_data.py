@@ -15,11 +15,12 @@ OVERVIEW = dict(
 ARTICLES = [
     # ---------- Branding ----------
     dict(
-        slug="ratgeber-gutes-logo", cat="Branding", read="ca. 3 Min",
+        slug="ratgeber-gutes-logo", cat="Branding", read="ca. 4 Min",
         title="Was macht ein gutes Logo aus? | DESIGNJ Ratgeber",
         desc="Was ein gutes Logo ausmacht: 4 Merkmale, an denen du ein starkes, zeitloses Logo erkennst – verständlich erklärt, ohne Fachchinesisch.",
         teaser="4 Merkmale, an denen du ein starkes Logo erkennst.",
         eyebrow="Ratgeber · Branding", service_href="/branding", service_label="Branding",
+        hero_img="ratgeber_logo",
         h1="Was macht ein<br>gutes Logo aus?",
         lead="Ein gutes Logo muss nicht aufwändig sein –<br>es muss funktionieren: erkennbar, überall<br>einsetzbar und in ein paar Jahren noch gut.",
         blocks=[
@@ -37,12 +38,31 @@ ARTICLES = [
             ("Es passt zu dir", [
                 "Ein Logo aus der Vorlage sieht aus wie tausend andere. Gut ist es, wenn es zu deiner Branche und deinen Werten passt – und dich von anderen unterscheidet.",
             ]),
+            ("Logo ist noch keine Marke", [
+                "Das Logo ist der Anfang, nicht das Ganze. Erst mit festen Farben, Schriften und ein paar Regeln (einem Styleguide) wird daraus eine Marke, die überall gleich wirkt.",
+                "Das Logo allein macht dich noch nicht wiedererkennbar – das Zusammenspiel von allem tut es.",
+            ]),
+            ("Woran du ein schwaches Logo erkennst", [
+                "Warnzeichen sind: zu viele Details, Effekte oder Farbverläufe, schlechte Lesbarkeit in klein, Abhängigkeit von einem bunten Hintergrund – oder dass es verwechselbar mit anderen ist.",
+                "Ein guter Gegentest: Funktioniert dein Logo auch in Graustufen und in Briefmarkengröße? Wenn ja, bist du auf der sicheren Seite.",
+            ]),
         ],
         key=[
             "Einfach und auf einen Blick erkennbar.",
             "Funktioniert einfarbig und in jeder Größe.",
             "Zeitlos statt trendy – hält viele Jahre.",
             "Passt zu dir, nicht aus der Vorlage.",
+            "Logo + Farben + Schrift = erst dann eine Marke.",
+        ],
+        faq=[
+            ("Was kostet ein Logo?",
+             "Die Kosten für ein Logo hängen vom Umfang ab – vom einzelnen Logo bis zum kompletten Branding. Erzähl mir dein Vorhaben, du bekommst ein individuelles Angebot."),
+            ("Wie viele Entwürfe bekomme ich?",
+             "Du bekommst mehrere durchdachte Richtungen zur Auswahl – danach verfeinere ich den Favoriten mit dir, bis er sitzt."),
+            ("In welchen Dateien bekomme ich mein Logo?",
+             "Dein Logo bekommst du in allen gängigen Formaten für Druck und Web – inklusive einfarbiger Varianten und der Dateien, die Druckereien brauchen. Auf Wunsch mit kurzem Styleguide."),
+            ("Kann ich mein bestehendes Logo auffrischen lassen?",
+             "Ein bestehendes Logo lässt sich beim Rebranding behutsam modernisieren: Ich baue auf dem Bestehenden auf und bringe es auf ein aktuelles, einheitliches Niveau – ohne dass dich deine Kunden plötzlich nicht mehr erkennen."),
         ],
         cta_h2="Zeit für ein Logo, das bleibt?",
         cta_lead="Ich entwickle dir eine Marke, die erkennbar ist und zu dir passt.",
@@ -50,7 +70,7 @@ ARTICLES = [
     ),
     # ---------- Webdesign ----------
     dict(
-        slug="ratgeber-website-ablauf", cat="Webdesign", read="ca. 3 Min",
+        slug="ratgeber-website-ablauf", cat="Webdesign", read="ca. 4 Min",
         title="Website erstellen lassen: der Ablauf in 5 Schritten | DESIGNJ",
         desc="Website erstellen lassen: So läuft der Ablauf von der Idee bis online – in 5 verständlichen Schritten erklärt.",
         teaser="Von der Idee bis online – was wann passiert.",
@@ -59,24 +79,42 @@ ARTICLES = [
         lead="Eine Website entsteht nicht über Nacht –<br>aber der Weg dahin ist klar und planbar.<br>So läuft's von der Idee bis online.",
         blocks=[
             ("1. Gespräch & Ziel", [
-                "Zuerst finde ich mit dir heraus, was die Seite leisten soll: Kunden gewinnen, informieren, Termine bringen? Und wen du erreichen willst. Daraus ergibt sich alles Weitere.",
+                "Zuerst finde ich mit dir heraus, was die Seite leisten soll: Kunden gewinnen, informieren, Termine bringen? Und wen du erreichen willst. Daraus ergibt sich alles Weitere – Umfang, Aufbau und Ton.",
+                "Je klarer das Ziel, desto zielgerichteter wird die Seite. Dieser erste Schritt spart dir später am meisten Zeit.",
             ]),
             ("2. Struktur & Inhalte", [
                 "Ich lege mit dir fest, welche Seiten es gibt und was wo steht. Gute Struktur heißt: Besucher finden sofort, was sie suchen – und Google versteht die Seite auch.",
-                "Texte und Bilder trägst du zusammen; wo etwas fehlt, kümmere ich mich darum.",
+                "Texte und Bilder trägst du zusammen; wo etwas fehlt, kümmere ich mich darum – von der Formulierung bis zum passenden Foto.",
             ]),
-            ("3. Design & Umsetzung", [
-                "Jetzt bekommt die Seite ihr Gesicht – passend zu deiner Marke, auf dem Handy genauso wie am Rechner. Anschließend wird alles sauber und schnell umgesetzt.",
+            ("3. Design & Entwurf", [
+                "Jetzt bekommt die Seite ihr Gesicht – passend zu deiner Marke, mit klaren Farben und Schriften. Du siehst einen Entwurf, und wir feilen gemeinsam, bis es sitzt.",
+                "So gibt es beim Umsetzen keine Überraschungen: Du weißt vorher, wie deine Seite aussieht.",
             ]),
-            ("4. Launch & danach", [
+            ("4. Umsetzung & Technik", [
+                "Aus dem Entwurf wird die fertige Seite: sauber umgesetzt, schnell ladend, auf dem Handy genauso wie am Rechner. Domain, SSL und Hosting richte ich auf Wunsch gleich mit ein.",
+                "Du musst dich um nichts Technisches kümmern – das läuft im Hintergrund.",
+            ]),
+            ("5. Launch & danach", [
                 "Vor dem Livegang prüfe ich alles: Technik, Mobildarstellung, Google-Grundlagen. Nach dem Start kann die Seite jederzeit wachsen – auf Wunsch pflege ich sie laufend.",
+                "So bleibt deine Seite aktuell, ohne dass du ständig daran denken musst.",
             ]),
         ],
         key=[
             "Erst Ziel klären, dann bauen.",
             "Struktur für Besucher UND Google.",
-            "Responsiv: Handy wie Desktop.",
+            "Entwurf vorab – keine Überraschungen.",
+            "Responsiv & schnell: Handy wie Desktop.",
             "Nach dem Launch jederzeit erweiterbar.",
+        ],
+        faq=[
+            ("Was kostet eine Website?",
+             "Die Kosten für eine Website hängen vom Umfang ab – von der kompakten Web-Visitenkarte bis zur großen Seite. Erzähl mir dein Vorhaben, du bekommst ein individuelles Angebot."),
+            ("Wie lange dauert es, bis meine Website online ist?",
+             "Eine Website ist je nach Umfang in wenigen Tagen bis zu einigen Wochen online. Den genauen Zeitrahmen lege ich mit dir im ersten Gespräch fest."),
+            ("Muss ich die Texte und Bilder selbst liefern?",
+             "Vorhandene Texte und Bilder baust du gern ein – wo etwas fehlt, kümmere ich mich darum, von der Formulierung bis zum passenden Foto. Du musst nicht alles fertig liefern."),
+            ("Kann ich die Website später erweitern?",
+             "Deine Website lässt sich jederzeit erweitern. Auf Wunsch übernehme ich die laufende Pflege, oder ich richte sie so ein, dass du Inhalte selbst aktualisieren kannst."),
         ],
         cta_h2="Bereit für deine Website?",
         cta_lead="Von der Idee bis online – aus einer Hand, persönlich geplant.",
@@ -117,7 +155,7 @@ ARTICLES = [
     ),
     # ---------- Social Media ----------
     dict(
-        slug="ratgeber-social-selbst-oder-auslagern", cat="Social Media", read="ca. 3 Min",
+        slug="ratgeber-social-selbst-oder-auslagern", cat="Social Media", read="ca. 4 Min",
         title="Social Media selbst machen oder auslagern? | DESIGNJ Ratgeber",
         desc="Social Media selbst machen oder auslagern? Ehrliche Pro- und Contra-Abwägung – und warum ein Hybrid-Modell für viele am besten passt.",
         teaser="Ehrliche Pro- und Contra-Liste für beide Wege.",
@@ -137,12 +175,31 @@ ARTICLES = [
             ("Wann ganz auslagern?", [
                 "Wenn dir schlicht die Zeit fehlt, übernehme ich auch Planung und Umsetzung – dann läuft dein Auftritt, ohne dass du ständig dran denken musst.",
             ]),
+            ("Woran du merkst, dass du Hilfe brauchst", [
+                "Wenn dein letzter Post Wochen her ist, der Look von Mal zu Mal anders aussieht oder dich das Posten eher stresst als Spaß macht – dann ist es Zeit, dir einen Teil abnehmen zu lassen.",
+                "Das ist kein Scheitern, sondern Arbeitsteilung: Du machst, was dir liegt, den Rest übernehme ich.",
+            ]),
+            ("Was am Ende wirklich zählt", [
+                "Nicht wer am meisten postet gewinnt, sondern wer verlässlich und wiedererkennbar auftritt. Lieber einmal pro Woche einheitlich als täglich zusammengewürfelt.",
+                "Der einheitliche Look macht aus einzelnen Posts einen Auftritt, der im Kopf bleibt.",
+            ]),
         ],
         key=[
             "Echte Momente fängst du selbst am besten ein.",
             "Schwachstelle ist meist die Konsistenz.",
             "Hybrid: Vorlagen von mir, Inhalte von dir.",
             "Keine Zeit? Dann übernehme ich komplett.",
+            "Verlässlich & einheitlich schlägt viel & planlos.",
+        ],
+        faq=[
+            ("Was kostet es, Social Media auszulagern?",
+             "Die Kosten hängen vom Umfang ab – von einzelnen Vorlagen bis zur kompletten Betreuung. Du bekommst ein individuelles Angebot, passend zu dem, was du wirklich brauchst."),
+            ("Wie viel Zeit kostet mich Social Media, wenn ich es selbst mache?",
+             "Selbst gemacht brauchst du vor allem Regelmäßigkeit – mit einem fertigen Vorlagen-Set sind das oft nur ein paar Minuten pro Post. Ohne Vorlagen frisst vor allem das Gestalten die Zeit."),
+            ("Welche Plattform ist die richtige für mich?",
+             "Die richtige Plattform hängt davon ab, wo deine Kunden sind – für die meisten lokalen Betriebe sind das Instagram und Facebook. Lieber ein, zwei Kanäle richtig als fünf halbherzig."),
+            ("Muss ich selbst vor die Kamera?",
+             "Vor die Kamera musst du nicht. Oft wirken Fotos von deiner Arbeit, den Ergebnissen oder dem Team sogar besser – und die lassen sich ganz nebenbei einsammeln."),
         ],
         cta_h2="Unsicher, welcher Weg zu dir passt?",
         cta_lead="Ich finde mit dir den Mix, der zu deiner Zeit und deinen Zielen passt.",
@@ -184,7 +241,7 @@ ARTICLES = [
     ),
     # ---------- Branche: Handwerk ----------
     dict(
-        slug="ratgeber-marketing-handwerk", cat="Handwerk", read="ca. 4 Min",
+        slug="ratgeber-marketing-handwerk", cat="Handwerk", read="ca. 5 Min",
         title="Marketing fürs Handwerk: 5 Hebel, die sofort wirken | DESIGNJ",
         desc="Marketing fürs Handwerk: 5 einfache Hebel – von Fahrzeugbeschriftung bis Google-Profil – die zuverlässig für mehr Aufträge sorgen.",
         teaser="5 einfache Hebel, die zuverlässig Aufträge bringen.",
@@ -208,12 +265,27 @@ ARTICLES = [
             ("5. Bewertungen einsammeln", [
                 "Zufriedene Kunden sind deine beste Werbung. Frag aktiv nach einer Google-Bewertung – ein paar gute Sterne überzeugen den nächsten Interessenten.",
             ]),
+            ("Womit du anfängst", [
+                "Du musst nicht alles auf einmal machen. Fang mit dem an, was dich am sichtbarsten macht: meist das Fahrzeug und das Google-Profil. Der Rest kommt Schritt für Schritt dazu.",
+                "Lieber zwei Dinge richtig als zehn halb – so bleibt es bezahlbar und wirkt trotzdem.",
+            ]),
         ],
         key=[
             "Fahrzeugbeschriftung = Werbung, die 24/7 fährt.",
             "Bauzaun und Baustelle als Werbefläche nutzen.",
             "Google-Profil + einfache Website = auffindbar.",
             "Einheitlicher Auftritt schafft Vertrauen.",
+            "Schritt für Schritt statt alles auf einmal.",
+        ],
+        faq=[
+            ("Was bringt Marketing im Handwerk überhaupt?",
+             "Marketing fürs Handwerk sorgt dafür, dass dich die richtigen Kunden und Mitarbeiter finden – auch wenn deine Arbeit top ist. Gute Arbeit allein spricht sich heute nicht mehr von selbst herum."),
+            ("Womit sollte ich als Handwerksbetrieb anfangen?",
+             "Am meisten bringt dir zuerst ein sauber beschriftetes Fahrzeug und ein gepflegtes Google-Profil – beides macht dich sofort sichtbar und auffindbar. Den Rest baust du Schritt für Schritt aus."),
+            ("Brauche ich als Handwerker wirklich eine Website?",
+             "Eine einfache, gute Website hilft im Handwerk vor allem bei zwei Dingen: gefunden werden und Vertrauen schaffen. Für den Anfang reicht oft eine kompakte Seite, die später mitwächst."),
+            ("Hilft Marketing auch bei der Mitarbeitersuche?",
+             "Ein sichtbarer, sympathischer Auftritt zieht nicht nur Kunden, sondern auch Bewerber an. Wer dich vom Fahrzeug, von Social oder der Website kennt, bewirbt sich leichter."),
         ],
         cta_h2="Mehr Aufträge aus deinem Auftritt?",
         cta_lead="Von Fahrzeug bis Website – ich bringe dein Handwerk sichtbar nach vorn.",

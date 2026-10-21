@@ -46,9 +46,9 @@ def related_block(a, articles):
     links = ' <span class="rg-dot">·</span> '.join(
         f'<a href="/{r["slug"]}">{display_name(r)}</a>' for r in rel)
     return f'''
-<section class="section" style="padding-top:0">
+<section class="section">
   <div class="container">
-    <p class="rg-note" style="max-width:760px;margin-left:auto;margin-right:auto"><strong>Das könnte dich auch interessieren:</strong> {links}</p>
+    <p class="rg-note" style="max-width:760px;margin:0 auto"><strong>Das könnte dich auch interessieren:</strong> {links}</p>
   </div>
 </section>
 '''
