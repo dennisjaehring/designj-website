@@ -665,7 +665,6 @@ ARTICLES = [
         desc="Lokal gefunden werden: Wie du mit dem Google-Unternehmensprofil, Bewertungen und einheitlichen Daten in deiner Region ganz oben auftauchst.",
         teaser="Wie du in deiner Region ganz oben auftauchst.",
         eyebrow="Ratgeber · Marketing", service_href="/marketing-betreuung", service_label="Marketing & Betreuung",
-        hero_img="kontakt_karte",
         h1="Lokal gefunden werden",
         lead="Wenn jemand in deiner Nähe sucht, willst du oben stehen.<br>Ein paar Grundlagen entscheiden, ob Google<br>dich deiner Region zuordnet.",
         blocks=[
