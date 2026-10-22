@@ -86,7 +86,10 @@ def build_article_main(a, articles):
     for h2, paras in a["blocks"]:
         blocks.append(f'      <h2>{hb(h2)}</h2>')
         for p in paras:
-            blocks.append(f'      <p>{hb(p)}</p>')
+            if p.lstrip().startswith("<"):   # rohes Block-HTML (z. B. Tabelle) – nicht in <p> wickeln
+                blocks.append("      " + p)
+            else:
+                blocks.append(f'      <p>{hb(p)}</p>')
     body = "\n".join(blocks)
     keys = "\n".join(f'          <li>{CK}{k}</li>' for k in a["key"])
     return f'''<main class="kampagne">
@@ -226,6 +229,9 @@ def article_schema(a):
                       "logo": {"@type": "ImageObject", "url": "https://www.designj.de/designj_logo.svg"}},
         "mainEntityOfPage": f"https://www.designj.de/{a['slug']}",
     }
+    if a.get("datum"):
+        blog["datePublished"] = a["datum"]
+        blog["dateModified"] = a["datum"]
     if not a.get("faq"):
         return json.dumps(blog, ensure_ascii=False, indent=2)
     # Ausfuehrliche Artikel: FAQPage ergaenzen -> JSON-LD-Array

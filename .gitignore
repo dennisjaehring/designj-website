@@ -30,3 +30,6 @@ _neu-kanzlei-praxis/
 
 # Social: Quellbilder liegen im Drive (Social Media/_Social-Bilder)
 _social-bilder/
+
+# lokaler Sicherheits-Check, nicht deployen
+PHP-CHECK.md
