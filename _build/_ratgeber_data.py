@@ -796,6 +796,7 @@ ARTICLES = [
         teaser="Was passiert ist, wie du prüfst, ob du betroffen bist – und was jetzt zu tun ist.",
         eyebrow="Ratgeber · Sicherheit", service_href="/webdesign", service_label="Webdesign",
         hero_img="ratgeber_php_sicherheit", datum="2026-10-22",
+        hero_alt="Laptop mit grünem Schutzschild – Symbol für eine sichere Website ohne PHP",
         h1="PHP-Lücke „PHP2Shell“:<br>bist du betroffen?",
         lead="Große Schlagzeilen, Behörden schalten Seiten ab –<br>klingt dramatisch. Ist ernst, aber nicht jede Seite<br>ist gleich dran. In 3 Minuten weißt du, ob’s dich betrifft.",
         blocks=[
