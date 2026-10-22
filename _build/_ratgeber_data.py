@@ -881,7 +881,7 @@ ARTICLES = [
              "Für klassische Firmen-Websites fast immer – besonders, wenn die aktuelle Seite auf einer alten, nicht mehr aktualisierbaren PHP-Version läuft. Und falls du denkst, dein Shop oder dein Portal sei zu komplex dafür: Auch große, interaktive Projekte lassen sich heute ohne klassisches PHP umsetzen – als moderne Web-App mit eigener, abgesicherter Datenbank. Da ist deutlich mehr möglich, als viele denken."),
         ],
         cta_h2="Unsicher, ob dich das betrifft?",
-        cta_lead="Schick mir einfach die Adresse deiner Website – ich sag dir ehrlich, ob ein Update reicht oder sich ein Neuaufbau ohne PHP lohnt. Melde dich per <a href=\"/kontakt\">Kontakt</a>, Telefon oder Mail.",
+        cta_lead="Schick mir einfach die Adresse deiner Website – ich schau sie mir von außen an und sag dir ehrlich meine Einschätzung: reicht ein Update oder lohnt sich ein Neuaufbau ohne PHP? Melde dich per <a href=\"/kontakt\">Kontakt</a>, Telefon oder Mail.",
         published=True,
     ),
 ]
