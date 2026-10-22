@@ -12,3 +12,6 @@
 /kanzlei.html           /kanzleimarketing            301
 /praxis.html            /praxismarketing             301
 /marketing-extern.html  /marketing-auslagern         301
+
+# Kurz-URL fuer die PHP-Sicherheitsluecke (Reel/Bio) -> Keyword-URL bleibt kanonisch
+/php  /ratgeber-php-sicherheitsluecke-php2shell  301
