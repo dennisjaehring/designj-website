@@ -791,14 +791,14 @@ ARTICLES = [
     # ---------- Sicherheit (aktuell) ----------
     dict(
         slug="ratgeber-php-sicherheitsluecke-php2shell", cat="Webdesign", read="ca. 8 Min",
-        title="PHP-Sicherheitslücke PHP2Shell: Ist deine Website betroffen? | DESIGNJ",
-        desc="Zwei kritische PHP-Lücken bedrohen WordPress, Joomla & Co. Was passiert ist, wie du in 3 Minuten prüfst, ob du betroffen bist – und wann sich eine Website ohne PHP lohnt.",
+        title="PHP-Sicherheitslücke: Ist deine Website betroffen? | DESIGNJ",
+        desc="Zwei kritische PHP-Lücken bedrohen WordPress, Joomla & Co. Wie du prüfst, ob du betroffen bist – und wann sich eine Website ohne PHP lohnt.",
         teaser="Was passiert ist, wie du prüfst, ob du betroffen bist – und was jetzt zu tun ist.",
         eyebrow="Ratgeber · Sicherheit", service_href="/webdesign", service_label="Webdesign",
         hero_img="ratgeber_php_sicherheit", datum="2026-10-22",
         hero_alt="Laptop mit grünem Schutzschild – Symbol für eine sichere Website ohne PHP",
         h1="PHP-Lücke „PHP2Shell“:<br>bist du betroffen?",
-        lead="Große Schlagzeilen, Behörden schalten Seiten ab –<br>klingt dramatisch. Ist ernst, aber nicht jede Seite<br>ist gleich dran. In 3 Minuten weißt du, ob’s dich betrifft.",
+        lead="Große Schlagzeilen, Behörden schalten Seiten ab –<br>klingt dramatisch. Ist ernst, aber nicht jede Seite<br>ist gleich dran. Mit ein paar Handgriffen weißt du, ob’s dich betrifft.",
         blocks=[
             ("Was ist passiert?", [
                 "Fast jede Website läuft auf einem unsichtbaren Baukasten namens PHP – einer Sprache, die im Hintergrund auf dem Server die Seiten zusammenbaut. Genau darin wurden zwei kritische Lücken gefunden: „PHP2Shell“ (CVE-2026-109618 und CVE-2026-109619), beide am oberen Ende der Gefahrenskala (CVSS 9,2).",
@@ -857,7 +857,7 @@ ARTICLES = [
             "„PHP2Shell“ (CVE-2026-109618/109619, CVSS 9,2) – kritisch, aber nicht jede Seite ist betroffen.",
             "Angreifer können aus der Ferne Code ausführen – ohne Login, ohne Klick.",
             "Gepatcht: PHP 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12. Für PHP 8.1 und älter gibt es kein Update.",
-            "In 3 Minuten prüfbar: System + PHP-Version checken, mit den gepatchten Versionen abgleichen.",
+            "Schnell prüfbar: System + PHP-Version checken, mit den gepatchten Versionen abgleichen.",
             "Reine HTML-Seiten ohne PHP sind nicht betroffen.",
         ],
         faq=[

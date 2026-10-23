@@ -182,7 +182,7 @@ PAGES["print-produktion"] = dict(
 
 PAGES["social-media"] = dict(
     title="Social-Media-Design Weiden | DESIGNJ",
-    desc="Social-Media-Design aus Weiden: Feed- & Story-Vorlagen, Content-Pakete und Werbeanzeigen-Grafiken – damit deine Marke auf Instagram, Facebook & LinkedIn einheitlich auftritt.",
+    desc="Social-Media-Design aus Weiden: Feed- & Story-Vorlagen, Content-Pakete und Anzeigen-Grafiken für einen einheitlichen Auftritt auf Instagram & Facebook.",
     eyebrow="Social Media · Weiden &amp; Oberpfalz",
     h1='Auf allen Kanälen<br><span class="accentword">wiedererkennbar</span>.',
     lead="Von der einzelnen Grafik bis zum kompletten<br>Content-Paket – ich sorge für einen<br>professionellen, einheitlichen Auftritt auf<br>Instagram, Facebook, LinkedIn &amp; Co.",
