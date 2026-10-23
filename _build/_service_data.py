@@ -74,7 +74,7 @@ NOTE = 'Noch unsicher, was du brauchst?<br>Im Gespräch finde ich mit dir den pa
 PAGES = {}
 
 PAGES["branding"] = dict(
-    title="Branding & Logo-Design Weiden | DESIGNJ",
+    title="Branding, Logo & Grafikdesign Weiden | DESIGNJ",
     desc="Branding aus Weiden: Logo, Corporate Design und Styleguide aus einer Hand – damit deine Marke klar, einheitlich und wiedererkennbar auftritt.",
     eyebrow="Branding · Weiden &amp; Oberpfalz",
     h1='Eine Marke,<br>die <span class="accentword">hängen bleibt</span>.',
@@ -128,7 +128,7 @@ PAGES["branding"] = dict(
 )
 
 PAGES["print-produktion"] = dict(
-    title="Print & Produktion Weiden | DESIGNJ",
+    title="Flyer, Schilder & Textildruck Weiden | DESIGNJ",
     desc="Print & Produktion aus Weiden: Flyer, Broschüren, Großformat, Fahrzeugbeschriftung, Textildruck & Werbemittel – gestaltet und produziert aus einer Hand.",
     eyebrow="Print &amp; Produktion · Weiden &amp; Oberpfalz",
     h1='Gestaltet, gedruckt, <span class="accentword">geliefert</span>.',
