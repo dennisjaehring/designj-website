@@ -128,7 +128,7 @@ def build_main(p):
       <a href="#kontakt" class="btn btn--accent btn--lg"><span class="chev">»</span> Projekt starten</a>
       {btn_ref}
     </div>
-    <div class="kmp-hero__media reveal" data-delay="120">
+    <div class="kmp-hero__media" data-delay="120">
       <img src="{R}{p["hero_img"]}.webp" alt="{p["hero_alt"]}" style="border-radius:var(--radius)">
     </div>
   </div>

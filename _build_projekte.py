@@ -569,7 +569,7 @@ TPL = r"""<!DOCTYPE html>
 <main class="proj-page">
 
 <section class="hero hero--text hero--project">
-  <div class="container hero__content reveal">
+  <div class="container hero__content">
     <a href="/projekte" class="back-link"><span class="arrow">←</span> Alle Projekte</a>
     <span class="eyebrow">@@EYEBROW@@</span>
     <h1>@@H1@@</h1>

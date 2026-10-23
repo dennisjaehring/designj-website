@@ -53,7 +53,7 @@ def build(cfg):
       <p class="lead">{cfg['lead']}</p>
       <a href="#kontakt" class="btn btn--accent btn--lg"><span class="chev">»</span> Unverbindlich anfragen</a>
     </div>
-    <div class="kmp-hero__media reveal" data-delay="120">
+    <div class="kmp-hero__media" data-delay="120">
       <div class="placeholder-img ratio-1-1" data-label="Hero · {cfg['hero_label']} – Firefly folgt"></div>
     </div>
   </div>

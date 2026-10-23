@@ -102,7 +102,7 @@ def build_article_main(a, articles):
       <p class="rg-meta">Lesezeit {a["read"]} <span class="rg-dot">·</span> <a href="{a["service_href"]}">{a["service_label"]}</a></p>
       <p class="lead" style="max-width:none">{hb(a["lead"])}</p>
     </div>
-    <div class="kmp-hero__media reveal" data-delay="120">
+    <div class="kmp-hero__media" data-delay="120">
       <img class="rg-hero__img" src="images/{hero_img(a)}.webp" alt="{a.get("hero_alt") or (a["service_label"] + " – Beispiel von DESIGNJ")}" style="border-radius:var(--radius)">
     </div>
   </div>
@@ -167,7 +167,7 @@ f'''      <a class="rg-card reveal" href="/{a["slug"]}" data-cat="{a["cat"]}">
       <h1 class="seo-h1">{hb(ov["h1"])}</h1>
       <p class="lead" style="max-width:none">{hb(ov["lead"])}</p>
     </div>
-    <div class="kmp-hero__media reveal" data-delay="120">
+    <div class="kmp-hero__media" data-delay="120">
       <img src="images/dennis_spotlight.webp" alt="Dennis Jähring – DESIGNJ, dein Ansprechpartner" style="border-radius:var(--radius)">
     </div>
   </div>
