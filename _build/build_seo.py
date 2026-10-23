@@ -269,8 +269,8 @@ immo = dict(file="immobilienmarketing.html", bodyclass="kampagne-immo", slug="im
  opts=["Kompletter Auftritt (Logo, Website, Exposés)","Website oder Landingpage","Objekt-Präsentation &amp; Exposés","Social-Media-Betreuung","Großformat (Bautafel, Schild, Banner)"])
 
 kanz = dict(file="kanzleimarketing.html", bodyclass="kampagne-kanzlei", slug="kanzleimarketing",
- title="Kanzleimarketing Weiden | Werbeagentur DESIGNJ", seoname="Kanzleimarketing",
- desc="Kanzleimarketing aus Weiden: moderne Website, seriöser Auftritt und Recruiting aus einer Hand – für Anwälte, Notare und Steuerberater.",
+ title="Kanzleimarketing: Werbeagentur für Kanzleien | DESIGNJ", seoname="Kanzleimarketing",
+ desc="Modernes Kanzleimarketing für Anwälte, Notare und Steuerberater: seriöse Website, Branding, Recruiting und Content aus einer Hand – persönlich, deutschlandweit.",
  eyebrow="Kanzleimarketing · Weiden &amp; Oberpfalz", h1a="Marketing für", h1b="Kanzleien", hero_label="Kanzlei-Motiv (Violett)",
  hero_lead='Website, Auftritt, Content &amp; Recruiting –<br>alles mit einem Ansprechpartner.<br>Damit deine Kanzlei modern wirkt und die<br>richtigen Mandanten &amp; Mitarbeiter dich finden.',
  intro_eyebrow="Warum Kanzleimarketing?", intro_h2="Seriös auftreten –<br>online wie auf Papier.",
