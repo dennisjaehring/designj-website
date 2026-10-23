@@ -194,9 +194,9 @@ def build(cfg):
     # Head / Body / Kontakt
     subs = [
      ('<body class="kampagne-macher">', f'<body class="{cfg["bodyclass"]}">'),
-     ('<title>Marketing fürs Handwerk Weiden | Werbeagentur DESIGNJ</title>', f'<title>{cfg["title"]}</title>'),
-     ('<meta property="og:title" content="Marketing fürs Handwerk Weiden | Werbeagentur DESIGNJ">', f'<meta property="og:title" content="{cfg["title"]}">'),
-     ('<meta name="description" content="Marketing fürs Handwerk aus Weiden: Website, Fahrzeug, Schilder &amp; Social Media aus einer Hand – damit dich die richtigen Kunden und Mitarbeiter finden.">', f'<meta name="description" content="{cfg["desc"]}">'),
+     ('<title>Werbeagentur fürs Handwerk Weiden | DESIGNJ</title>', f'<title>{cfg["title"]}</title>'),
+     ('<meta property="og:title" content="Werbeagentur fürs Handwerk Weiden | DESIGNJ">', f'<meta property="og:title" content="{cfg["title"]}">'),
+     ('<meta name="description" content="Werbeagentur fürs Handwerk aus Weiden: Website, Fahrzeug, Schilder &amp; Social Media aus einer Hand – damit dich die richtigen Kunden und Mitarbeiter finden.">', f'<meta name="description" content="{cfg["desc"]}">'),
      ('<meta property="og:description" content="Website, Fahrzeug, Schilder, Social Media &amp; Recruiting aus einer Hand – damit dein Handwerksbetrieb sichtbar wird.">', f'<meta property="og:description" content="{cfg["desc"]}">'),
      ('name="_subject" value="Neue Anfrage über SEO-Seite: Marketing fürs Handwerk"', f'name="_subject" value="Neue Anfrage über SEO-Seite: {cfg["seoname"]}"'),
      ('name="Herkunft" value="SEO-Seite: Marketing fürs Handwerk"', f'name="Herkunft" value="SEO-Seite: {cfg["seoname"]}"'),
