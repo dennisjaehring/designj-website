@@ -247,6 +247,8 @@ PAGES["social-media"] = dict(
         ("Für welche Plattformen gestaltest du?", "Bei DESIGNJ gestalte ich für Instagram, Facebook, LinkedIn und Co. – in den passenden Formaten für jeden Kanal."),
         ("Machst du auch Werbeanzeigen-Grafiken?", "Werbeanzeigen-Grafiken mache ich auch – für Meta-, Instagram- und LinkedIn-Ads sowie Google-Ads-Banner."),
         ("Bekomme ich ein einheitliches Design über alle Kanäle?", "Ein einheitliches Design über alle Kanäle ist genau das Ziel: ein konsistenter Look, der deine Marke überall wiedererkennbar macht."),
+        ("Bist du eine Social-Media-Agentur für Weiden und die Oberpfalz?", "Ja – ich betreue Unternehmen aus Weiden und der ganzen Oberpfalz bei Social Media: von Design und Content bis zur laufenden Betreuung. Persönlich, mit festem Ansprechpartner statt anonymer Agentur."),
+        ("Machst du Social-Media-Marketing auch für kleine Unternehmen und Vereine in der Region?", "Ja – gerade für kleine Betriebe und Vereine aus Weiden und Umgebung lohnt sich ein einheitlicher Social-Media-Auftritt. Wir starten so groß oder klein, wie es für dich passt."),
     ],
     k_h2="Lass uns über<br>deinen Social-Auftritt sprechen.", k_lead="Erzähl mir kurz dein Vorhaben – du bekommst eine ehrliche Einschätzung und ein individuelles Angebot.",
     k_subject="Neue Anfrage über Seite: Social Media", k_herkunft="Seite: Social Media",
