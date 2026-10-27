@@ -47,6 +47,9 @@ Mobil-Umbrüche). Zwei abgesicherte Muster:
 
 - **`_build_projekte.py`** (Projekt-Detailseiten): **synchron gehalten** – Vorlage + Daten
   im Skript sind die Quelle. Änderungen an Projektseiten dort mitpflegen.
+  **Seit 27.10.2026 mit Sicherung:** Das Skript bettet am Ende das CSS ein (`inline_css.py`) und
+  meldet „✓ Projektseiten unverändert" – oder listet jede Seite, die vom letzten Stand abweicht.
+  Dann nicht committen, sondern `git checkout -- projekt-*.html` und das Skript angleichen.
   **Abschluss-Block-Standard:** Jede Projektseite endet vor der Kundenstimme mit einem
   **Prosa-„Fazit"** (`.proj-fazit`) statt Aufzählung – gesetzt über `fazit_h` (kurze,
   individuelle Überschrift) + `fazit` (2–3 Sätze, Umfang/Leistungen eingewoben, mündet

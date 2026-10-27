@@ -15,3 +15,8 @@
 
 # Kurz-URL fuer die PHP-Sicherheitsluecke (Reel/Bio) -> Keyword-URL bleibt kanonisch
 /php  /ratgeber-php-sicherheitsluecke-php2shell  301
+
+# Adressen mit Schrägstrich am Ende dauerhaft (301) auf die Adresse ohne umleiten
+# (Cloudflare würde sonst nur vorläufig mit 307 umleiten). Ordner mit eigener
+# index.html gibt es außer der Startseite nicht – also keine Schleife.
+/:seite/  /:seite  301

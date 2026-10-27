@@ -472,7 +472,7 @@ TPL = r"""<!DOCTYPE html>
     "description": "Werbeagentur aus Weiden i.d.OPf. Design, Druck & Digital aus einer Hand – über 20 Jahre Erfahrung, ein Ansprechpartner.",
     "url": "https://www.designj.de/",
     "image": "https://www.designj.de/og-image.jpg",
-    "telephone": "+49 170 291 83 05",
+    "telephone": "+491702918305",
     "email": "info@designj.de",
     "priceRange": "€€",
     "slogan": "Design. Druck. Digital.",
@@ -516,12 +516,12 @@ TPL = r"""<!DOCTYPE html>
       <span class="nav__item--drop">
         <a href="/loesungen" class="nav__droptop">Lösungen <i class="nav__caret">▾</i></a>
         <span class="nav__drop">
-          <a href="/sport">Sport &amp; Vereine</a>
-          <a href="/handwerk">Handwerk &amp; Bau</a>
-          <a href="/immobilien">Immobilien &amp; Bau</a>
-          <a href="/kanzlei">Recht &amp; Steuer</a>
-          <a href="/praxis">Praxen &amp; Pflege</a>
-          <a href="/marketing-extern">Externes Marketing</a>
+          <a href="/sportmarketing">Sport &amp; Vereine</a>
+          <a href="/marketing-fuers-handwerk">Handwerk &amp; Bau</a>
+          <a href="/immobilienmarketing">Immobilien &amp; Bau</a>
+          <a href="/kanzleimarketing">Recht &amp; Steuer</a>
+          <a href="/praxismarketing">Praxen &amp; Pflege</a>
+          <a href="/marketing-auslagern">Externes Marketing</a>
         </span>
       </span>
       <span class="nav__item--drop">
@@ -551,12 +551,12 @@ TPL = r"""<!DOCTYPE html>
   <a href="/social-media" class="m-link m-link--sub">Social Media</a>
   <a href="/marketing-betreuung" class="m-link m-link--sub">Marketing &amp; Betreuung</a>
   <a href="/loesungen" class="m-link">Lösungen</a>
-  <a href="/sport" class="m-link m-link--sub">Sport &amp; Vereine</a>
-  <a href="/handwerk" class="m-link m-link--sub">Handwerk &amp; Bau</a>
-  <a href="/immobilien" class="m-link m-link--sub">Immobilien &amp; Bau</a>
-  <a href="/kanzlei" class="m-link m-link--sub">Recht &amp; Steuer</a>
-  <a href="/praxis" class="m-link m-link--sub">Praxen &amp; Pflege</a>
-  <a href="/marketing-extern" class="m-link m-link--sub">Externes Marketing</a>
+  <a href="/sportmarketing" class="m-link m-link--sub">Sport &amp; Vereine</a>
+  <a href="/marketing-fuers-handwerk" class="m-link m-link--sub">Handwerk &amp; Bau</a>
+  <a href="/immobilienmarketing" class="m-link m-link--sub">Immobilien &amp; Bau</a>
+  <a href="/kanzleimarketing" class="m-link m-link--sub">Recht &amp; Steuer</a>
+  <a href="/praxismarketing" class="m-link m-link--sub">Praxen &amp; Pflege</a>
+  <a href="/marketing-auslagern" class="m-link m-link--sub">Externes Marketing</a>
   <a href="/referenzen" class="m-link">Referenzen</a>
   <a href="/projekte" class="m-link m-link--sub">Projekte</a>
   <a href="/kunden" class="m-link m-link--sub">Kunden</a>
@@ -611,7 +611,7 @@ TPL = r"""<!DOCTYPE html>
     <div class="footer__top">
       <div class="footer__brand">
         <img src="designj_logo.svg" alt="DESIGNJ – Design Druck Digital" width="158" height="38">
-        <p class="footer__addr">DESIGNJ | Dennis Jähring<br>Hasenweg 34<br>92699 Irchenrieth<br><a href="tel:+491702918305">+49 170 291 83 05</a><br><a href="mailto:info@designj.de">info@designj.de</a></p>
+        <p class="footer__addr">DESIGNJ | Dennis Jähring<br>Hasenweg 34<br>92699 Irchenrieth<br><a href="tel:+491702918305">+49 170 2918305</a><br><a href="mailto:info@designj.de">info@designj.de</a></p>
       </div>
       <div class="footer__col">
         <h3>Navigation</h3>
@@ -812,3 +812,16 @@ for u in all_imgs:
                 time.sleep(1.5)
     time.sleep(0.25)
 print(f"\nFertig: {built} Seiten gebaut | Bilder neu: {ok}, vorhanden: {skip}, Fehler: {fail}")
+
+# ---- Sicherung (seit 27.10.2026): CSS wie live einbetten, dann zeigen, was sich geändert hat ----
+# Ohne gewollte Änderung an den Projektdaten muss hier „unverändert" stehen. Steht da etwas
+# anderes, dreht das Skript den Live-Stand zurück → nicht committen, `git checkout -- projekt-*.html`.
+import subprocess
+subprocess.run(["python3", os.path.join(ROOT, "_build", "inline_css.py")], cwd=ROOT, check=True, stdout=subprocess.DEVNULL)
+geaendert = subprocess.run(["git", "diff", "--name-only", "--", "projekt-*.html"], cwd=ROOT, capture_output=True, text=True).stdout.split()
+if geaendert:
+    print(f"\n⚠️  {len(geaendert)} Projektseiten weichen vom letzten Stand ab – erst mit `git diff` prüfen, ob das gewollt ist:")
+    for g in geaendert: print("   ", g)
+    print("   Nicht gewollt?  git checkout -- projekt-*.html")
+else:
+    print("\n✓ Projektseiten unverändert – Skript und Live-Stand sind synchron.")
